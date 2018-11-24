@@ -1,55 +1,29 @@
-
-// -------------- SET UP STUFF --------------
-
-// Required packages.
 const express = require("express");
-const path = require("path");
-const favicon = require("serve-favicon");
+const router = express.Router();
 const mongodb = require("mongodb");
-const exec = require("child_process").exec;
 
 // Set up mongodb connect url.
 const user = process.env.MONGODB_RWU;
 const ww = process.env.MONGODB_RWP;
 const mongoport = 27017;
 const ip = "192.168.1.90";
-const db = "nodelpage";
+const db = "de_kelder";
 const collinks = "links";
 const MongoClient = mongodb.MongoClient;
-const mongourl = "mongodb://" + user + ":" + ww + "@" + ip + ":" + mongoport + "/" + db;
-
-// Declare the app and set the port.
-const app = express();
-const port = 3099;
-
-// Stop anything from being shown about the server.
-app.disable("x-powered-by");
-
-// Set the folder for the pug files and make the source pretty.
-app.set("views", path.join(__dirname, "0-views"));
-app.set("view engine", "pug");
-app.locals.pretty = true;
-
-
-// --------------- MIDDLEWARE ---------------
-
-// Set the public folder
-app.use(express.static(path.join(__dirname, "1-public")));
-// Set the favicon.
-app.use(favicon(path.join(__dirname, "1-public", "favicon.png")));
-
+//const mongourl = "mongodb://" + user + ":" + ww + "@" + ip + ":" + mongoport + "/" + db;
+const mongourl = "mongodb://localhost:27017/de_kelder";
 
 // --------------- GET  PAGES ---------------
 
 // Function to easily get the page.
 function getPage(url, view, title) {
-    app.get(url, (req, res) => {
+    router.get(url, (req, res, next) => {
         res.render(view, { title : title });
     });
 }
 
 // The landing page.
-app.get("/", (req, res) => {
+router.get("/", (req, res, next) => {
     // Get the hostname from the url.
     var urlbar = req.headers.host.split(":");
     MongoClient.connect(mongourl, (err, db) => {
@@ -81,7 +55,7 @@ app.get("/", (req, res) => {
 });
 
 // Wake my PC.
-app.get("/wol", (req, res) => {
+router.get("/wol", (req, res, next) => {
     exec("wolpc", (err, stdout, stderr) => {
         if (err) {
             console.log(err);
@@ -96,13 +70,11 @@ app.get("/wol", (req, res) => {
     })
 })
 
-// Get the 404 page.
-getPage("*", "404", "Not found");
+// Just get a simple page.
+getPage("/test", "index", "Test");
 
-
-// --------- TECHNICAL SERVER STUFF ---------
-
-// Make the app listen to the right port.
-app.listen(port, () => {
-    console.log("      " + db.toUpperCase() + " is now listening on port: " + port);
+router.get("/test2", (req, res, next) => {
+    res.send("Dit is test 2 bitch!");
 });
+
+module.exports = router;
