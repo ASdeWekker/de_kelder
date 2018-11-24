@@ -4,9 +4,6 @@
 const express = require("express");
 const path = require("path");
 const favicon = require("serve-favicon");
-const mongodb = require("mongodb");
-const exec = require("child_process").exec;
-const sass = require("node-sass-middleware");
 
 // Call the routers and eclare the app.
 const indexRouter = require("./3-routes/index");
@@ -27,13 +24,6 @@ app.locals.pretty = true;
 app.use(express.static(path.join(__dirname, "1-public")));
 // Set the favicon.
 app.use(favicon(path.join(__dirname, "1-public", "favicon.png")));
-// Use sass.
-app.use(sass({
-    src: path.join(__dirname, "1-public"),
-    dest: path.join(__dirname, "1-public"),
-    indentedSyntax: true, // true = sass, false = scss.
-    sourceMap: true
-}));
 
 // Use the routes.
 app.use("/", indexRouter);

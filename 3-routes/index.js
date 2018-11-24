@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const mongodb = require("mongodb");
+const exec = require("child_process").exec;
 
 // Set up mongodb connect url.
 const user = process.env.MONGODB_RWU;
