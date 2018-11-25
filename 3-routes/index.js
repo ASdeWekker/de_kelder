@@ -21,7 +21,7 @@ const ww = process.env.PSQLW;
 const host = "192.168.1.90";
 const psqlport = 5432;
 const db = "dekelder";
-// const connStr = "postgresql://" + user + ":" + ww + "@" + host + ":" + psqlport + "/" + db;
+const connStr = "postgresql://" + user + ":" + ww + "@" + host + ":" + psqlport + "/" + db;
 // Create a new client.
 // const client = new Client({
 //     connectionString: connStr
@@ -54,9 +54,7 @@ router.get("/", (req, res, next) => {
             // Pass the ip address in the url to easily switch between hosts.
             url : url[0]
         }))
-        .catch(e => console.error(e.stack))
-        .catch(res.send("Unable to connect or find anything."));
-    client.end();
+        .catch(e => console.error(e.stack));
 });
 
 // The landing page.

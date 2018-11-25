@@ -3,7 +3,7 @@ extends base
 block content
     h1.title Landing Page!
     ul.linklist
-        each link, i in links
+        each link, i in links.rows
             li.linkli: a(href="http://" + url + ":" + link.url).links #{link.name}
     ul.hosts
         li.hostli: a.host(href="http://192.168.1.90:3099") 90
