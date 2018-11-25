@@ -93,7 +93,7 @@ getPage("/", "index", "Home");
 
 // Wake my PC.
 router.get("/wol", (req, res, next) => {
-    exec("/wol.sh", (err, stdout, stderr) => {
+    exec("wol.sh", (err, stdout, stderr) => {
         if (err) {
             console.log(err);
             res.redirect("/");
