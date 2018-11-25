@@ -1,0 +1,9 @@
+extends base
+
+block content
+    h2 Errors will appear here.
+    p.error-err !{error}
+    p.error-msg !{message}
+    h1= message
+    h2= error.status
+    pre #{error.stack}
