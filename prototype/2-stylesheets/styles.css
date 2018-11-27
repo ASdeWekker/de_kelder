@@ -1,0 +1,40 @@
+/* line 1, styles.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, styles.sass */
+html, body {
+  font-family: "Lucida Console", Monaco, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, styles.sass */
+html, body, .container {
+  background: #000;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 15, styles.sass */
+.footer, footer {
+  height: 28px;
+  width: 100%;
+}
+
+/* line 24, styles.sass */
+html body .container .main .item .item-title {
+  text-align: center;
+}
+/* line 26, styles.sass */
+html body .container .footer {
+  bottom: 0;
+  position: fixed;
+}
+/* line 32, styles.sass */
+html body .container .footer footer .searchbar .search-input {
+  border-radius: 10px;
+  padding-left: 8px;
+}
