@@ -82,11 +82,11 @@ html body .container .hosts {
 }
 /* line 91, styles.sass */
 html body .container .hosts .hostli {
-  width: 30%;
+  width: 23%;
 }
 /* line 94, styles.sass */
 html body .container .hosts .hostli:first-child {
-  margin-left: 5%;
+  margin-left: 4%;
 }
 /* line 97, styles.sass */
 html body .container .hosts .hostli .host {
