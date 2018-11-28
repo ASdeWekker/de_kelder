@@ -5,36 +5,61 @@
 
 /* line 4, styles.sass */
 html, body {
-  font-family: "Lucida Console", Monaco, monospace;
+  display: flex;
+  font-family: Arial;
   margin: 0;
   padding: 0;
 }
 
-/* line 9, styles.sass */
+/* line 10, styles.sass */
 html, body, .container {
   background: #000;
   color: #fff;
-  height: 100%;
+  height: auto;
+  position: relative;
   width: 100%;
 }
 
-/* line 15, styles.sass */
+/* line 17, styles.sass */
 .footer, footer {
-  height: 28px;
+  height: 48px;
   width: 100%;
 }
 
-/* line 24, styles.sass */
+/* line 26, styles.sass */
 html body .container .main .item .item-title {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 100%;
   text-align: center;
 }
-/* line 26, styles.sass */
+/* line 30, styles.sass */
 html body .container .footer {
+  background: #333;
   bottom: 0;
   position: fixed;
 }
-/* line 32, styles.sass */
+/* line 37, styles.sass */
 html body .container .footer footer .searchbar .search-input {
   border-radius: 10px;
   padding-left: 8px;
+}
+/* line 40, styles.sass */
+html body .container .footer footer .menu-button {
+  background: #ddd;
+  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 50% 50%;
+}
+/* line 55, styles.sass */
+html body .container .footer footer .add-recipe {
+  background: #333;
+  border-radius: 50%;
+  bottom: 66px;
+  height: 48px;
+  right: 12px;
+  position: absolute;
+  width: 48px;
 }
