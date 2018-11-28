@@ -1,18 +1,18 @@
-/* line 1, styles.sass */
+/* line 10, styles.sass */
 * {
   box-sizing: border-box;
 }
 
-/* line 4, styles.sass */
+/* line 13, styles.sass */
 html, body {
-  display: flex;
   font-family: Arial;
   margin: 0;
   padding: 0;
 }
 
-/* line 10, styles.sass */
+/* line 18, styles.sass */
 html, body, .container {
+  display: flex;
   background: #000;
   color: #fff;
   height: auto;
@@ -20,35 +20,41 @@ html, body, .container {
   width: 100%;
 }
 
-/* line 17, styles.sass */
+/* line 26, styles.sass */
 .footer, footer {
   height: 48px;
   width: 100%;
 }
 
-/* line 26, styles.sass */
+/* line 33, styles.sass */
+html body .container .main {
+  margin-left: 10%;
+  margin-bottom: -48px;
+  width: 80%;
+}
+/* line 39, styles.sass */
 html body .container .main .item .item-title {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 100%;
   text-align: center;
 }
-/* line 31, styles.sass */
+/* line 44, styles.sass */
 html body .container .footer {
   background: #333;
   bottom: 0;
   position: fixed;
 }
-/* line 38, styles.sass */
+/* line 51, styles.sass */
 html body .container .footer footer .searchbar .search-input {
   border-radius: 10px;
   padding-left: 8px;
 }
-/* line 42, styles.sass */
+/* line 55, styles.sass */
 html body .container .footer footer .menu-button {
-  background: #ddd;
+  background: #606060;
   border-radius: 0 0 50% 50%;
 }
-/* line 46, styles.sass */
+/* line 59, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #333;
   border-radius: 50%;
@@ -58,20 +64,20 @@ html body .container .footer footer .add-recipe {
   position: absolute;
   width: 54px;
 }
-/* line 55, styles.sass */
+/* line 68, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
   background: #606060;
   border-radius: 0px;
   position: absolute;
 }
-/* line 60, styles.sass */
+/* line 73, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert {
   height: 36px;
   left: 25px;
   top: 9px;
   width: 4px;
 }
-/* line 66, styles.sass */
+/* line 79, styles.sass */
 html body .container .footer footer .add-recipe .cross-hori {
   height: 4px;
   left: 9px;
