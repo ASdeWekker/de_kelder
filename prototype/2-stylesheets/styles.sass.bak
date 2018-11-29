@@ -31,30 +31,20 @@ html
     body
         .container
             .main
-                display: flex
-               6 margin-left: 10%
+                margin-left: 10%
                 margin-bottom: 48px
-                6width: 80%
+                width: 80%
 
                 .item
-                    -webkit-flex-flow: column nowrap
+                    display: block
                     height: auto
-                    width: 100%
+                    width: auto
                     
                     .item-title
                         color: $text-h1
                         font-family: "Lucida Console", Monaco, monospace
                         font-size: 100%
                         text-align: center
-                        text-decoration: none
-
-                    div p
-                        color: $text
-                        display: none
-                        text-decoration: none
-
-                    div .show
-                        display: block
 
             .footer
                 background: $bg-alt
