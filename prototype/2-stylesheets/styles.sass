@@ -32,11 +32,16 @@ html
         .container
             .main
                 margin-left: 10%
-                margin-bottom: -48px
+                margin-bottom: 48px
                 width: 80%
 
                 .item
+                    display: block
+                    height: auto
+                    width: auto
+                    
                     .item-title
+                        color: $text-h1
                         font-family: "Lucida Console", Monaco, monospace
                         font-size: 100%
                         text-align: center
@@ -54,7 +59,12 @@ html
 
                     .menu-button
                         background: $bg-alt-2
-                        border-radius: 0 0 50% 50%
+                        border-radius: 50% 0 0 50%
+                        bottom: 0
+                        height: 48px
+                        position: absolute
+                        right: 0
+                        width: 48px
 
                     .add-recipe
                         background: $bg-alt
