@@ -1,43 +1,110 @@
-/*
-Error: Inconsistent indentation: 15 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
-        on line 35 of /var/www/html/de_kelder/prototype/2-stylesheets/styles.sass
+/* line 10, styles.sass */
+* {
+  box-sizing: border-box;
+}
 
-30: html
-31:     body
-32:         .container
-33:             .main
-34:                 display: flex
-35:                6 margin-left: 10%
-36:                 margin-bottom: 48px
-37:                 6width: 80%
-38: 
-39:                 .item
-40:                     -webkit-flex-flow: column nowrap
+/* line 13, styles.sass */
+html, body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
 
-Backtrace:
-/var/www/html/de_kelder/prototype/2-stylesheets/styles.sass:35
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:489:in `block in tabulate'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:447:in `each'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:447:in `each_with_index'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:447:in `tabulate'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:412:in `_to_tree'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-/home/alex/.gem/ruby/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/home/alex/.gem/ruby/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/home/alex/.gem/ruby/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/home/alex/.gem/ruby/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Inconsistent indentation: 15 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 35 of /var/www/html/de_kelder/prototype/2-stylesheets/styles.sass\A \A 30: html\A 31:     body\A 32:         .container\A 33:             .main\A 34:                 display: flex\A 35:                6 margin-left: 10%\A 36:                 margin-bottom: 48px\A 37:                 6width: 80%\A 38: \A 39:                 .item\A 40:                     -webkit-flex-flow: column nowrap"; }
+/* line 18, styles.sass */
+html, body, .container {
+  display: flex;
+  background: #000;
+  color: #fff;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+/* line 26, styles.sass */
+.footer, footer {
+  height: 48px;
+  width: 100%;
+}
+
+/* line 33, styles.sass */
+html body .container .main {
+  display: flex;
+  margin-left: 10%;
+  margin-bottom: 48px;
+  width: 80%;
+}
+/* line 39, styles.sass */
+html body .container .main .item {
+  -webkit-flex-flow: column nowrap;
+  height: auto;
+  width: 100%;
+}
+/* line 44, styles.sass */
+html body .container .main .item .item-title {
+  color: #eee;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 51, styles.sass */
+html body .container .main .item div p {
+  color: #fff;
+  display: none;
+  text-decoration: none;
+}
+/* line 56, styles.sass */
+html body .container .main .item div .show {
+  display: block;
+}
+/* line 59, styles.sass */
+html body .container .footer {
+  background: #333;
+  bottom: 0;
+  position: fixed;
+}
+/* line 66, styles.sass */
+html body .container .footer footer .searchbar .search-input {
+  border-radius: 10px;
+  padding-left: 8px;
+}
+/* line 70, styles.sass */
+html body .container .footer footer .menu-button {
+  background: #606060;
+  border-radius: 50% 0 0 50%;
+  bottom: 0;
+  height: 48px;
+  position: absolute;
+  right: 0;
+  width: 48px;
+}
+/* line 79, styles.sass */
+html body .container .footer footer .add-recipe {
+  background: #333;
+  border-radius: 50%;
+  bottom: 64px;
+  height: 54px;
+  right: 16px;
+  position: absolute;
+  width: 54px;
+}
+/* line 88, styles.sass */
+html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
+  background: #606060;
+  border-radius: 0px;
+  position: absolute;
+}
+/* line 93, styles.sass */
+html body .container .footer footer .add-recipe .cross-vert {
+  height: 36px;
+  left: 25px;
+  top: 9px;
+  width: 4px;
+}
+/* line 99, styles.sass */
+html body .container .footer footer .add-recipe .cross-hori {
+  height: 4px;
+  left: 9px;
+  top: 25px;
+  width: 36px;
+}
