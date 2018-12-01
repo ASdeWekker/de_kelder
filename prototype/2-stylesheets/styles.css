@@ -1,16 +1,16 @@
-/* line 6, styles.sass */
+/* line 9, styles.sass */
 * {
   box-sizing: border-box;
 }
 
-/* line 9, styles.sass */
+/* line 12, styles.sass */
 html, body {
   font-family: Arial;
   margin: 0;
   padding: 0;
 }
 
-/* line 14, styles.sass */
+/* line 17, styles.sass */
 html, body, .container {
   background: #303030;
   color: #ddd;
@@ -19,13 +19,13 @@ html, body, .container {
   width: 100%;
 }
 
-/* line 21, styles.sass */
+/* line 24, styles.sass */
 .footer, footer {
   height: 48px;
   width: 100%;
 }
 
-/* line 28, styles.sass */
+/* line 31, styles.sass */
 html body .container .main {
   display: flex;
   flex-flow: column nowrap;
@@ -33,101 +33,84 @@ html body .container .main {
   margin-bottom: 48px;
   width: 80%;
 }
-/* line 35, styles.sass */
+/* line 38, styles.sass */
 html body .container .main .item {
   height: auto;
-  text-decoration: none;
   width: 100%;
 }
-/* line 40, styles.sass */
-html body .container .main .item .item-title {
-  color: #368cbf;
+/* line 42, styles.sass */
+html body .container .main .item .item-title-link, html body .container .main .item .small-desc-link {
+  text-decoration: none;
+}
+/* line 45, styles.sass */
+html body .container .main .item .item-title-link {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 100%;
   text-align: center;
-  text-decoration: none;
 }
-/* line 47, styles.sass */
-html body .container .main .item .small-desc {
+/* line 50, styles.sass */
+html body .container .main .item .item-title-link .item-title {
+  color: #368cbf;
+}
+/* line 54, styles.sass */
+html body .container .main .item .small-desc-link .small-desc {
   color: #ddd;
 }
-/* line 51, styles.sass */
+/* line 57, styles.sass */
 html body .container .footer {
-  background: #212121;
+  background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 57, styles.sass */
+/* line 63, styles.sass */
 html body .container .footer footer .searchbar {
-  height: 48px;
-  width: 90%;
+  height: 40px;
+  width: 80%;
 }
-/* line 61, styles.sass */
+/* line 67, styles.sass */
 html body .container .footer footer .searchbar .search-input {
   background: #368cbf;
-  border: none;
+  border: 2px solid #303030;
   border-radius: 30px;
   color: #ddd;
   font-size: 130%;
-  height: 40px;
-  margin: 4px 0 0 2%;
+  height: 100%;
+  margin: 4px 0 0 4px;
   padding: 0 20px;
-  width: 90%;
+  width: 100%;
 }
-/* line 72, styles.sass */
+/* line 78, styles.sass */
 html body .container .footer footer .searchbar .search-input:focus {
   outline: none;
 }
-/* line 75, styles.sass */
-html body .container .footer footer .menu-button {
-  background: #303030;
-  border-radius: 50% 0 0 50%;
-  bottom: 0;
-  height: 40px;
-  margin: 4px 0;
-  position: absolute;
-  right: 0;
-  width: 40px;
-}
-/* line 85, styles.sass */
-html body .container .footer footer .menu-button .stripe {
-  background: #ddd;
-  height: 4px;
-  margin: 0 0 7px 2px;
-  width: 38px;
-}
-/* line 91, styles.sass */
-html body .container .footer footer .menu-button .stripe:first-child {
-  margin-top: 7px;
-}
-/* line 94, styles.sass */
+/* line 81, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #368cbf;
   border-radius: 50%;
-  bottom: 64px;
-  height: 50px;
-  right: 16px;
-  opacity: 0.95;
+  border: 2px solid #303030;
+  bottom: 4px;
+  height: 40px;
+  right: 4px;
   position: absolute;
-  width: 50px;
+  width: 40px;
 }
-/* line 104, styles.sass */
+/* line 91, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
   background: #ddd;
   border-radius: 0px;
   position: absolute;
 }
-/* line 109, styles.sass */
+/* line 96, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert {
-  height: 20px;
-  left: 24px;
-  top: 15px;
+  height: 18px;
+  left: 17px;
+  top: 9px;
   width: 2px;
 }
-/* line 115, styles.sass */
+/* line 102, styles.sass */
 html body .container .footer footer .add-recipe .cross-hori {
   height: 2px;
-  left: 15px;
-  top: 24px;
-  width: 20px;
+  left: 9px;
+  top: 17px;
+  width: 18px;
 }

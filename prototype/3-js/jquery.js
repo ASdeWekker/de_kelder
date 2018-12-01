@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".item-title").click(function() {
-        $(".item div p").toggleClass("show");
+    $(".item-title-link").click(function() {
+        $(".small-desc-link").css({color: "red"});
     });
 });
