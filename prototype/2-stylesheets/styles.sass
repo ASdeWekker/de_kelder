@@ -1,9 +1,5 @@
-// Vars.
-$text: #fff
-$text-h1: #eee
-$bg: #000
-$bg-alt: #333
-$bg-alt-2: #606060
+// Import vars and mixins.
+@import ../../1-public/stylesheets/parts/vars-and-mixins
 
 // Styling.
 
@@ -41,7 +37,7 @@ html
                     width: 100%
                     
                     .item-title
-                        color: $text-h1
+                        color: $text-alt
                         font-family: "Lucida Console", Monaco, monospace
                         font-size: 100%
                         text-align: center
@@ -59,7 +55,7 @@ html
                             padding-left: 8px
 
                     .menu-button
-                        background: $bg-alt-2
+                        background: $bg
                         border-radius: 50% 0 0 50%
                         bottom: 0
                         height: 48px
@@ -78,7 +74,7 @@ html
                         width: 50px
 
                         .cross-vert, .cross-hori
-                            background: $bg-alt-2
+                            background: $text-alt
                             border-radius: 0px
                             position: absolute
 

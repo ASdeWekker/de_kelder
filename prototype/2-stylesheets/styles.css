@@ -1,31 +1,31 @@
-/* line 10, styles.sass */
+/* line 6, styles.sass */
 * {
   box-sizing: border-box;
 }
 
-/* line 13, styles.sass */
+/* line 9, styles.sass */
 html, body {
   font-family: Arial;
   margin: 0;
   padding: 0;
 }
 
-/* line 18, styles.sass */
+/* line 14, styles.sass */
 html, body, .container {
-  background: #000;
-  color: #fff;
+  background: #212121;
+  color: #ddd;
   height: auto;
   position: relative;
   width: 100%;
 }
 
-/* line 25, styles.sass */
+/* line 21, styles.sass */
 .footer, footer {
   height: 48px;
   width: 100%;
 }
 
-/* line 32, styles.sass */
+/* line 28, styles.sass */
 html body .container .main {
   display: flex;
   flex-flow: column nowrap;
@@ -33,33 +33,33 @@ html body .container .main {
   margin-bottom: 48px;
   width: 80%;
 }
-/* line 39, styles.sass */
+/* line 35, styles.sass */
 html body .container .main .item {
   height: auto;
   width: 100%;
 }
-/* line 43, styles.sass */
+/* line 39, styles.sass */
 html body .container .main .item .item-title {
-  color: #eee;
+  color: #aaa;
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 100%;
   text-align: center;
   text-decoration: none;
 }
-/* line 50, styles.sass */
+/* line 46, styles.sass */
 html body .container .footer {
-  background: #333;
+  background: #303030;
   bottom: 0;
   position: fixed;
 }
-/* line 57, styles.sass */
+/* line 53, styles.sass */
 html body .container .footer footer .searchbar .search-input {
   border-radius: 10px;
   padding-left: 8px;
 }
-/* line 61, styles.sass */
+/* line 57, styles.sass */
 html body .container .footer footer .menu-button {
-  background: #606060;
+  background: #212121;
   border-radius: 50% 0 0 50%;
   bottom: 0;
   height: 48px;
@@ -67,9 +67,9 @@ html body .container .footer footer .menu-button {
   right: 0;
   width: 48px;
 }
-/* line 70, styles.sass */
+/* line 66, styles.sass */
 html body .container .footer footer .add-recipe {
-  background: #333;
+  background: #303030;
   border-radius: 50%;
   bottom: 64px;
   height: 50px;
@@ -78,20 +78,20 @@ html body .container .footer footer .add-recipe {
   position: absolute;
   width: 50px;
 }
-/* line 80, styles.sass */
+/* line 76, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
-  background: #606060;
+  background: #aaa;
   border-radius: 0px;
   position: absolute;
 }
-/* line 85, styles.sass */
+/* line 81, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert {
   height: 20px;
   left: 24px;
   top: 15px;
   width: 2px;
 }
-/* line 91, styles.sass */
+/* line 87, styles.sass */
 html body .container .footer footer .add-recipe .cross-hori {
   height: 2px;
   left: 15px;
