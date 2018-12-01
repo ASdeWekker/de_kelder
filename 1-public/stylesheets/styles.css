@@ -19,7 +19,7 @@ html, body, ul {
 /* line 20, styles.sass */
 html body .container {
   background: #212121;
-  font-family: Verdana, "sans-serif";
+  font-family: Arial, "sans-serif";
 }
 /* line 25, styles.sass */
 html body .container h1, html body .container h2, html body .container h3, html body .container p {
@@ -57,33 +57,31 @@ html body .container .linklist .linkli {
 }
 /* line 55, styles.sass */
 html body .container .linklist .linkli .links {
-  color: #aaa;
+  color: #ddd;
   display: inline-block;
   line-height: 22px;
   padding: 10px;
-  text-decoration: underline;
   width: 100%;
 }
-/* line 63, styles.sass */
+/* line 62, styles.sass */
 html body .container .linklist .linkli .links:hover {
-  background: #aaa;
+  background: #368cbf;
   border-radius: 10px;
-  color: #ddd;
-  text-decoration: none;
+  color: #303030;
 }
-/* line 71, styles.sass */
+/* line 69, styles.sass */
 html body .container .hosts {
   margin: 20px 0 0 0;
 }
-/* line 74, styles.sass */
+/* line 72, styles.sass */
 html body .container .hosts .hostli {
   width: 23%;
 }
-/* line 77, styles.sass */
+/* line 75, styles.sass */
 html body .container .hosts .hostli:first-child {
   margin-left: 4%;
 }
-/* line 80, styles.sass */
+/* line 78, styles.sass */
 html body .container .hosts .hostli .host {
   color: #ddd;
   display: block;
@@ -91,77 +89,77 @@ html body .container .hosts .hostli .host {
   font-weight: 900;
   width: 100%;
 }
-/* line 89, styles.sass */
+/* line 87, styles.sass */
 html body .container .buttons {
   background: none;
   bottom: 10px;
   overflow: hidden;
   position: absolute;
 }
-/* line 95, styles.sass */
+/* line 93, styles.sass */
 html body .container .buttons .butli {
   width: 14%;
 }
-/* line 98, styles.sass */
+/* line 96, styles.sass */
 html body .container .buttons .butli:first-child {
   margin-left: 1%;
 }
-/* line 102, styles.sass */
+/* line 100, styles.sass */
 html body .container .buttons .butli .button {
-  color: #ddd;
+  color: #368cbf;
   display: block;
   font-size: 2em;
 }
-/* line 107, styles.sass */
+/* line 105, styles.sass */
 html body .container .buttons .butli .button svg {
   display: block;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1261px) {
-  /* line 112, styles.sass */
+  /* line 110, styles.sass */
   .linklist li {
     width: 11.1%;
   }
 }
 @media screen and (max-width: 1260px) {
-  /* line 117, styles.sass */
+  /* line 115, styles.sass */
   .linklist li {
     width: 14.28571%;
   }
 }
 @media screen and (max-width: 1080px) {
-  /* line 117, styles.sass */
+  /* line 115, styles.sass */
   .linklist li {
     width: 16.66667%;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 117, styles.sass */
+  /* line 115, styles.sass */
   .linklist li {
     width: 20%;
   }
 }
 @media screen and (max-width: 720px) {
-  /* line 117, styles.sass */
+  /* line 115, styles.sass */
   .linklist li {
     width: 25%;
   }
 }
 @media screen and (max-width: 540px) {
-  /* line 117, styles.sass */
+  /* line 115, styles.sass */
   .linklist li {
     width: 33.33333%;
   }
 }
 @media screen and (max-width: 360px) {
-  /* line 117, styles.sass */
+  /* line 115, styles.sass */
   .linklist li {
     width: 50%;
   }
 }
 @media screen and (max-width: 180px) {
-  /* line 117, styles.sass */
+  /* line 115, styles.sass */
   .linklist li {
     width: 100%;
   }

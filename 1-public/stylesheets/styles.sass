@@ -20,7 +20,7 @@ html
         .container
             @extend %stdsizebg
             background: $bg
-            font-family: Verdana, "sans-serif"
+            font-family: Arial, "sans-serif"
         
             h1, h2, h3, p
                 text-align: center
@@ -53,18 +53,16 @@ html
                     overflow: auto
         
                     .links
-                        color: $text-alt
+                        color: $text
                         display: inline-block
                         line-height: 22px
                         padding: 10px
-                        text-decoration: underline
                         width: 100% //120px
         
                         &:hover
                             background: $text-alt
                             border-radius: 10px
-                            color: $text
-                            text-decoration: none
+                            color: $bg-alt
 
             // BUTTONS FOR SWITCHING BETWEEN HOSTS.
 
@@ -100,7 +98,7 @@ html
         
         
                     .button
-                        color: $text
+                        color: $text-alt
                         display: block
                         font-size: 2em
         

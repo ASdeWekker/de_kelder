@@ -50,21 +50,44 @@ html
 
                 footer
                     .searchbar
+                        height: 48px
+                        width: 90%
+
                         .search-input
-                            border-radius: 10px
-                            padding-left: 8px
+                            background: $text-alt
+                            border: none
+                            border-radius: 30px
+                            color: $text
+                            font-size: 130%
+                            height: 40px
+                            margin: 4px 0 0 2%
+                            padding: 0 20px
+                            width: 90%
+
+                            &:focus
+                                outline: none
 
                     .menu-button
                         background: $bg
                         border-radius: 50% 0 0 50%
                         bottom: 0
-                        height: 48px
+                        height: 40px
+                        margin: 4px 0
                         position: absolute
                         right: 0
-                        width: 48px
+                        width: 40px
+
+                        .stripe
+                            background: $text
+                            height: 4px
+                            margin: 0 0 7px 2px
+                            width: 38px
+
+                            &:first-child
+                                margin-top: 7px
 
                     .add-recipe
-                        background: $bg-alt
+                        background: $text-alt
                         border-radius: 50%
                         bottom: 64px
                         height: 50px
@@ -74,7 +97,7 @@ html
                         width: 50px
 
                         .cross-vert, .cross-hori
-                            background: $text-alt
+                            background: $text
                             border-radius: 0px
                             position: absolute
 
