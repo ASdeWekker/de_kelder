@@ -20,19 +20,17 @@ html
         .container
             @extend %stdsizebg
             background: $bg
+            display: flex
+            flex-flow: column nowrap
             font-family: Arial, "sans-serif"
-        
-            h1, h2, h3, p
-                text-align: center
-                width: 100%
 
             ul
+                display: flex
+                flex-flow: row wrap
                 height: auto
                 width: 100%
 
                 li
-                    display: block
-                    float: left
                     list-style-type: none
 
                     a
@@ -43,21 +41,20 @@ html
             // LIST OF LINKS.
         
             .linklist
-                margin: 0 auto
-                overflow: auto
+                justify-content: center
         
                 .linkli
                     height: 42px
                     line-height: 42px
                     margin: 10px 0
-                    overflow: auto
+                    width: 100px
         
                     .links
                         color: $text
-                        display: inline-block
                         line-height: 22px
                         padding: 10px
-                        width: 100% //120px
+                        text-align: center
+                        width: 100%
         
                         &:hover
                             background: $text-alt
@@ -67,50 +64,41 @@ html
             // BUTTONS FOR SWITCHING BETWEEN HOSTS.
 
             .hosts
-                margin: 20px 0 0 0
+                justify-content: space-evenly
+                margin-top: 100px
 
                 .hostli
-                    width: 23%
-
-                    &:first-child
-                        margin-left: 4%
 
                     .host
                         color: $text
-                        display: block
                         font-size: 2em
                         font-weight: 900
-                        width: 100%
         
             // BUTTONS AT THE BOTTOM OF THE PAGE.
         
             .buttons
                 background: none
-                bottom: 10px
-                overflow: hidden
+                bottom: 1.5%
+                justify-content: space-around
                 position: absolute
         
                 .butli
-                    width: 14%
-        
-                    &:first-child
-                        margin-left: 1%
         
         
                     .button
                         color: $text-alt
-                        display: block
                         font-size: 2em
         
                         svg
                             display: block
                             margin: 0 auto
-                
-@media screen and (min-width: 1261px)
-    .linklist li
-        width: 11.1%
+
+// I'm going to leave these bits in because I like them.                
+// @media screen and (min-width: 1261px)
+//     .linklist li
+//         width: 11.1%
         
-@for $i from 7 to 0
-    @media screen and (max-width: 180px * $i)
-        .linklist li
-            width: 100% / $i
+// @for $i from 7 to 0
+//     @media screen and (max-width: 180px * $i)
+//         .linklist li
+//             width: 100% / $i

@@ -19,148 +19,77 @@ html, body, ul {
 /* line 20, styles.sass */
 html body .container {
   background: #303030;
+  display: flex;
+  flex-flow: column nowrap;
   font-family: Arial, "sans-serif";
 }
-/* line 25, styles.sass */
-html body .container h1, html body .container h2, html body .container h3, html body .container p {
-  text-align: center;
-  width: 100%;
-}
-/* line 29, styles.sass */
+/* line 27, styles.sass */
 html body .container ul {
+  display: flex;
+  flex-flow: row wrap;
   height: auto;
   width: 100%;
 }
 /* line 33, styles.sass */
 html body .container ul li {
-  display: block;
-  float: left;
   list-style-type: none;
 }
-/* line 38, styles.sass */
+/* line 36, styles.sass */
 html body .container ul li a {
   color: #ddd;
   text-align: center;
   text-decoration: none;
 }
-/* line 45, styles.sass */
+/* line 43, styles.sass */
 html body .container .linklist {
-  margin: 0 auto;
-  overflow: auto;
+  justify-content: center;
 }
-/* line 49, styles.sass */
+/* line 46, styles.sass */
 html body .container .linklist .linkli {
   height: 42px;
   line-height: 42px;
   margin: 10px 0;
-  overflow: auto;
+  width: 100px;
 }
-/* line 55, styles.sass */
+/* line 52, styles.sass */
 html body .container .linklist .linkli .links {
   color: #ddd;
-  display: inline-block;
   line-height: 22px;
   padding: 10px;
+  text-align: center;
   width: 100%;
 }
-/* line 62, styles.sass */
+/* line 59, styles.sass */
 html body .container .linklist .linkli .links:hover {
   background: #368cbf;
   border-radius: 10px;
   color: #212121;
 }
-/* line 69, styles.sass */
+/* line 66, styles.sass */
 html body .container .hosts {
-  margin: 20px 0 0 0;
+  justify-content: space-evenly;
+  margin-top: 100px;
 }
 /* line 72, styles.sass */
-html body .container .hosts .hostli {
-  width: 23%;
-}
-/* line 75, styles.sass */
-html body .container .hosts .hostli:first-child {
-  margin-left: 4%;
-}
-/* line 78, styles.sass */
 html body .container .hosts .hostli .host {
   color: #ddd;
-  display: block;
   font-size: 2em;
   font-weight: 900;
-  width: 100%;
 }
-/* line 87, styles.sass */
+/* line 79, styles.sass */
 html body .container .buttons {
   background: none;
-  bottom: 10px;
-  overflow: hidden;
+  bottom: 1.5%;
+  justify-content: space-around;
   position: absolute;
 }
-/* line 93, styles.sass */
-html body .container .buttons .butli {
-  width: 14%;
-}
-/* line 96, styles.sass */
-html body .container .buttons .butli:first-child {
-  margin-left: 1%;
-}
-/* line 100, styles.sass */
+/* line 88, styles.sass */
 html body .container .buttons .butli .button {
   color: #368cbf;
-  display: block;
   font-size: 2em;
 }
-/* line 105, styles.sass */
+/* line 92, styles.sass */
 html body .container .buttons .butli .button svg {
   display: block;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 1261px) {
-  /* line 110, styles.sass */
-  .linklist li {
-    width: 11.1%;
-  }
-}
-@media screen and (max-width: 1260px) {
-  /* line 115, styles.sass */
-  .linklist li {
-    width: 14.28571%;
-  }
-}
-@media screen and (max-width: 1080px) {
-  /* line 115, styles.sass */
-  .linklist li {
-    width: 16.66667%;
-  }
-}
-@media screen and (max-width: 900px) {
-  /* line 115, styles.sass */
-  .linklist li {
-    width: 20%;
-  }
-}
-@media screen and (max-width: 720px) {
-  /* line 115, styles.sass */
-  .linklist li {
-    width: 25%;
-  }
-}
-@media screen and (max-width: 540px) {
-  /* line 115, styles.sass */
-  .linklist li {
-    width: 33.33333%;
-  }
-}
-@media screen and (max-width: 360px) {
-  /* line 115, styles.sass */
-  .linklist li {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 180px) {
-  /* line 115, styles.sass */
-  .linklist li {
-    width: 100%;
-  }
 }
