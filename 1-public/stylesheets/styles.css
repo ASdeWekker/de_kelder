@@ -18,7 +18,7 @@ html, body, ul {
 
 /* line 20, styles.sass */
 html body .container {
-  background: #212121;
+  background: #303030;
   font-family: Arial, "sans-serif";
 }
 /* line 25, styles.sass */
@@ -67,7 +67,7 @@ html body .container .linklist .linkli .links {
 html body .container .linklist .linkli .links:hover {
   background: #368cbf;
   border-radius: 10px;
-  color: #303030;
+  color: #212121;
 }
 /* line 69, styles.sass */
 html body .container .hosts {

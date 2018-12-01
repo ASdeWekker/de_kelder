@@ -12,7 +12,7 @@ html, body {
 
 /* line 14, styles.sass */
 html, body, .container {
-  background: #212121;
+  background: #303030;
   color: #ddd;
   height: auto;
   position: relative;
@@ -36,9 +36,10 @@ html body .container .main {
 /* line 35, styles.sass */
 html body .container .main .item {
   height: auto;
+  text-decoration: none;
   width: 100%;
 }
-/* line 39, styles.sass */
+/* line 40, styles.sass */
 html body .container .main .item .item-title {
   color: #368cbf;
   font-family: "Lucida Console", Monaco, monospace;
@@ -46,18 +47,22 @@ html body .container .main .item .item-title {
   text-align: center;
   text-decoration: none;
 }
-/* line 46, styles.sass */
+/* line 47, styles.sass */
+html body .container .main .item .small-desc {
+  color: #ddd;
+}
+/* line 51, styles.sass */
 html body .container .footer {
-  background: #303030;
+  background: #212121;
   bottom: 0;
   position: fixed;
 }
-/* line 52, styles.sass */
+/* line 57, styles.sass */
 html body .container .footer footer .searchbar {
   height: 48px;
   width: 90%;
 }
-/* line 56, styles.sass */
+/* line 61, styles.sass */
 html body .container .footer footer .searchbar .search-input {
   background: #368cbf;
   border: none;
@@ -69,13 +74,13 @@ html body .container .footer footer .searchbar .search-input {
   padding: 0 20px;
   width: 90%;
 }
-/* line 67, styles.sass */
+/* line 72, styles.sass */
 html body .container .footer footer .searchbar .search-input:focus {
   outline: none;
 }
-/* line 70, styles.sass */
+/* line 75, styles.sass */
 html body .container .footer footer .menu-button {
-  background: #212121;
+  background: #303030;
   border-radius: 50% 0 0 50%;
   bottom: 0;
   height: 40px;
@@ -84,18 +89,18 @@ html body .container .footer footer .menu-button {
   right: 0;
   width: 40px;
 }
-/* line 80, styles.sass */
+/* line 85, styles.sass */
 html body .container .footer footer .menu-button .stripe {
   background: #ddd;
   height: 4px;
   margin: 0 0 7px 2px;
   width: 38px;
 }
-/* line 86, styles.sass */
+/* line 91, styles.sass */
 html body .container .footer footer .menu-button .stripe:first-child {
   margin-top: 7px;
 }
-/* line 89, styles.sass */
+/* line 94, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #368cbf;
   border-radius: 50%;
@@ -106,20 +111,20 @@ html body .container .footer footer .add-recipe {
   position: absolute;
   width: 50px;
 }
-/* line 99, styles.sass */
+/* line 104, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
   background: #ddd;
   border-radius: 0px;
   position: absolute;
 }
-/* line 104, styles.sass */
+/* line 109, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert {
   height: 20px;
   left: 24px;
   top: 15px;
   width: 2px;
 }
-/* line 110, styles.sass */
+/* line 115, styles.sass */
 html body .container .footer footer .add-recipe .cross-hori {
   height: 2px;
   left: 15px;
