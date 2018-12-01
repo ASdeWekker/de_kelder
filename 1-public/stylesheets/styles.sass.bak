@@ -1,0 +1,116 @@
+// Import vars and mixins.
+@import parts/vars-and-mixins
+
+// STANDARD STYLINGS.
+
+*
+    box-sizing: border-box
+
+
+html, body, ul
+    margin: 0
+    padding: 0
+
+html
+    @extend %stdsizebg
+
+    body
+        @extend %stdsizebg
+
+        .container
+            @extend %stdsizebg
+            background: $bg
+            font-family: Arial, "sans-serif"
+        
+            h1, h2, h3, p
+                text-align: center
+                width: 100%
+
+            ul
+                height: auto
+                width: 100%
+
+                li
+                    display: block
+                    float: left
+                    list-style-type: none
+
+                    a
+                        color: $text
+                        text-align: center
+                        text-decoration: none
+        
+            // LIST OF LINKS.
+        
+            .linklist
+                margin: 0 auto
+                overflow: auto
+        
+                .linkli
+                    height: 42px
+                    line-height: 42px
+                    margin: 10px 0
+                    overflow: auto
+        
+                    .links
+                        color: $text
+                        display: inline-block
+                        line-height: 22px
+                        padding: 10px
+                        width: 100% //120px
+        
+                        &:hover
+                            background: $text-alt
+                            border-radius: 10px
+                            color: $bg-alt
+
+            // BUTTONS FOR SWITCHING BETWEEN HOSTS.
+
+            .hosts
+                margin: 20px 0 0 0
+
+                .hostli
+                    width: 23%
+
+                    &:first-child
+                        margin-left: 4%
+
+                    .host
+                        color: $text
+                        display: block
+                        font-size: 2em
+                        font-weight: 900
+                        width: 100%
+        
+            // BUTTONS AT THE BOTTOM OF THE PAGE.
+        
+            .buttons
+                background: none
+                bottom: 10px
+                overflow: hidden
+                position: absolute
+        
+                .butli
+                    width: 14%
+        
+                    &:first-child
+                        margin-left: 1%
+        
+        
+                    .button
+                        color: $text-alt
+                        display: block
+                        font-size: 2em
+        
+                        svg
+                            display: block
+                            margin: 0 auto
+                
+@media screen and (min-width: 1261px)
+    .linklist li
+        width: 11.1%
+        
+@for $i from 7 to 0
+    @media screen and (max-width: 180px * $i)
+        .linklist li
+            width: 100% / $i
