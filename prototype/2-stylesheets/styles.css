@@ -12,7 +12,6 @@ html, body {
 
 /* line 18, styles.sass */
 html, body, .container {
-  display: flex;
   background: #000;
   color: #fff;
   height: auto;
@@ -20,26 +19,26 @@ html, body, .container {
   width: 100%;
 }
 
-/* line 26, styles.sass */
+/* line 25, styles.sass */
 .footer, footer {
   height: 48px;
   width: 100%;
 }
 
-/* line 33, styles.sass */
+/* line 32, styles.sass */
 html body .container .main {
   display: flex;
+  flex-flow: column nowrap;
   margin-left: 10%;
   margin-bottom: 48px;
   width: 80%;
 }
 /* line 39, styles.sass */
 html body .container .main .item {
-  -webkit-flex-flow: column nowrap;
   height: auto;
   width: 100%;
 }
-/* line 44, styles.sass */
+/* line 43, styles.sass */
 html body .container .main .item .item-title {
   color: #eee;
   font-family: "Lucida Console", Monaco, monospace;
@@ -47,28 +46,18 @@ html body .container .main .item .item-title {
   text-align: center;
   text-decoration: none;
 }
-/* line 51, styles.sass */
-html body .container .main .item div p {
-  color: #fff;
-  display: none;
-  text-decoration: none;
-}
-/* line 56, styles.sass */
-html body .container .main .item div .show {
-  display: block;
-}
-/* line 59, styles.sass */
+/* line 50, styles.sass */
 html body .container .footer {
   background: #333;
   bottom: 0;
   position: fixed;
 }
-/* line 66, styles.sass */
+/* line 57, styles.sass */
 html body .container .footer footer .searchbar .search-input {
   border-radius: 10px;
   padding-left: 8px;
 }
-/* line 70, styles.sass */
+/* line 61, styles.sass */
 html body .container .footer footer .menu-button {
   background: #606060;
   border-radius: 50% 0 0 50%;
@@ -78,33 +67,34 @@ html body .container .footer footer .menu-button {
   right: 0;
   width: 48px;
 }
-/* line 79, styles.sass */
+/* line 70, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #333;
   border-radius: 50%;
   bottom: 64px;
-  height: 54px;
+  height: 50px;
   right: 16px;
+  opacity: 0.95;
   position: absolute;
-  width: 54px;
+  width: 50px;
 }
-/* line 88, styles.sass */
+/* line 80, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
   background: #606060;
   border-radius: 0px;
   position: absolute;
 }
-/* line 93, styles.sass */
+/* line 85, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert {
-  height: 36px;
-  left: 25px;
-  top: 9px;
-  width: 4px;
+  height: 20px;
+  left: 24px;
+  top: 15px;
+  width: 2px;
 }
-/* line 99, styles.sass */
+/* line 91, styles.sass */
 html body .container .footer footer .add-recipe .cross-hori {
-  height: 4px;
-  left: 9px;
-  top: 25px;
-  width: 36px;
+  height: 2px;
+  left: 15px;
+  top: 24px;
+  width: 20px;
 }

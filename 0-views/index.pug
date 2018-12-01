@@ -1,7 +1,6 @@
 extends base
 
 block content
-    h1.title De_Kelder
     ul.linklist
         each link, i in links.rows
             li.linkli: a(href="http://" + url + ":" + link.url).links #{link.name}

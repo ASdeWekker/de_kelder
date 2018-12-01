@@ -1,9 +1,9 @@
 // VARS.
 
-$alt-text-color: #333
-$text-color: #eee
-$lblue: #65fdf0
-$dblue: #1d6fa3
+$bg: #212121
+$bg-alt: #303030
+$text: #424242
+$text-alt: #606060
 
 // STANDARD SIZE AND SUCH.
 
@@ -30,9 +30,8 @@ html
 
         .container
             @extend %stdsizebg
-            background: radial-gradient($lblue, $dblue)
+            background: $bg
             font-family: Verdana, "sans-serif"
-            overflow: hidden
         
             h1, h2, h3, p
                 text-align: center
@@ -48,14 +47,9 @@ html
                     list-style-type: none
 
                     a
-                        color: $text-color
+                        color: $text
                         text-align: center
                         text-decoration: none
-            
-            // HEADER TITLE.
-        
-            .title
-                color: $text-color
         
             // LIST OF LINKS.
         
@@ -70,7 +64,7 @@ html
                     overflow: auto
         
                     .links
-                        color: $alt-text-color
+                        color: $text-alt
                         display: inline-block
                         line-height: 22px
                         padding: 10px
@@ -78,9 +72,9 @@ html
                         width: 100% //120px
         
                         &:hover
-                            background: $alt-text-color
+                            background: $text-alt
                             border-radius: 10px
-                            color: $text-color
+                            color: $text
                             text-decoration: none
 
             // BUTTONS FOR SWITCHING BETWEEN HOSTS.
@@ -95,6 +89,7 @@ html
                         margin-left: 4%
 
                     .host
+                        color: $text
                         display: block
                         font-size: 2em
                         font-weight: 900
@@ -107,7 +102,6 @@ html
                 bottom: 10px
                 overflow: hidden
                 position: absolute
-                //width: 100%
         
                 .butli
                     width: 14%
@@ -117,7 +111,7 @@ html
         
         
                     .button
-                        color: $text-color
+                        color: $text
                         display: block
                         font-size: 2em
         
