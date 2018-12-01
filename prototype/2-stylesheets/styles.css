@@ -55,19 +55,24 @@ html body .container .main .item .item-title-link .item-title {
 /* line 54, styles.sass */
 html body .container .main .item .small-desc-link .small-desc {
   color: #ddd;
+  display: none;
 }
-/* line 57, styles.sass */
+/* line 58, styles.sass */
+html body .container .main .item .small-desc-link .show {
+  display: inline;
+}
+/* line 61, styles.sass */
 html body .container .footer {
   background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 63, styles.sass */
+/* line 67, styles.sass */
 html body .container .footer footer .searchbar {
   height: 40px;
   width: 80%;
 }
-/* line 67, styles.sass */
+/* line 71, styles.sass */
 html body .container .footer footer .searchbar .search-input {
   background: #368cbf;
   border: 2px solid #303030;
@@ -79,11 +84,11 @@ html body .container .footer footer .searchbar .search-input {
   padding: 0 20px;
   width: 100%;
 }
-/* line 78, styles.sass */
+/* line 82, styles.sass */
 html body .container .footer footer .searchbar .search-input:focus {
   outline: none;
 }
-/* line 81, styles.sass */
+/* line 85, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #368cbf;
   border-radius: 50%;
@@ -94,20 +99,20 @@ html body .container .footer footer .add-recipe {
   position: absolute;
   width: 40px;
 }
-/* line 91, styles.sass */
+/* line 95, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
   background: #ddd;
   border-radius: 0px;
   position: absolute;
 }
-/* line 96, styles.sass */
+/* line 100, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert {
   height: 18px;
   left: 17px;
   top: 9px;
   width: 2px;
 }
-/* line 102, styles.sass */
+/* line 106, styles.sass */
 html body .container .footer footer .add-recipe .cross-hori {
   height: 2px;
   left: 9px;
