@@ -25,7 +25,7 @@ html, body, .container {
   width: 100%;
 }
 
-/* line 31, styles.sass */
+/* line 33, styles.sass */
 html body .container .main {
   display: flex;
   flex-flow: column nowrap;
@@ -33,46 +33,42 @@ html body .container .main {
   margin-bottom: 48px;
   width: 80%;
 }
-/* line 38, styles.sass */
+/* line 40, styles.sass */
 html body .container .main .item {
   height: auto;
   width: 100%;
 }
-/* line 42, styles.sass */
+/* line 44, styles.sass */
 html body .container .main .item .item-title-link, html body .container .main .item .small-desc-link {
   text-decoration: none;
 }
-/* line 45, styles.sass */
+/* line 47, styles.sass */
 html body .container .main .item .item-title-link {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 100%;
   text-align: center;
 }
-/* line 50, styles.sass */
+/* line 52, styles.sass */
 html body .container .main .item .item-title-link .item-title {
   color: #368cbf;
 }
-/* line 54, styles.sass */
+/* line 56, styles.sass */
 html body .container .main .item .small-desc-link .small-desc {
   color: #ddd;
   display: none;
 }
-/* line 58, styles.sass */
-html body .container .main .item .small-desc-link .show {
-  display: inline;
-}
-/* line 61, styles.sass */
+/* line 70, styles.sass */
 html body .container .footer {
   background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 67, styles.sass */
+/* line 76, styles.sass */
 html body .container .footer footer .searchbar {
   height: 40px;
   width: 80%;
 }
-/* line 71, styles.sass */
+/* line 80, styles.sass */
 html body .container .footer footer .searchbar .search-input {
   background: #368cbf;
   border: 2px solid #303030;
@@ -84,11 +80,11 @@ html body .container .footer footer .searchbar .search-input {
   padding: 0 20px;
   width: 100%;
 }
-/* line 82, styles.sass */
+/* line 91, styles.sass */
 html body .container .footer footer .searchbar .search-input:focus {
   outline: none;
 }
-/* line 85, styles.sass */
+/* line 94, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #368cbf;
   border-radius: 50%;
@@ -99,23 +95,28 @@ html body .container .footer footer .add-recipe {
   position: absolute;
   width: 40px;
 }
-/* line 95, styles.sass */
+/* line 104, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
   background: #ddd;
   border-radius: 0px;
   position: absolute;
 }
-/* line 100, styles.sass */
+/* line 109, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert {
   height: 18px;
   left: 17px;
   top: 9px;
   width: 2px;
 }
-/* line 106, styles.sass */
+/* line 115, styles.sass */
 html body .container .footer footer .add-recipe .cross-hori {
   height: 2px;
   left: 9px;
   top: 17px;
   width: 18px;
+}
+
+/* line 123, styles.sass */
+#recipe {
+  background: tomato;
 }
