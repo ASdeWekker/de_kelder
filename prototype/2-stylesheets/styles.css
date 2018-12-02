@@ -118,5 +118,43 @@ html body .container .footer footer .add-recipe .cross-hori {
 
 /* line 123, styles.sass */
 #recipe {
-  background: tomato;
+  margin: 0 0 0 10%;
+  width: 80%;
+}
+/* line 127, styles.sass */
+#recipe .last-made b, #recipe .last-eaten b {
+  color: #368cbf;
+}
+/* line 130, styles.sass */
+#recipe .instructions, #recipe .ingredients {
+  padding-left: 10px;
+}
+/* line 133, styles.sass */
+#recipe .instruction, #recipe .ingredient {
+  color: #368cbf;
+  margin-bottom: 3px;
+}
+/* line 137, styles.sass */
+#recipe .instruction span, #recipe .ingredient span {
+  color: #ddd;
+}
+/* line 141, styles.sass */
+#recipe .title-wrap .title {
+  color: #368cbf;
+  text-align: center;
+}
+/* line 146, styles.sass */
+#recipe .photo-wrap .photo {
+  border-radius: 50%;
+  display: block;
+  height: 90%;
+  margin-bottom: 10px;
+  max-height: 400px;
+  max-width: 400px;
+  width: 90%;
+}
+/* line 169, styles.sass */
+#recipe .tags-wrap .tags i {
+  font-size: 80%;
+  opacity: 0.6;
 }

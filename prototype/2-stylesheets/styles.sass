@@ -121,13 +121,51 @@ html
 // Styling for a single recipe page.
             
 #recipe
-    background: tomato
+    margin: 0 0 0 10%
+    width: 80%
 
-    .title
-    .photo
-    .instructions
-    .ingredients
-    .last-made
-    .last-eaten
-    .calendar
-    .tags
+    .last-made b, .last-eaten b
+        color: $text-alt
+
+    .instructions, .ingredients
+        padding-left: 10px
+
+    .instruction, .ingredient
+        color: $text-alt
+        margin-bottom: 3px
+
+        span
+            color: $text
+
+    .title-wrap
+        .title
+            color: $text-alt
+            text-align: center
+
+    .photo-wrap
+        .photo
+            border-radius: 50%
+            display: block
+            height: 90%
+            margin-bottom: 10px
+            max-height: 400px
+            max-width: 400px
+            width: 90%
+
+    .instructions-wrap
+        .instructions
+            .instruction
+    .ingredients-wrap
+        .ingredients
+            .ingredient
+    .last-made-wrap
+        .last-made
+    .last-eaten-wrap
+        .last-eaten
+    .calendar-wrap
+        .calendar
+    .tags-wrap
+        .tags
+            i
+                font-size: 80%
+                opacity: 0.6
