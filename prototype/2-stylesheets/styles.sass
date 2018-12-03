@@ -56,16 +56,6 @@ html
                         .small-desc
                             color: $text
                             display: none
-                            // height: 0
-                            // margin: -10px 0 0 0
-                            // overflow: hidden
-
-                        .show
-                            // display: inline
-                            // height: auto
-                            // margin: 16px 0
-                            // overflow: visible
-                            // transition: all 1s ease-out
 
             .footer
                 background: none
@@ -121,8 +111,7 @@ html
 // Styling for a single recipe page.
             
 #recipe
-    margin: 0 0 0 10%
-    width: 80%
+    margin-bottom: 0
 
     .last-made b, .last-eaten b
         color: $text-alt
@@ -140,6 +129,8 @@ html
     .title-wrap
         .title
             color: $text-alt
+            font-size: 200%
+            letter-spacing: 5px
             text-align: center
 
     .photo-wrap
@@ -152,20 +143,86 @@ html
             max-width: 400px
             width: 90%
 
-    .instructions-wrap
-        .instructions
-            .instruction
-    .ingredients-wrap
-        .ingredients
-            .ingredient
-    .last-made-wrap
-        .last-made
-    .last-eaten-wrap
-        .last-eaten
-    .calendar-wrap
-        .calendar
+    // .instructions-wrap
+    //     .instructions
+    //         .instruction
+    // .ingredients-wrap
+    //     .ingredients
+    //         .ingredient
+    // .last-made-wrap
+    //     .last-made
+    // .last-eaten-wrap
+    //     .last-eaten
+    // .calendar-wrap
+    //     .calendar
     .tags-wrap
         .tags
             i
                 font-size: 80%
                 opacity: 0.6
+
+#add
+    margin: 30px 5%
+    width: 90%
+
+    .wrap
+        background: $bg-alt
+        border-radius: 5px
+        height: 50px
+        margin-bottom: 20px
+        position: relative
+        width: 100%
+
+        .input, .span
+            position: absolute
+
+        .input
+            background: none
+            border: 2px solid $text-alt
+            border-radius: 5px
+            caret-color: $text
+            color: $text
+            height: 50px
+            left: 0
+            padding: 0 10px
+            top: 0
+            width: 100%
+            z-index: 2
+
+            &:focus
+                outline: none
+                padding-top: 18px
+
+            &:focus + .span
+                font-size: 80%
+                opacity: 0.7
+                top: 8px
+
+        .span
+            color: $text-alt
+            left: 10px
+            top: 16px
+            transition: all 0.2s ease
+            z-index: 1
+
+    .tags-wrap
+        .span-tags
+            span
+                font-size: 70%
+
+    .submit-wrap
+        border-radius: 5px
+        height: 50px
+        width: 100%
+
+        .input-submit
+            background: $text-alt
+            border: none
+            border-radius: 5px
+            font-size: 120%
+            height: 100%
+            line-height: 50px
+            padding: 0
+            text-align: center
+            width: 100%
+

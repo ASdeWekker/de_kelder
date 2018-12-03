@@ -3,6 +3,29 @@ html
     include ./1-partials/head.pug
     body
         .container
-            section.main
-                h1 Add Recipe.
+            section#add.main
+                .wrap.name-wrap
+                    input.input.input-title
+                    span.span.span-title Titel
+                .wrap.photo-wrap
+                    input.input.input-photo
+                    span.span.span-photo Foto
+                .wrap.instructions-wrap
+                    input.input.input-instructions
+                    span.span.span-instructions Instructies
+                .wrap.ingredients-wrap
+                    input.input.input-ingredients
+                    span.span.span-ingredients Ingredienten
+                .wrap.last-made-wrap
+                    input.input.input-last-made
+                    span.span.span-last-made Laatst gemaakt
+                .wrap.last-eaten-wrap
+                    input.input.input-last-eaten
+                    span.span.span-last-eaten Laatst gegeten
+                .wrap.tags-wrap
+                    input.input.input-tags
+                    span.span.span-tags Tags 
+                        span (scheiden met een komma)
+                .submit-wrap
+                    input(type="submit", value="Versturen").input-submit
             

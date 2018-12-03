@@ -57,18 +57,18 @@ html body .container .main .item .small-desc-link .small-desc {
   color: #ddd;
   display: none;
 }
-/* line 70, styles.sass */
+/* line 60, styles.sass */
 html body .container .footer {
   background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 76, styles.sass */
+/* line 66, styles.sass */
 html body .container .footer footer .searchbar {
   height: 40px;
   width: 80%;
 }
-/* line 80, styles.sass */
+/* line 70, styles.sass */
 html body .container .footer footer .searchbar .search-input {
   background: #368cbf;
   border: 2px solid #303030;
@@ -80,11 +80,11 @@ html body .container .footer footer .searchbar .search-input {
   padding: 0 20px;
   width: 100%;
 }
-/* line 91, styles.sass */
+/* line 81, styles.sass */
 html body .container .footer footer .searchbar .search-input:focus {
   outline: none;
 }
-/* line 94, styles.sass */
+/* line 84, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #368cbf;
   border-radius: 50%;
@@ -95,20 +95,20 @@ html body .container .footer footer .add-recipe {
   position: absolute;
   width: 40px;
 }
-/* line 104, styles.sass */
+/* line 94, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
   background: #ddd;
   border-radius: 0px;
   position: absolute;
 }
-/* line 109, styles.sass */
+/* line 99, styles.sass */
 html body .container .footer footer .add-recipe .cross-vert {
   height: 18px;
   left: 17px;
   top: 9px;
   width: 2px;
 }
-/* line 115, styles.sass */
+/* line 105, styles.sass */
 html body .container .footer footer .add-recipe .cross-hori {
   height: 2px;
   left: 9px;
@@ -116,34 +116,35 @@ html body .container .footer footer .add-recipe .cross-hori {
   width: 18px;
 }
 
-/* line 123, styles.sass */
+/* line 113, styles.sass */
 #recipe {
-  margin: 0 0 0 10%;
-  width: 80%;
+  margin-bottom: 0;
 }
-/* line 127, styles.sass */
+/* line 116, styles.sass */
 #recipe .last-made b, #recipe .last-eaten b {
   color: #368cbf;
 }
-/* line 130, styles.sass */
+/* line 119, styles.sass */
 #recipe .instructions, #recipe .ingredients {
   padding-left: 10px;
 }
-/* line 133, styles.sass */
+/* line 122, styles.sass */
 #recipe .instruction, #recipe .ingredient {
   color: #368cbf;
   margin-bottom: 3px;
 }
-/* line 137, styles.sass */
+/* line 126, styles.sass */
 #recipe .instruction span, #recipe .ingredient span {
   color: #ddd;
 }
-/* line 141, styles.sass */
+/* line 130, styles.sass */
 #recipe .title-wrap .title {
   color: #368cbf;
+  font-size: 200%;
+  letter-spacing: 5px;
   text-align: center;
 }
-/* line 146, styles.sass */
+/* line 137, styles.sass */
 #recipe .photo-wrap .photo {
   border-radius: 50%;
   display: block;
@@ -153,8 +154,82 @@ html body .container .footer footer .add-recipe .cross-hori {
   max-width: 400px;
   width: 90%;
 }
-/* line 169, styles.sass */
+/* line 160, styles.sass */
 #recipe .tags-wrap .tags i {
   font-size: 80%;
   opacity: 0.6;
+}
+
+/* line 164, styles.sass */
+#add {
+  margin: 30px 5%;
+  width: 90%;
+}
+/* line 168, styles.sass */
+#add .wrap {
+  background: #212121;
+  border-radius: 5px;
+  height: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+/* line 176, styles.sass */
+#add .wrap .input, #add .wrap .span {
+  position: absolute;
+}
+/* line 179, styles.sass */
+#add .wrap .input {
+  background: none;
+  border: 2px solid #368cbf;
+  border-radius: 5px;
+  caret-color: #ddd;
+  color: #ddd;
+  height: 50px;
+  left: 0;
+  padding: 0 10px;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+/* line 192, styles.sass */
+#add .wrap .input:focus {
+  outline: none;
+  padding-top: 18px;
+}
+/* line 196, styles.sass */
+#add .wrap .input:focus + .span {
+  font-size: 80%;
+  opacity: 0.7;
+  top: 8px;
+}
+/* line 201, styles.sass */
+#add .wrap .span {
+  color: #368cbf;
+  left: 10px;
+  top: 16px;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+/* line 210, styles.sass */
+#add .tags-wrap .span-tags span {
+  font-size: 70%;
+}
+/* line 213, styles.sass */
+#add .submit-wrap {
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+}
+/* line 218, styles.sass */
+#add .submit-wrap .input-submit {
+  background: #368cbf;
+  border: none;
+  border-radius: 5px;
+  font-size: 120%;
+  height: 100%;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
 }

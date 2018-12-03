@@ -6,12 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Recepten.</title>
     <link rel="stylesheet" href="2-stylesheets/styles.css" type="text/css">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#303030">
   </head>
   <body>
     <div class="container">
-      <section class="main">
-        <h1>Add Recipe.</h1>
+      <section class="main" id="add">
+        <div class="wrap name-wrap">
+          <input class="input input-title"><span class="span span-title">Titel</span>
+        </div>
+        <div class="wrap photo-wrap">
+          <input class="input input-photo"><span class="span span-photo">Foto</span>
+        </div>
+        <div class="wrap instructions-wrap">
+          <input class="input input-instructions"><span class="span span-instructions">Instructies</span>
+        </div>
+        <div class="wrap ingredients-wrap">
+          <input class="input input-ingredients"><span class="span span-ingredients">Ingredienten</span>
+        </div>
+        <div class="wrap last-made-wrap">
+          <input class="input input-last-made"><span class="span span-last-made">Laatst gemaakt</span>
+        </div>
+        <div class="wrap last-eaten-wrap">
+          <input class="input input-last-eaten"><span class="span span-last-eaten">Laatst gegeten</span>
+        </div>
+        <div class="wrap tags-wrap">
+          <input class="input input-tags"><span class="span span-tags">Tags <span>(scheiden met een komma)</span></span>
+        </div>
+        <div class="submit-wrap">
+          <input class="input-submit" type="submit" value="Versturen">
+        </div>
       </section>
     </div>
   </body>
