@@ -179,6 +179,10 @@ html body .container .footer footer .add-recipe .cross-hori {
   position: absolute;
 }
 /* line 179, styles.sass */
+#add .wrap input:not(:placeholder-shown) {
+  border-color: tomato;
+}
+/* line 182, styles.sass */
 #add .wrap .input {
   background: none;
   border: 2px solid #368cbf;
@@ -192,18 +196,18 @@ html body .container .footer footer .add-recipe .cross-hori {
   width: 100%;
   z-index: 2;
 }
-/* line 192, styles.sass */
+/* line 195, styles.sass */
 #add .wrap .input:focus {
   outline: none;
   padding-top: 18px;
 }
-/* line 196, styles.sass */
+/* line 199, styles.sass */
 #add .wrap .input:focus + .span {
   font-size: 80%;
   opacity: 0.7;
   top: 8px;
 }
-/* line 201, styles.sass */
+/* line 204, styles.sass */
 #add .wrap .span {
   color: #368cbf;
   left: 10px;
@@ -211,17 +215,17 @@ html body .container .footer footer .add-recipe .cross-hori {
   transition: all 0.2s ease;
   z-index: 1;
 }
-/* line 210, styles.sass */
+/* line 213, styles.sass */
 #add .tags-wrap .span-tags span {
   font-size: 70%;
 }
-/* line 213, styles.sass */
+/* line 216, styles.sass */
 #add .submit-wrap {
   border-radius: 5px;
   height: 50px;
   width: 100%;
 }
-/* line 218, styles.sass */
+/* line 221, styles.sass */
 #add .submit-wrap .input-submit {
   background: #368cbf;
   border: none;
