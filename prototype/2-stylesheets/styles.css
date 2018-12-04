@@ -1,3 +1,135 @@
+/* line 3, _add-recipe.sass */
+#add {
+  margin: 30px 5%;
+  width: 90%;
+}
+/* line 7, _add-recipe.sass */
+#add .wrap {
+  background: #212121;
+  border-radius: 5px;
+  height: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+/* line 15, _add-recipe.sass */
+#add .wrap .input, #add .wrap .span {
+  position: absolute;
+}
+/* line 23, _add-recipe.sass */
+#add .wrap .input {
+  background: none;
+  border: 2px solid #368cbf;
+  border-radius: 5px;
+  caret-color: #ddd;
+  color: #ddd;
+  height: 50px;
+  left: 0;
+  padding: 0 10px;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+/* line 36, _add-recipe.sass */
+#add .wrap .input:focus {
+  outline: none;
+  padding-top: 18px;
+}
+/* line 40, _add-recipe.sass */
+#add .wrap .input:focus + .span {
+  font-size: 80%;
+  opacity: 0.7;
+  top: 8px;
+}
+/* line 45, _add-recipe.sass */
+#add .wrap .input::placeholder {
+  color: #212121;
+}
+/* line 48, _add-recipe.sass */
+#add .wrap .input:not(:placeholder-shown) {
+  padding-top: 18px;
+}
+/* line 51, _add-recipe.sass */
+#add .wrap .input:not(:placeholder-shown) + .span {
+  font-size: 80%;
+  opacity: 0.7;
+  top: 8px;
+}
+/* line 56, _add-recipe.sass */
+#add .wrap .span {
+  color: #368cbf;
+  left: 10px;
+  top: 16px;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+/* line 65, _add-recipe.sass */
+#add .tags-wrap .span-tags span {
+  font-size: 70%;
+}
+/* line 68, _add-recipe.sass */
+#add .submit-wrap {
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+}
+/* line 73, _add-recipe.sass */
+#add .submit-wrap .input-submit {
+  background: #368cbf;
+  border: none;
+  border-radius: 5px;
+  font-size: 120%;
+  height: 100%;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 3, _recipe.sass */
+#recipe {
+  margin-bottom: 0;
+}
+/* line 6, _recipe.sass */
+#recipe .last-made b, #recipe .last-eaten b {
+  color: #368cbf;
+}
+/* line 9, _recipe.sass */
+#recipe .instructions, #recipe .ingredients {
+  padding-left: 10px;
+}
+/* line 12, _recipe.sass */
+#recipe .instruction, #recipe .ingredient {
+  color: #368cbf;
+  margin-bottom: 3px;
+}
+/* line 16, _recipe.sass */
+#recipe .instruction span, #recipe .ingredient span {
+  color: #ddd;
+}
+/* line 20, _recipe.sass */
+#recipe .title-wrap .title {
+  color: #368cbf;
+  font-size: 200%;
+  letter-spacing: 5px;
+  text-align: center;
+}
+/* line 27, _recipe.sass */
+#recipe .photo-wrap .photo {
+  border-radius: 50%;
+  display: block;
+  height: 90%;
+  margin-bottom: 10px;
+  max-height: 400px;
+  max-width: 400px;
+  width: 90%;
+}
+/* line 50, _recipe.sass */
+#recipe .tags-wrap .tags i {
+  font-size: 80%;
+  opacity: 0.6;
+}
+
 /* line 9, styles.sass */
 * {
   box-sizing: border-box;
@@ -114,126 +246,4 @@ html body .container .footer footer .add-recipe .cross-hori {
   left: 9px;
   top: 17px;
   width: 18px;
-}
-
-/* line 113, styles.sass */
-#recipe {
-  margin-bottom: 0;
-}
-/* line 116, styles.sass */
-#recipe .last-made b, #recipe .last-eaten b {
-  color: #368cbf;
-}
-/* line 119, styles.sass */
-#recipe .instructions, #recipe .ingredients {
-  padding-left: 10px;
-}
-/* line 122, styles.sass */
-#recipe .instruction, #recipe .ingredient {
-  color: #368cbf;
-  margin-bottom: 3px;
-}
-/* line 126, styles.sass */
-#recipe .instruction span, #recipe .ingredient span {
-  color: #ddd;
-}
-/* line 130, styles.sass */
-#recipe .title-wrap .title {
-  color: #368cbf;
-  font-size: 200%;
-  letter-spacing: 5px;
-  text-align: center;
-}
-/* line 137, styles.sass */
-#recipe .photo-wrap .photo {
-  border-radius: 50%;
-  display: block;
-  height: 90%;
-  margin-bottom: 10px;
-  max-height: 400px;
-  max-width: 400px;
-  width: 90%;
-}
-/* line 160, styles.sass */
-#recipe .tags-wrap .tags i {
-  font-size: 80%;
-  opacity: 0.6;
-}
-
-/* line 164, styles.sass */
-#add {
-  margin: 30px 5%;
-  width: 90%;
-}
-/* line 168, styles.sass */
-#add .wrap {
-  background: #212121;
-  border-radius: 5px;
-  height: 50px;
-  margin-bottom: 20px;
-  position: relative;
-  width: 100%;
-}
-/* line 176, styles.sass */
-#add .wrap .input, #add .wrap .span {
-  position: absolute;
-}
-/* line 179, styles.sass */
-#add .wrap input:not(:placeholder-shown) {
-  border-color: tomato;
-}
-/* line 182, styles.sass */
-#add .wrap .input {
-  background: none;
-  border: 2px solid #368cbf;
-  border-radius: 5px;
-  caret-color: #ddd;
-  color: #ddd;
-  height: 50px;
-  left: 0;
-  padding: 0 10px;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
-/* line 195, styles.sass */
-#add .wrap .input:focus {
-  outline: none;
-  padding-top: 18px;
-}
-/* line 199, styles.sass */
-#add .wrap .input:focus + .span {
-  font-size: 80%;
-  opacity: 0.7;
-  top: 8px;
-}
-/* line 204, styles.sass */
-#add .wrap .span {
-  color: #368cbf;
-  left: 10px;
-  top: 16px;
-  transition: all 0.2s ease;
-  z-index: 1;
-}
-/* line 213, styles.sass */
-#add .tags-wrap .span-tags span {
-  font-size: 70%;
-}
-/* line 216, styles.sass */
-#add .submit-wrap {
-  border-radius: 5px;
-  height: 50px;
-  width: 100%;
-}
-/* line 221, styles.sass */
-#add .submit-wrap .input-submit {
-  background: #368cbf;
-  border: none;
-  border-radius: 5px;
-  font-size: 120%;
-  height: 100%;
-  line-height: 50px;
-  padding: 0;
-  text-align: center;
-  width: 100%;
 }
