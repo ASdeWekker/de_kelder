@@ -3,30 +3,30 @@ html
     include ./1-partials/head.pug
     body
         .container
-            section#add.main
+            #add.main
                 form.form
-                    .wrap.name-wrap
-                        input(placeholder=".").input.input-name
-                        label(for="name").span.span-title Titel
+                    .wrap.name--wrap
+                        input(placeholder=".")#name.input.input--name
+                        label(for="name").label.label--title Titel
                     .wrap.photo-wrap
-                        input(placeholder=".").input.input-photo
-                        span.span.span-photo Foto
+                        input(placeholder=".")#photo.input.input--photo
+                        label(for="photo").label.label--photo Foto
                     .wrap.instructions-wrap
-                        input(placeholder=".").input.input-instructions
-                        span.span.span-instructions Instructies
+                        input(placeholder=".")#instructions.input.input--instructions
+                        label(for="instructions").label.label--instructions Instructies
                     .wrap.ingredients-wrap
-                        input(placeholder=".").input.input-ingredients
-                        span.span.span-ingredients Ingredienten
+                        input(placeholder=".")#ingredients.input.input--ingredients
+                        label(for="ingredients").label.label---ingredients Ingredienten
                     .wrap.last-made-wrap
-                        input(placeholder=".").input.input-last-made
-                        span.span.span-last-made Laatst gemaakt
+                        input(placeholder=".")#last-made.input.input--last-made
+                        label(for="last-made").label.label--last-made Laatst gemaakt
                     .wrap.last-eaten-wrap
-                        input(placeholder=".").input.input-last-eaten
-                        span.span.span-last-eaten Laatst gegeten
+                        input(placeholder=".")#last-eaten.input.input--last-eaten
+                        label(for="last-eaten").label.label--last-eaten Laatst gegeten
                     .wrap.tags-wrap
-                        input(placeholder=".").input.input-tags
-                        span.span.span-tags Tags 
+                        input(placeholder=".")#tags.input.input--tags
+                        label(for="tags").label.label--tags Tags 
                             span (scheiden met een komma)
                     .submit-wrap
-                        input(type="submit", value="Versturen").input-submit
+                        input(type="submit", value="Versturen").input--submit
             
