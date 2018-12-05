@@ -4,28 +4,29 @@ html
     body
         .container
             section#add.main
-                .wrap.name-wrap
-                    input(placeholder=".").input.input-title
-                    span.span.span-title Titel
-                .wrap.photo-wrap
-                    input(placeholder=".").input.input-photo
-                    span.span.span-photo Foto
-                .wrap.instructions-wrap
-                    input(placeholder=".").input.input-instructions
-                    span.span.span-instructions Instructies
-                .wrap.ingredients-wrap
-                    input(placeholder=".").input.input-ingredients
-                    span.span.span-ingredients Ingredienten
-                .wrap.last-made-wrap
-                    input(placeholder=".").input.input-last-made
-                    span.span.span-last-made Laatst gemaakt
-                .wrap.last-eaten-wrap
-                    input(placeholder=".").input.input-last-eaten
-                    span.span.span-last-eaten Laatst gegeten
-                .wrap.tags-wrap
-                    input(placeholder=".").input.input-tags
-                    span.span.span-tags Tags 
-                        span (scheiden met een komma)
-                .submit-wrap
-                    input(type="submit", value="Versturen").input-submit
+                form.form
+                    .wrap.name-wrap
+                        input(placeholder=".").input.input-name
+                        label(for="name").span.span-title Titel
+                    .wrap.photo-wrap
+                        input(placeholder=".").input.input-photo
+                        span.span.span-photo Foto
+                    .wrap.instructions-wrap
+                        input(placeholder=".").input.input-instructions
+                        span.span.span-instructions Instructies
+                    .wrap.ingredients-wrap
+                        input(placeholder=".").input.input-ingredients
+                        span.span.span-ingredients Ingredienten
+                    .wrap.last-made-wrap
+                        input(placeholder=".").input.input-last-made
+                        span.span.span-last-made Laatst gemaakt
+                    .wrap.last-eaten-wrap
+                        input(placeholder=".").input.input-last-eaten
+                        span.span.span-last-eaten Laatst gegeten
+                    .wrap.tags-wrap
+                        input(placeholder=".").input.input-tags
+                        span.span.span-tags Tags 
+                            span (scheiden met een komma)
+                    .submit-wrap
+                        input(type="submit", value="Versturen").input-submit
             
