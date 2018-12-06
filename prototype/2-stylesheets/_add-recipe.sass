@@ -4,79 +4,72 @@
     margin: 30px 5%
     width: 90%
 
-    .wrap
-        background: $bg-alt
-        border-radius: 5px
-        height: 50px
-        margin-bottom: 20px
-        position: relative
+    .form
+        background: none
+        height: auto
         width: 100%
 
-        .input, .label
-            position: absolute
-
-        // .input::placeholder
-        //     color: $bg-alt
-
-        // .input:not(:placeholder-shown)
-
-        .input
-            background: none
-            border: 2px solid $text-alt
+        &--input-wrap
+            background: $bg-alt
             border-radius: 5px
-            caret-color: $text
-            color: $text
             height: 50px
-            left: 0
-            padding: 0 10px
-            top: 0
+            margin-bottom: 20px
+            position: relative
             width: 100%
-            z-index: 2
 
-            &:focus
-                outline: none
-                padding-top: 18px
+            &--input, &--label
+                position: absolute
 
-            &:focus + .label
-                font-size: 80%
-                opacity: 0.7
-                top: 8px
+            &--input
+                background: none
+                border: 2px solid $text-alt
+                border-radius: 5px
+                caret-color: $text
+                color: $text
+                height: 50px
+                left: 0
+                padding: 0 10px
+                top: 0
+                width: 100%
+                z-index: 2
 
-            &::placeholder
-                color: $bg-alt
+                &:focus
+                    outline: none
+                    padding-top: 18px
 
-            &:not(:placeholder-shown)
-                padding-top: 18px
+                &:focus + .label
+                    font-size: 80%
+                    opacity: 0.7
+                    top: 8px
 
-            &:not(:placeholder-shown) + .label
-                font-size: 80%
-                opacity: 0.7
-                top: 8px
+                &::placeholder
+                    color: $bg-alt
 
-        .label
-            color: $text-alt
-            left: 10px
-            top: 16px
-            transition: all 0.2s ease
-            z-index: 1
+                &:not(:placeholder-shown)
+                    padding-top: 18px
 
-    .tags--wrap
-        .span--tags
-            span
-                font-size: 70%
+                &:not(:placeholder-shown) + .label
+                    font-size: 80%
+                    opacity: 0.7
+                    top: 8px
 
-    .submit-wrap
-        border-radius: 5px
-        height: 50px
-        width: 100%
+            &--label
+                color: $text-alt
+                left: 10px
+                top: 16px
+                transition: all 0.2s ease
+                z-index: 1
 
-        .input--submit
-            background: $text-alt
-            border: none
-            border-radius: 5px
-            font-size: 120%
-            height: 100%
-            line-height: 50px
-            padding: 0
-            text-align: center
-            width: 100%
+                &--span
+                    font-size: 70%
+
+            &--submit
+                background: $text-alt
+                border: none
+                border-radius: 5px
+                font-size: 120%
+                height: 100%
+                line-height: 50px
+                padding: 0
+                text-align: center
+                width: 100%

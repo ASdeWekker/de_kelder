@@ -5,28 +5,27 @@ html
         .container
             #add.main
                 form.form
-                    .wrap.name--wrap
-                        input(placeholder=".")#name.input.input--name
-                        label(for="name").label.label--title Titel
-                    .wrap.photo-wrap
-                        input(placeholder=".")#photo.input.input--photo
-                        label(for="photo").label.label--photo Foto
-                    .wrap.instructions-wrap
-                        input(placeholder=".")#instructions.input.input--instructions
-                        label(for="instructions").label.label--instructions Instructies
-                    .wrap.ingredients-wrap
-                        input(placeholder=".")#ingredients.input.input--ingredients
-                        label(for="ingredients").label.label---ingredients Ingredienten
-                    .wrap.last-made-wrap
-                        input(placeholder=".")#last-made.input.input--last-made
-                        label(for="last-made").label.label--last-made Laatst gemaakt
-                    .wrap.last-eaten-wrap
-                        input(placeholder=".")#last-eaten.input.input--last-eaten
-                        label(for="last-eaten").label.label--last-eaten Laatst gegeten
-                    .wrap.tags-wrap
-                        input(placeholder=".")#tags.input.input--tags
-                        label(for="tags").label.label--tags Tags 
-                            span (scheiden met een komma)
-                    .submit-wrap
-                        input(type="submit", value="Versturen").input--submit
-            
+                    .form--input-wrap.title
+                        input(placeholder=".")#title.form--input-wrap--input
+                        label(for="title").form--input-wrap--label Gerecht
+                    .form--input-wrap.photo
+                        input(placeholder=".")#photo.form--input-wrap--input
+                        label(for="photo").form--input-wrap--label Foto
+                    .form--input-wrap.instructions
+                        input(placeholder=".")#instructions.form--input-wrap--input
+                        label(for="instructions").form--input-wrap--label Instructies
+                    .form--input-wrap.ingredients
+                        input(placeholder=".")#ingredients.form--input-wrap--input
+                        label(for="ingredients").form--input-wrap--label Ingredienten
+                    .form--input-wrap.last-made
+                        input(placeholder=".")#last-made.form--input-wrap--input
+                        label(for="last-made").form--input-wrap--label Laatst gemaakt
+                    .form--input-wrap.last-eaten
+                        input(placeholder=".")#last-eaten.form--input-wrap--input
+                        label(for="last-eaten").form--input-wrap--label Laatst gegeten
+                    .form--input-wrap.tags
+                        input(placeholder=".")#tags.form--input-wrap--input
+                        label(for="tags").form--input-wrap--label Tags 
+                            span.form--input-wrap--label--span (scheiden met een komma)
+                    .form--input-wrap.submit
+                        input(type="submit", value="Versturen").form--input-wrap--submit

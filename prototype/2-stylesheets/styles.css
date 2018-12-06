@@ -4,7 +4,13 @@
   width: 90%;
 }
 /* line 7, _add-recipe.sass */
-#add .wrap {
+#add .form {
+  background: none;
+  height: auto;
+  width: 100%;
+}
+/* line 12, _add-recipe.sass */
+#add .form--input-wrap {
   background: #212121;
   border-radius: 5px;
   height: 50px;
@@ -12,12 +18,12 @@
   position: relative;
   width: 100%;
 }
-/* line 15, _add-recipe.sass */
-#add .wrap .input, #add .wrap .label {
+/* line 20, _add-recipe.sass */
+#add .form--input-wrap--input, #add .form--input-wrap--label {
   position: absolute;
 }
 /* line 23, _add-recipe.sass */
-#add .wrap .input {
+#add .form--input-wrap--input {
   background: none;
   border: 2px solid #368cbf;
   border-radius: 5px;
@@ -31,50 +37,44 @@
   z-index: 2;
 }
 /* line 36, _add-recipe.sass */
-#add .wrap .input:focus {
+#add .form--input-wrap--input:focus {
   outline: none;
   padding-top: 18px;
 }
 /* line 40, _add-recipe.sass */
-#add .wrap .input:focus + .label {
+#add .form--input-wrap--input:focus + .label {
   font-size: 80%;
   opacity: 0.7;
   top: 8px;
 }
 /* line 45, _add-recipe.sass */
-#add .wrap .input::placeholder {
+#add .form--input-wrap--input::placeholder {
   color: #212121;
 }
 /* line 48, _add-recipe.sass */
-#add .wrap .input:not(:placeholder-shown) {
+#add .form--input-wrap--input:not(:placeholder-shown) {
   padding-top: 18px;
 }
 /* line 51, _add-recipe.sass */
-#add .wrap .input:not(:placeholder-shown) + .label {
+#add .form--input-wrap--input:not(:placeholder-shown) + .label {
   font-size: 80%;
   opacity: 0.7;
   top: 8px;
 }
 /* line 56, _add-recipe.sass */
-#add .wrap .label {
+#add .form--input-wrap--label {
   color: #368cbf;
   left: 10px;
   top: 16px;
   transition: all 0.2s ease;
   z-index: 1;
 }
-/* line 65, _add-recipe.sass */
-#add .tags--wrap .span--tags span {
+/* line 63, _add-recipe.sass */
+#add .form--input-wrap--label--span {
   font-size: 70%;
 }
-/* line 68, _add-recipe.sass */
-#add .submit-wrap {
-  border-radius: 5px;
-  height: 50px;
-  width: 100%;
-}
-/* line 73, _add-recipe.sass */
-#add .submit-wrap .input--submit {
+/* line 66, _add-recipe.sass */
+#add .form--input-wrap--submit {
   background: #368cbf;
   border: none;
   border-radius: 5px;
