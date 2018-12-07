@@ -3,34 +3,34 @@ html
     include ./1-partials/head.pug
     body
         .container
-            section#recipe.main
-                .title-wrap
+            #recipe.main
+                .wrap.title
                     h1.title Zalmpasta
-                .photo-wrap
+                .wrap.photo
                     img(src="http://alexdewekker.nl/zalmpasta.jpg", alt="Zalmpasta").photo
-                .instructions-wrap
-                    ol.instructions
-                        li.instruction: span Snij de courgette in blokjes en zet een pan water op het vuur.
-                        li.instruction: span Bak de courgette blokjes een paar minuten in een grote pan.
-                        li.instruction: span Gooi hier de tomatenblokjes en mascarpone bij en mix het goed door elkaar heen.
-                        li.instruction: span Gooi zodra het kookt de zalmsnippers erbij en laat het geheel opwarmen.
-                        li.instruction: span Vergeet niet om de fusili te koken en serveer het gerecht samen in een bord op.
-                .ingredients-wrap
-                    ul.ingredients
-                        li.ingredient: span Zalmsnippers, 400 gram.
-                        li.ingredient: span Fusili, 300 gram.
-                        li.ingredient: span 1 Courgette.
-                        li.ingredient: span Gezeefde tomatenblokjes (knoflook), 400 gram.
-                        li.ingredient: span Mascarpone, 250 gram.
-                .last-made-wrap
-                    p.last-made Laatst gemaakt op: 
+                .wrap.instructions
+                    ol.wrap--list
+                        li.wrap--list--item: span.wrap--list--item--span Snij de courgette in blokjes en zet een pan water op het vuur.
+                        li.wrap--list--item: span.wrap--list--item--span Bak de courgette blokjes een paar minuten in een grote pan.
+                        li.wrap--list--item: span.wrap--list--item--span Gooi hier de tomatenblokjes en mascarpone bij en mix het goed door elkaar heen.
+                        li.wrap--list--item: span.wrap--list--item--span Gooi zodra het kookt de zalmsnippers erbij en laat het geheel opwarmen.
+                        li.wrap--list--item: span.wrap--list--item--span Vergeet niet om de fusili te koken en serveer het gerecht samen in een bord op.
+                .wrap.ingredients
+                    ul.wrap--list
+                        li.wrap--list--item: span.wrap--list--item--span Zalmsnippers, 400 gram.
+                        li.wrap--list--item: span.wrap--list--item--span Fusili, 300 gram.
+                        li.wrap--list--item: span.wrap--list--item--span 1 Courgette.
+                        li.wrap--list--item: span.wrap--list--item--span Gezeefde tomatenblokjes (knoflook), 400 gram.
+                        li.wrap--list--item: span.wrap--list--item--span Mascarpone, 250 gram.
+                .wrap.last-made
+                    p.wrap--p Laatst gemaakt op: 
                         b 30-11-2018
-                .last-eaten-wrap
-                    p.last-eaten Laatst gegeten op: 
+                .wrap.last-eaten
+                    p.wrap--p Laatst gegeten op: 
                         b 02-12-2018
-                .calendar-wrap
+                .wrap.calendar
                     .calendar: p Hier komt een kalendertjih
-                .tags-wrap
-                    p.tags 
-                        i Italiaans, Pasta, Zalm, Vullend
+                .wrap.tags
+                    p.wrap--p 
+                        i.wrap--p--i Italiaans, Pasta, Zalm, Vullend
             
