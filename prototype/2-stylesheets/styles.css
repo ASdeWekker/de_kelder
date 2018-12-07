@@ -42,7 +42,7 @@
   padding-top: 18px;
 }
 /* line 40, _add-recipe.sass */
-#add .form--input-wrap--input:focus + .label {
+#add .form--input-wrap--input:focus + .form--input-wrap--label {
   font-size: 80%;
   opacity: 0.7;
   top: 8px;
@@ -56,7 +56,7 @@
   padding-top: 18px;
 }
 /* line 51, _add-recipe.sass */
-#add .form--input-wrap--input:not(:placeholder-shown) + .label {
+#add .form--input-wrap--input:not(:placeholder-shown) + .form--input-wrap--label {
   font-size: 80%;
   opacity: 0.7;
   top: 8px;
@@ -74,7 +74,7 @@
   font-size: 70%;
 }
 /* line 66, _add-recipe.sass */
-#add .form--input-wrap--submit {
+#add .form--input-wrap--button {
   background: #368cbf;
   border: none;
   border-radius: 5px;
@@ -91,31 +91,18 @@
   margin-bottom: 0;
 }
 /* line 6, _recipe.sass */
-#recipe .last-made b, #recipe .last-eaten b {
-  color: #368cbf;
-}
-/* line 9, _recipe.sass */
 #recipe .instructions, #recipe .ingredients {
   padding-left: 10px;
 }
-/* line 12, _recipe.sass */
-#recipe .instruction, #recipe .ingredient {
-  color: #368cbf;
-  margin-bottom: 3px;
-}
-/* line 16, _recipe.sass */
-#recipe .instruction span, #recipe .ingredient span {
-  color: #ddd;
-}
-/* line 20, _recipe.sass */
-#recipe .title-wrap .title {
+/* line 10, _recipe.sass */
+#recipe .wrap--title {
   color: #368cbf;
   font-size: 200%;
   letter-spacing: 5px;
   text-align: center;
 }
-/* line 27, _recipe.sass */
-#recipe .photo-wrap .photo {
+/* line 16, _recipe.sass */
+#recipe .wrap--photo {
   border-radius: 50%;
   display: block;
   height: 90%;
@@ -124,25 +111,34 @@
   max-width: 400px;
   width: 90%;
 }
-/* line 50, _recipe.sass */
-#recipe .tags-wrap .tags i {
+/* line 26, _recipe.sass */
+#recipe .wrap--list--item {
+  color: #368cbf;
+  margin-bottom: 3px;
+}
+/* line 30, _recipe.sass */
+#recipe .wrap--list--item--span {
+  color: #ddd;
+}
+/* line 34, _recipe.sass */
+#recipe .wrap--p--i {
   font-size: 80%;
   opacity: 0.6;
 }
 
-/* line 9, styles.sass */
+/* line 12, styles.sass */
 * {
   box-sizing: border-box;
 }
 
-/* line 12, styles.sass */
+/* line 15, styles.sass */
 html, body {
   font-family: Arial;
   margin: 0;
   padding: 0;
 }
 
-/* line 17, styles.sass */
+/* line 20, styles.sass */
 html, body, .container {
   background: #303030;
   color: #ddd;
@@ -151,13 +147,13 @@ html, body, .container {
   width: 100%;
 }
 
-/* line 24, styles.sass */
+/* line 27, styles.sass */
 .footer, footer {
   height: 48px;
   width: 100%;
 }
 
-/* line 33, styles.sass */
+/* line 36, styles.sass */
 html body .container .main {
   display: flex;
   flex-flow: column nowrap;
@@ -165,43 +161,54 @@ html body .container .main {
   margin-bottom: 48px;
   width: 80%;
 }
-/* line 40, styles.sass */
+/* line 43, styles.sass */
 html body .container .main .item {
   height: auto;
   width: 100%;
 }
-/* line 44, styles.sass */
-html body .container .main .item .item-title-link, html body .container .main .item .small-desc-link {
+/* line 48, styles.sass */
+html body .container .main .item--title--link, html body .container .main .item--small-desc--link {
   text-decoration: none;
 }
-/* line 47, styles.sass */
-html body .container .main .item .item-title-link {
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 100%;
-  text-align: center;
+/* line 51, styles.sass */
+html body .container .main .item--title {
+  margin: 19px 0;
+  width: 100%;
 }
-/* line 52, styles.sass */
-html body .container .main .item .item-title-link .item-title {
+/* line 55, styles.sass */
+html body .container .main .item--title--link {
   color: #368cbf;
+  display: block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 75%;
+  text-align: center;
+  width: 100%;
 }
-/* line 56, styles.sass */
-html body .container .main .item .small-desc-link .small-desc {
-  color: #ddd;
+/* line 64, styles.sass */
+html body .container .main .item:nth-child(2n) .item--title--link {
+  opacity: 0.6;
+}
+/* line 67, styles.sass */
+html body .container .main .item--small-desc {
   display: none;
 }
-/* line 60, styles.sass */
+/* line 70, styles.sass */
+html body .container .main .item--small-desc--link {
+  color: #ddd;
+}
+/* line 73, styles.sass */
 html body .container .footer {
   background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 66, styles.sass */
+/* line 79, styles.sass */
 html body .container .footer footer .searchbar {
   height: 40px;
   width: 80%;
 }
-/* line 70, styles.sass */
-html body .container .footer footer .searchbar .search-input {
+/* line 83, styles.sass */
+html body .container .footer footer .searchbar--input {
   background: #368cbf;
   border: 2px solid #303030;
   border-radius: 30px;
@@ -212,11 +219,11 @@ html body .container .footer footer .searchbar .search-input {
   padding: 0 20px;
   width: 100%;
 }
-/* line 81, styles.sass */
-html body .container .footer footer .searchbar .search-input:focus {
+/* line 94, styles.sass */
+html body .container .footer footer .searchbar--input:focus {
   outline: none;
 }
-/* line 84, styles.sass */
+/* line 97, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #368cbf;
   border-radius: 50%;
@@ -227,23 +234,16 @@ html body .container .footer footer .add-recipe {
   position: absolute;
   width: 40px;
 }
-/* line 94, styles.sass */
-html body .container .footer footer .add-recipe .cross-vert, html body .container .footer footer .add-recipe .cross-hori {
+/* line 107, styles.sass */
+html body .container .footer footer .add-recipe--cross {
   background: #ddd;
-  border-radius: 0px;
-  position: absolute;
-}
-/* line 99, styles.sass */
-html body .container .footer footer .add-recipe .cross-vert {
-  height: 18px;
-  left: 17px;
-  top: 9px;
-  width: 2px;
-}
-/* line 105, styles.sass */
-html body .container .footer footer .add-recipe .cross-hori {
   height: 2px;
   left: 9px;
+  position: absolute;
   top: 17px;
   width: 18px;
+}
+/* line 115, styles.sass */
+html body .container .footer footer .add-recipe--cross.vert {
+  transform: rotate(90deg);
 }

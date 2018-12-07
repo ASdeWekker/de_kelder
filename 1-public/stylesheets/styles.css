@@ -45,14 +45,14 @@ html body .container .linklist {
   justify-content: center;
 }
 /* line 46, styles.sass */
-html body .container .linklist .linkli {
+html body .container .linklist--item {
   height: 42px;
   line-height: 42px;
   margin: 10px 0;
   min-width: 100px;
 }
 /* line 52, styles.sass */
-html body .container .linklist .linkli .links {
+html body .container .linklist--item--link {
   color: #ddd;
   line-height: 22px;
   padding: 10px;
@@ -60,7 +60,7 @@ html body .container .linklist .linkli .links {
   width: 100%;
 }
 /* line 59, styles.sass */
-html body .container .linklist .linkli .links:hover {
+html body .container .linklist--item--link:hover {
   background: #368cbf;
   border-radius: 10px;
   color: #212121;
@@ -71,7 +71,7 @@ html body .container .hosts {
   margin-top: 100px;
 }
 /* line 72, styles.sass */
-html body .container .hosts .hostli .host {
+html body .container .hosts--item--link {
   color: #ddd;
   font-size: 2em;
   font-weight: 900;
@@ -84,12 +84,12 @@ html body .container .buttons {
   position: absolute;
 }
 /* line 88, styles.sass */
-html body .container .buttons .butli .button {
+html body .container .buttons--item--button {
   color: #368cbf;
   font-size: 2em;
 }
 /* line 92, styles.sass */
-html body .container .buttons .butli .button svg {
+html body .container .buttons--item--button svg {
   display: block;
   margin: 0 auto;
 }

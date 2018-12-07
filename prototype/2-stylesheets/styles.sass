@@ -1,6 +1,9 @@
 // Import vars and mixins.
+
 @import ../../1-public/stylesheets/parts/vars-and-mixins
+
 // Import styles for the other two pages.
+
 @import add-recipe
 @import recipe
 
@@ -41,21 +44,31 @@ html
                     height: auto
                     width: 100%
 
-                    .item-title-link, .small-desc-link
-                        text-decoration: none
-                    
-                    .item-title-link
-                        font-family: "Lucida Console", Monaco, monospace
-                        font-size: 100%
-                        text-align: center
+                    &--title, &--small-desc
+                        &--link
+                            text-decoration: none
 
-                        .item-title
+                    &--title
+                        margin: 19px 0
+                        width: 100%
+
+                        &--link
                             color: $text-alt
+                            display: block
+                            font-family: "Lucida Console", Monaco, monospace
+                            font-size: 75%
+                            text-align: center
+                            width: 100%
 
-                    .small-desc-link
-                        .small-desc
+                    &:nth-child(2n)
+                        .item--title--link
+                            opacity: 0.6
+
+                    &--small-desc
+                        display: none
+
+                        &--link
                             color: $text
-                            display: none
 
             .footer
                 background: none
@@ -67,7 +80,7 @@ html
                         height: 40px
                         width: 80%
 
-                        .search-input
+                        &--input
                             background: $text-alt
                             border: 2px solid $bg
                             border-radius: 30px
@@ -91,19 +104,13 @@ html
                         position: absolute
                         width: 40px
 
-                        .cross-vert, .cross-hori
+                        &--cross
                             background: $text
-                            border-radius: 0px
-                            position: absolute
-
-                        .cross-vert
-                            height: 18px
-                            left: 17px
-                            top: 9px
-                            width: 2px
-
-                        .cross-hori
                             height: 2px
                             left: 9px
+                            position: absolute
                             top: 17px
                             width: 18px
+
+                        &--cross.vert
+                            transform: rotate(90deg)

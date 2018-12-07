@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".item-title-link").on("click", function() {
-        $(this).closest("a").siblings().find("p").slideToggle(200);
+    $(".item--title").on("click", function() {
+        $(this).siblings().slideToggle(200);
     });
 });
