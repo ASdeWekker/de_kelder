@@ -24,7 +24,7 @@ app.locals.pretty = true;
 // Set the public folder
 app.use(express.static(path.join(__dirname, "1-public")));
 // Set the favicon.
-app.use(favicon(path.join(__dirname, "1-public", "favicon.ico")));
+app.use(favicon(path.join(__dirname, "1-public", "favicon-new.png")));
 
 // Use the routes.
 app.use("/", indexRouter);
