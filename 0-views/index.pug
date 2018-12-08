@@ -1,38 +1,40 @@
 extends base
 
 block content
-    ul.linklist
-        each link, i in links.rows
-            li.linklist--item
-                a(href="http://" + url + ":" + link.port).linklist--item--link #{link.name}
-    ul.hosts
-        li.hosts--item
-            a(href="http://192.168.1.90:3099").hosts--item--link 90
-        li.hosts--item
-            a(href="http://192.168.1.99:3099").hosts--item--link 99
-        li.hosts--item
-            a(href="http://10.8.0.1:3099").hosts--item--link 10.1
-        li.hosts--item
-            a(href="http://10.8.0.6:3099").hosts--item--link 10.6
-    ul.buttons
-        li.buttons--item
-            a(href="javascript:void(0);").buttons--item--button
-                i.fas.fa-cog
-        li.buttons--item
-            a(href="http://192.168.1.90:81/admin").buttons--item--button
-                i.fas.fa-shield-alt
-        li.buttons--item
-            a(href="http://192.168.1.99:8112").buttons--item--button
-                .fas.fa-tint
-        li.buttons--item
-            a(href="/wol").buttons--item--button
-                i.fas.fa-power-off
-        li.buttons--item
-            a(href="http://" + url + "/backup/alex/cv/2").buttons--item--button
-                i.fas.fa-user
-        li.buttons--item
-            a(href="http://" + url + "/backup").buttons--item--button
-                i.fas.fa-folder-open
-        li.buttons--item
-            a(href="http://" + url + "/de_kelder/prototype").buttons--item--button
-                i.fas.fa-utensils
+    #main.container
+        h1.title De_Kelder
+        ul.linklist
+            each link, i in links.rows
+                li.linklist--item
+                    a(href="http://" + url + ":" + link.port).linklist--item--link #{link.name}
+        ul.hosts
+            li.hosts--item
+                a(href="http://192.168.1.90:3099").hosts--item--link 90
+            li.hosts--item
+                a(href="http://192.168.1.99:3099").hosts--item--link 99
+            li.hosts--item
+                a(href="http://10.8.0.1:3099").hosts--item--link 10.1
+            li.hosts--item
+                a(href="http://10.8.0.6:3099").hosts--item--link 10.6
+        ul.buttons
+            li.buttons--item
+                a(href="javascript:void(0);").buttons--item--button
+                    i.fas.fa-cog
+            li.buttons--item
+                a(href="http://192.168.1.90:81/admin").buttons--item--button
+                    i.fas.fa-shield-alt
+            li.buttons--item
+                a(href="http://192.168.1.99:8112").buttons--item--button
+                    .fas.fa-tint
+            li.buttons--item
+                a(href="/wol").buttons--item--button
+                    i.fas.fa-power-off
+            li.buttons--item
+                a(href="http://" + url + "/backup/alex/cv/2").buttons--item--button
+                    i.fas.fa-user
+            li.buttons--item
+                a(href="http://" + url + "/backup").buttons--item--button
+                    i.fas.fa-folder-open
+            li.buttons--item
+                a(href="http://" + url + "/de_kelder/prototype").buttons--item--button
+                    i.fas.fa-utensils

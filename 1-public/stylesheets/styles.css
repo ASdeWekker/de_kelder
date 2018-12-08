@@ -10,48 +10,55 @@ html, html body, html body .container {
   box-sizing: border-box;
 }
 
-/* line 10, styles.sass */
+/* line 11, styles.sass */
 html, body, ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 20, styles.sass */
+/* line 21, styles.sass */
 html body .container {
   background: #303030;
   display: flex;
   flex-flow: column nowrap;
   font-family: Arial, "sans-serif";
 }
-/* line 27, styles.sass */
+/* line 28, styles.sass */
 html body .container ul {
   display: flex;
   flex-flow: row wrap;
   height: auto;
   width: 100%;
 }
-/* line 33, styles.sass */
+/* line 34, styles.sass */
 html body .container ul li {
   list-style-type: none;
 }
-/* line 36, styles.sass */
+/* line 37, styles.sass */
 html body .container ul li a {
   color: #ddd;
   text-align: center;
   text-decoration: none;
 }
-/* line 43, styles.sass */
+/* line 42, styles.sass */
+html body .container .title {
+  color: #368cbf;
+  font-size: 150%;
+  margin-bottom: 0;
+  text-align: center;
+}
+/* line 50, styles.sass */
 html body .container .linklist {
   justify-content: center;
 }
-/* line 46, styles.sass */
+/* line 53, styles.sass */
 html body .container .linklist--item {
   height: 42px;
   line-height: 42px;
   margin: 10px 0;
   min-width: 100px;
 }
-/* line 52, styles.sass */
+/* line 59, styles.sass */
 html body .container .linklist--item--link {
   color: #ddd;
   line-height: 22px;
@@ -59,36 +66,36 @@ html body .container .linklist--item--link {
   text-align: center;
   width: 100%;
 }
-/* line 59, styles.sass */
+/* line 66, styles.sass */
 html body .container .linklist--item--link:hover {
   background: #368cbf;
   border-radius: 10px;
   color: #212121;
 }
-/* line 66, styles.sass */
+/* line 73, styles.sass */
 html body .container .hosts {
   justify-content: space-evenly;
-  margin-top: 100px;
+  margin-top: 50px;
 }
-/* line 72, styles.sass */
+/* line 79, styles.sass */
 html body .container .hosts--item--link {
   color: #ddd;
   font-size: 2em;
   font-weight: 900;
 }
-/* line 79, styles.sass */
+/* line 86, styles.sass */
 html body .container .buttons {
   background: none;
   bottom: 1.5%;
   justify-content: space-around;
   position: absolute;
 }
-/* line 88, styles.sass */
+/* line 95, styles.sass */
 html body .container .buttons--item--button {
   color: #368cbf;
   font-size: 2em;
 }
-/* line 92, styles.sass */
+/* line 99, styles.sass */
 html body .container .buttons--item--button svg {
   display: block;
   margin: 0 auto;
