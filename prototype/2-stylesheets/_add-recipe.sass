@@ -1,6 +1,6 @@
 // Styling for the page to add recipes.
 
-#add
+#add-recipe
     margin: 30px 5%
     width: 90%
 
@@ -9,6 +9,26 @@
         height: auto
         width: 100%
 
+        .photo
+            #photo
+                height: 0.1px
+                opacity: 0
+                overflow: hidden
+                position: absolute
+                width: 0.1px
+                z-index: -1
+
+
+        &--input-title
+            height: 50px
+
+            &--title
+                color: $text-alt
+                height: 50px
+                line-height: 50px
+                margin-top: 0
+                text-align: center
+
         &--input-wrap
             background: $bg-alt
             border-radius: 5px
@@ -16,6 +36,9 @@
             margin-bottom: 20px
             position: relative
             width: 100%
+
+            // button.button:focus
+            //     outline: none
 
             &--input, &--label
                 position: absolute
@@ -67,6 +90,8 @@
                 background: $text-alt
                 border: none
                 border-radius: 5px
+                color: $bg
+                display: block
                 font-size: 120%
                 height: 100%
                 line-height: 50px

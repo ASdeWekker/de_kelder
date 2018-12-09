@@ -10,32 +10,42 @@
   </head>
   <body>
     <div class="container">
-      <div class="main" id="add">
+      <div class="main" id="add-recipe">
         <form class="form">
           <div class="form--input-wrap title">
-            <input class="form--input-wrap--input" placeholder="." id="title">
+            <input class="form--input-wrap--input" type="text" placeholder="." id="title">
             <label class="form--input-wrap--label" for="title">Gerecht</label>
           </div>
           <div class="form--input-wrap photo">
-            <input class="form--input-wrap--input" placeholder="." id="photo">
-            <label class="form--input-wrap--label" for="photo">Foto</label>
+            <input class="form--input-wrap--input" type="file" accept="image/*" id="photo">
+            <label class="form--input-wrap--button" for="photo">Kies een foto van het gerecht</label>
           </div>
-          <div class="form--input-wrap instructions">
-            <input class="form--input-wrap--input" placeholder="." id="instructions">
-            <label class="form--input-wrap--label" for="instructions">Instructies</label>
+          <div class="form--input-title instructions">
+            <h2 class="form--input-title--title">Instructies</h2>
           </div>
-          <div class="form--input-wrap instruction-button">
-            <button class="form--input-wrap--button button" type="button">+</button>
+          <div class="form--input-wrap instructions-1">
+            <input class="form--input-wrap--input" type="text" placeholder="." id="instructions-1">
+            <label class="form--input-wrap--label" for="instructions-1">- Stap 1</label>
           </div>
-          <div class="form--input-wrap ingredients">
-            <input class="form--input-wrap--input" placeholder="." id="ingredients">
-            <label class="form--input-wrap--label" for="ingredients">Ingredienten</label>
+          <div class="form--input-wrap instructions-2">
+            <input class="form--input-wrap--input" type="text" placeholder="." id="instructions-2">
+            <label class="form--input-wrap--label" for="instructions-2">- Stap 2</label>
           </div>
-          <div class="form--input-wrap ingredients-button">
-            <button class="form--input-wrap--button button" type="button">+</button>
+          <div class="form--input-wrap instruction-button"><a class="form--input-wrap--button button button-instructions">+</a></div>
+          <div class="form--input-title ingredients">
+            <h2 class="form--input-title--title">Ingredienten</h2>
           </div>
+          <div class="form--input-wrap ingredients-1">
+            <input class="form--input-wrap--input" type="text" placeholder="." id="ingredients">
+            <label class="form--input-wrap--label" for="ingredients">- Ingredient 1</label>
+          </div>
+          <div class="form--input-wrap ingredients-2">
+            <input class="form--input-wrap--input" type="text" placeholder="." id="ingredients">
+            <label class="form--input-wrap--label" for="ingredients">- Ingredient 2</label>
+          </div>
+          <div class="form--input-wrap ingredients-button"><a class="form--input-wrap--button button button-ingredients">+</a></div>
           <div class="form--input-wrap tags">
-            <input class="form--input-wrap--input" placeholder="." id="tags">
+            <input class="form--input-wrap--input" type="text" placeholder="." id="tags">
             <label class="form--input-wrap--label" for="tags">Tags <span class="form--input-wrap--label--span">(scheiden met een komma)</span></label>
           </div>
           <div class="form--input-wrap submit">
@@ -44,5 +54,8 @@
         </form>
       </div>
     </div>
+    <!--Scripts-->
+    <script defer src="3-js/jquery.min.js" type="text/javascript"></script>
+    <script defer src="3-js/jquery.js" type="text/javascript"></script>
   </body>
 </html>
