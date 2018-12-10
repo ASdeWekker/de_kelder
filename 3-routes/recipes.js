@@ -18,6 +18,10 @@ const client = new Client({
 });
 client.connect();
 
+// Queries.
+const query = "select * from recipe_photos;";
+//const input = "insert into recipe_photo (name) values (" + name + ");";
+
 // --------------- GET  PAGES ---------------
 
 // Function to easily get the page.
@@ -27,6 +31,13 @@ function getPage(url, view, title) {
     });
 }
 
-getPage("/", "recipes", "Recepten");
+router.get("/", (req, res, next) => {
+    client.query(query)
+        .then(data => res.render("recipes", {
+            title : "Recepten",
+            data : data
+        }))
+        .catch(e => console.error(e.stack));
+});
 
 module.exports = router;

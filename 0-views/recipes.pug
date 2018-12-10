@@ -10,4 +10,7 @@ block content
     #recipes.container
         h1.title= title
         ul
-            each link, i in links.rows
+            each key in data.rows
+                li
+                    p #{key.name}
+                    p #{key.id}
