@@ -10,6 +10,8 @@
         width: 100%
 
         .photo
+            margin-bottom: 10px
+
             #photo
                 height: 0.1px
                 opacity: 0
@@ -21,6 +23,7 @@
 
         &--input-title
             height: 50px
+            // margin-bottom: 20px
 
             &--title
                 color: $text-alt
@@ -36,9 +39,6 @@
             margin-bottom: 20px
             position: relative
             width: 100%
-
-            // button.button:focus
-            //     outline: none
 
             &--input, &--label
                 position: absolute
@@ -98,3 +98,17 @@
                 padding: 0
                 text-align: center
                 width: 100%
+
+            .half-button
+                float: left
+                margin-right: 10%
+                width: 45%
+
+                &:last-child
+                    margin-right: 0
+
+        .instructions-button
+            margin-bottom: 10px
+
+        .instructions-button, .ingredients-button
+            background: none

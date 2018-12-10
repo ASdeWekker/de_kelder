@@ -9,7 +9,11 @@
   height: auto;
   width: 100%;
 }
-/* line 13, _add-recipe.sass */
+/* line 12, _add-recipe.sass */
+#add-recipe .form .photo {
+  margin-bottom: 10px;
+}
+/* line 15, _add-recipe.sass */
 #add-recipe .form .photo #photo {
   height: 0.1px;
   opacity: 0;
@@ -18,11 +22,11 @@
   width: 0.1px;
   z-index: -1;
 }
-/* line 22, _add-recipe.sass */
+/* line 24, _add-recipe.sass */
 #add-recipe .form--input-title {
   height: 50px;
 }
-/* line 25, _add-recipe.sass */
+/* line 28, _add-recipe.sass */
 #add-recipe .form--input-title--title {
   color: #368cbf;
   height: 50px;
@@ -30,7 +34,7 @@
   margin-top: 0;
   text-align: center;
 }
-/* line 32, _add-recipe.sass */
+/* line 35, _add-recipe.sass */
 #add-recipe .form--input-wrap {
   background: #212121;
   border-radius: 5px;
@@ -107,6 +111,24 @@
   padding: 0;
   text-align: center;
   width: 100%;
+}
+/* line 102, _add-recipe.sass */
+#add-recipe .form--input-wrap .half-button {
+  float: left;
+  margin-right: 10%;
+  width: 45%;
+}
+/* line 107, _add-recipe.sass */
+#add-recipe .form--input-wrap .half-button:last-child {
+  margin-right: 0;
+}
+/* line 110, _add-recipe.sass */
+#add-recipe .form .instructions-button {
+  margin-bottom: 10px;
+}
+/* line 113, _add-recipe.sass */
+#add-recipe .form .instructions-button, #add-recipe .form .ingredients-button {
+  background: none;
 }
 
 /* line 3, _recipe.sass */

@@ -5,7 +5,7 @@ $(document).ready(function() {
     });
     
     var i = 3;
-    $(".button-instructions").on("click", function() {
+    $(".button-instructions-add").on("click", function() {
         var instr = "instructions-" + i;
         var j = i - 1;
         var instrmin = ".instructions-" + j;
@@ -19,7 +19,7 @@ $(document).ready(function() {
     });
 
     var x = 3;
-    $(".button-ingredients").on("click", function() {
+    $(".button-ingredients-add").on("click", function() {
         var ingr = "ingredients-" + x;
         var y = x - 1;
         var ingrmin = ".ingredients-" + y;
