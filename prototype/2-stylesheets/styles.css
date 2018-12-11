@@ -28,7 +28,7 @@
 }
 /* line 28, _add-recipe.sass */
 #add-recipe .form--input-title--title {
-  color: #368cbf;
+  color: #606060;
   height: 50px;
   line-height: 50px;
   margin-top: 0;
@@ -36,7 +36,7 @@
 }
 /* line 35, _add-recipe.sass */
 #add-recipe .form--input-wrap {
-  background: #303030;
+  background: #fff;
   border-radius: 5px;
   height: 50px;
   margin-bottom: 20px;
@@ -50,10 +50,10 @@
 /* line 46, _add-recipe.sass */
 #add-recipe .form--input-wrap--input {
   background: none;
-  border: 2px solid #368cbf;
+  border: 2px solid #606060;
   border-radius: 5px;
-  caret-color: #ddd;
-  color: #ddd;
+  caret-color: #000;
+  color: #000;
   height: 50px;
   left: 0;
   padding: 0 10px;
@@ -74,7 +74,7 @@
 }
 /* line 68, _add-recipe.sass */
 #add-recipe .form--input-wrap--input::placeholder {
-  color: #212121;
+  color: #ddd;
 }
 /* line 71, _add-recipe.sass */
 #add-recipe .form--input-wrap--input:not(:placeholder-shown) {
@@ -88,7 +88,7 @@
 }
 /* line 79, _add-recipe.sass */
 #add-recipe .form--input-wrap--label {
-  color: #368cbf;
+  color: #606060;
   left: 10px;
   top: 16px;
   transition: all 0.2s ease;
@@ -100,10 +100,10 @@
 }
 /* line 89, _add-recipe.sass */
 #add-recipe .form--input-wrap--button {
-  background: #368cbf;
+  background: #606060;
   border: none;
   border-radius: 5px;
-  color: #303030;
+  color: #fff;
   display: block;
   font-size: 120%;
   height: 100%;
@@ -137,7 +137,7 @@
 }
 /* line 10, _recipe.sass */
 #recipe .wrap--title {
-  color: #368cbf;
+  color: #606060;
   font-size: 200%;
   letter-spacing: 5px;
   text-align: center;
@@ -154,12 +154,12 @@
 }
 /* line 26, _recipe.sass */
 #recipe .wrap--list--item {
-  color: #368cbf;
+  color: #606060;
   margin-bottom: 3px;
 }
 /* line 30, _recipe.sass */
 #recipe .wrap--list--item--span {
-  color: #ddd;
+  color: #000;
 }
 /* line 34, _recipe.sass */
 #recipe .wrap--p--i {
@@ -167,34 +167,34 @@
   opacity: 0.6;
 }
 
-/* line 12, styles.sass */
+/* line 13, styles.sass */
 * {
   box-sizing: border-box;
 }
 
-/* line 15, styles.sass */
+/* line 16, styles.sass */
 html, body {
   font-family: Arial;
   margin: 0;
   padding: 0;
 }
 
-/* line 20, styles.sass */
+/* line 21, styles.sass */
 html, body, .container {
-  background: #303030;
-  color: #ddd;
+  background: #fff;
+  color: #000;
   height: auto;
   position: relative;
   width: 100%;
 }
 
-/* line 27, styles.sass */
+/* line 28, styles.sass */
 .footer, footer {
   height: 48px;
   width: 100%;
 }
 
-/* line 36, styles.sass */
+/* line 37, styles.sass */
 html body .container .main {
   display: flex;
   flex-flow: column nowrap;
@@ -202,89 +202,89 @@ html body .container .main {
   margin-bottom: 48px;
   width: 80%;
 }
-/* line 43, styles.sass */
+/* line 44, styles.sass */
 html body .container .main .item {
   height: auto;
   width: 100%;
 }
-/* line 48, styles.sass */
+/* line 49, styles.sass */
 html body .container .main .item--title--link, html body .container .main .item--small-desc--link {
   text-decoration: none;
 }
-/* line 51, styles.sass */
+/* line 52, styles.sass */
 html body .container .main .item--title {
   margin: 19px 0;
   width: 100%;
 }
-/* line 55, styles.sass */
+/* line 56, styles.sass */
 html body .container .main .item--title--link {
-  color: #368cbf;
+  color: #606060;
   display: block;
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 75%;
   text-align: center;
   width: 100%;
 }
-/* line 64, styles.sass */
+/* line 65, styles.sass */
 html body .container .main .item:nth-child(2n) .item--title--link {
   opacity: 0.6;
 }
-/* line 67, styles.sass */
+/* line 68, styles.sass */
 html body .container .main .item--small-desc {
   display: none;
 }
-/* line 70, styles.sass */
+/* line 71, styles.sass */
 html body .container .main .item--small-desc--link {
-  color: #ddd;
+  color: #000;
 }
-/* line 73, styles.sass */
+/* line 74, styles.sass */
 html body .container .footer {
   background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 79, styles.sass */
+/* line 80, styles.sass */
 html body .container .footer footer .searchbar {
   height: 40px;
   width: 80%;
 }
-/* line 83, styles.sass */
+/* line 84, styles.sass */
 html body .container .footer footer .searchbar--input {
-  background: #368cbf;
-  border: 2px solid #303030;
+  background: #606060;
+  border: 2px solid #fff;
   border-radius: 30px;
-  color: #ddd;
+  color: #000;
   font-size: 130%;
   height: 100%;
   margin: 4px 0 0 4px;
   padding: 0 20px;
   width: 100%;
 }
-/* line 94, styles.sass */
+/* line 95, styles.sass */
 html body .container .footer footer .searchbar--input:focus {
   outline: none;
 }
-/* line 97, styles.sass */
+/* line 98, styles.sass */
 html body .container .footer footer .add-recipe {
-  background: #368cbf;
+  background: #606060;
   border-radius: 50%;
-  border: 2px solid #303030;
+  border: 2px solid #fff;
   bottom: 4px;
   height: 40px;
   right: 4px;
   position: absolute;
   width: 40px;
 }
-/* line 107, styles.sass */
+/* line 108, styles.sass */
 html body .container .footer footer .add-recipe--cross {
-  background: #ddd;
+  background: #000;
   height: 2px;
   left: 9px;
   position: absolute;
   top: 17px;
   width: 18px;
 }
-/* line 115, styles.sass */
+/* line 116, styles.sass */
 html body .container .footer footer .add-recipe--cross.vert {
   transform: rotate(90deg);
 }
