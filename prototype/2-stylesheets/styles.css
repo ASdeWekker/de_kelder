@@ -220,35 +220,36 @@ html body .container .main .item--title {
 html body .container .main .item--title--link {
   color: #606060;
   display: block;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Raleway", sans-serif;
   font-size: 75%;
+  font-weight: 900;
   text-align: center;
   width: 100%;
 }
-/* line 65, styles.sass */
+/* line 66, styles.sass */
 html body .container .main .item:nth-child(2n) .item--title--link {
-  opacity: 0.6;
+  font-weight: 300;
 }
-/* line 68, styles.sass */
+/* line 69, styles.sass */
 html body .container .main .item--small-desc {
   display: none;
 }
-/* line 71, styles.sass */
+/* line 72, styles.sass */
 html body .container .main .item--small-desc--link {
   color: #000;
 }
-/* line 74, styles.sass */
+/* line 75, styles.sass */
 html body .container .footer {
   background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 80, styles.sass */
+/* line 81, styles.sass */
 html body .container .footer footer .searchbar {
   height: 40px;
   width: 80%;
 }
-/* line 84, styles.sass */
+/* line 85, styles.sass */
 html body .container .footer footer .searchbar--input {
   background: #606060;
   border: 2px solid #fff;
@@ -260,11 +261,11 @@ html body .container .footer footer .searchbar--input {
   padding: 0 20px;
   width: 100%;
 }
-/* line 95, styles.sass */
+/* line 96, styles.sass */
 html body .container .footer footer .searchbar--input:focus {
   outline: none;
 }
-/* line 98, styles.sass */
+/* line 99, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #606060;
   border-radius: 50%;
@@ -275,7 +276,7 @@ html body .container .footer footer .add-recipe {
   position: absolute;
   width: 40px;
 }
-/* line 108, styles.sass */
+/* line 109, styles.sass */
 html body .container .footer footer .add-recipe--cross {
   background: #000;
   height: 2px;
@@ -284,7 +285,7 @@ html body .container .footer footer .add-recipe--cross {
   top: 17px;
   width: 18px;
 }
-/* line 116, styles.sass */
+/* line 117, styles.sass */
 html body .container .footer footer .add-recipe--cross.vert {
   transform: rotate(90deg);
 }
