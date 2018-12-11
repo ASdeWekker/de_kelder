@@ -36,7 +36,7 @@
 }
 /* line 35, _add-recipe.sass */
 #add-recipe .form--input-wrap {
-  background: #212121;
+  background: #303030;
   border-radius: 5px;
   height: 50px;
   margin-bottom: 20px;
@@ -125,10 +125,6 @@
 /* line 110, _add-recipe.sass */
 #add-recipe .form .instructions-button {
   margin-bottom: 10px;
-}
-/* line 113, _add-recipe.sass */
-#add-recipe .form .instructions-button, #add-recipe .form .ingredients-button {
-  background: none;
 }
 
 /* line 3, _recipe.sass */
