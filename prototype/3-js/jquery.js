@@ -4,8 +4,9 @@ $(document).ready(function() {
         $(this).siblings().slideToggle(200);
     });
     
-    var i = 3;
+    var i = 2;
     $(".button-instructions-add").on("click", function() {
+        i++;
         var instr = "instructions-" + i;
         var j = i - 1;
         var instrmin = ".instructions-" + j;
@@ -15,7 +16,10 @@ $(document).ready(function() {
                 <label class='form--input-wrap--label' for='" + instr + "'>- Stap " + i + "</label>\
             </div>";
         $(instrmin).after(input);
-        i++;
+    });
+    $(".button-instructions-delete").on("click", function() {
+        $("h2").css({color:"tomato"});
+        $(this).remove(this);
     });
 
     var x = 3;
