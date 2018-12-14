@@ -32,7 +32,7 @@
 }
 /* line 30, _add-recipe.sass */
 #add-recipe .form--input-title--title {
-  color: tomato;
+  color: #333;
   height: 50px;
   line-height: 50px;
   margin-top: 0;
@@ -40,7 +40,7 @@
 }
 /* line 37, _add-recipe.sass */
 #add-recipe .form--input-wrap {
-  background: #fff;
+  background: #eee;
   border-radius: 5px;
   height: 50px;
   margin-bottom: 20px;
@@ -54,10 +54,10 @@
 /* line 48, _add-recipe.sass */
 #add-recipe .form--input-wrap--input {
   background: none;
-  border: 2px solid tomato;
+  border: 2px solid #333;
   border-radius: 5px;
-  caret-color: #000;
-  color: #000;
+  caret-color: #222;
+  color: #222;
   height: 50px;
   left: 0;
   padding: 0 10px;
@@ -78,7 +78,7 @@
 }
 /* line 70, _add-recipe.sass */
 #add-recipe .form--input-wrap--input::placeholder {
-  color: #fff;
+  color: #eee;
 }
 /* line 73, _add-recipe.sass */
 #add-recipe .form--input-wrap--input:not(:placeholder-shown) {
@@ -92,7 +92,7 @@
 }
 /* line 81, _add-recipe.sass */
 #add-recipe .form--input-wrap--label {
-  color: #000;
+  color: #222;
   left: 10px;
   top: 16px;
   transition: all 0.2s ease;
@@ -104,10 +104,10 @@
 }
 /* line 91, _add-recipe.sass */
 #add-recipe .form--input-wrap--button {
-  background: tomato;
+  background: #333;
   border: none;
   border-radius: 5px;
-  color: #000;
+  color: #222;
   display: block;
   font-size: 120%;
   height: 100%;
@@ -141,7 +141,7 @@
 }
 /* line 10, _recipe.sass */
 #recipe .wrap--title {
-  color: tomato;
+  color: #333;
   font-family: "Raleway", sans-serif;
   font-size: 200%;
   font-weight: 300;
@@ -159,12 +159,12 @@
 }
 /* line 27, _recipe.sass */
 #recipe .wrap--list--item {
-  color: tomato;
+  color: #333;
   margin-bottom: 3px;
 }
 /* line 31, _recipe.sass */
 #recipe .wrap--list--item--span {
-  color: #000;
+  color: #222;
 }
 /* line 35, _recipe.sass */
 #recipe .wrap--p--i {
@@ -186,20 +186,24 @@ html, body {
 
 /* line 21, styles.sass */
 html, body, .container {
-  background: #fff;
-  color: #000;
+  color: #222;
   height: auto;
   position: relative;
   width: 100%;
 }
 
-/* line 28, styles.sass */
+/* line 27, styles.sass */
 .footer, footer {
   height: 48px;
   width: 100%;
 }
 
-/* line 37, styles.sass */
+/* line 33, styles.sass */
+html {
+  background: #eee url("http://vertruffelijk.nl/wp-content/uploads/2017/12/untitled-1729.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+/* line 39, styles.sass */
 html body .container .main {
   display: flex;
   flex-flow: column nowrap;
@@ -207,23 +211,23 @@ html body .container .main {
   margin-bottom: 48px;
   width: 80%;
 }
-/* line 44, styles.sass */
+/* line 46, styles.sass */
 html body .container .main .item {
   height: auto;
   width: 100%;
 }
-/* line 49, styles.sass */
+/* line 51, styles.sass */
 html body .container .main .item--title--link, html body .container .main .item--small-desc--link {
   text-decoration: none;
 }
-/* line 52, styles.sass */
+/* line 54, styles.sass */
 html body .container .main .item--title {
   margin: 19px 0;
   width: 100%;
 }
-/* line 56, styles.sass */
+/* line 58, styles.sass */
 html body .container .main .item--title--link {
-  color: #000;
+  color: #222;
   display: block;
   font-family: "Raleway", sans-serif;
   font-size: 75%;
@@ -231,66 +235,66 @@ html body .container .main .item--title--link {
   text-align: center;
   width: 100%;
 }
-/* line 66, styles.sass */
+/* line 68, styles.sass */
 html body .container .main .item:nth-child(2n) .item--title--link {
   font-weight: 300;
 }
-/* line 69, styles.sass */
+/* line 71, styles.sass */
 html body .container .main .item--small-desc {
   display: none;
 }
-/* line 72, styles.sass */
+/* line 74, styles.sass */
 html body .container .main .item--small-desc--link {
-  color: #000;
+  color: #222;
 }
-/* line 75, styles.sass */
+/* line 77, styles.sass */
 html body .container .footer {
   background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 81, styles.sass */
+/* line 83, styles.sass */
 html body .container .footer footer .searchbar {
   height: 40px;
   width: 80%;
 }
-/* line 85, styles.sass */
+/* line 87, styles.sass */
 html body .container .footer footer .searchbar--input {
-  background: #fff;
-  border: 2px solid tomato;
+  background: #eee;
+  border: 2px solid #333;
   border-radius: 30px;
-  color: #000;
+  color: #222;
   font-size: 130%;
   height: 100%;
   margin: 4px 0 0 4px;
   padding: 0 20px;
   width: 100%;
 }
-/* line 96, styles.sass */
+/* line 98, styles.sass */
 html body .container .footer footer .searchbar--input:focus {
   outline: none;
 }
-/* line 99, styles.sass */
+/* line 101, styles.sass */
 html body .container .footer footer .add-recipe {
-  background: tomato;
+  background: #333;
   border-radius: 50%;
-  border: 2px solid tomato;
+  border: 2px solid #333;
   bottom: 4px;
   height: 40px;
   right: 4px;
   position: absolute;
   width: 40px;
 }
-/* line 109, styles.sass */
+/* line 111, styles.sass */
 html body .container .footer footer .add-recipe--cross {
-  background: #fff;
+  background: white;
   height: 2px;
   left: 9px;
   position: absolute;
   top: 17px;
   width: 18px;
 }
-/* line 117, styles.sass */
+/* line 119, styles.sass */
 html body .container .footer footer .add-recipe--cross.vert {
   transform: rotate(90deg);
 }
