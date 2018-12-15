@@ -44,26 +44,17 @@ router.get("/", (req, res, next) => {
 
 // Wake my PC.
 router.get("/wol", (req, res, next) => {
-    // exec("node -v", (err, stdout, stderr) => {
-    //     if (err) {
-    //         console.log(err)
-    //         res.redirect("/")
-    //     } else if (stderr) {
-    //         console.log(stderr)
-    //         res.redirect("/")
-    //     } else {
-    //         console.log(stdout)
-    //         res.redirect("/")
-    //     }
-    // })
-
-    execFile("/wol.sh", [""], (error, stdout, stderr) => {
-        if (error) {
-            console.log(error)
-            res.render("erorr", { error : error })
-        }
-        console.log(stdout)
-        res.redirect("/")
+    execFile("./wol.sh", [], (err, stdout, stderr) => {
+        if (err) {
+             console.log(err)
+             res.redirect("/")
+         } else if (stderr) {
+             console.log(stderr)
+             res.redirect("/")
+         } else {
+             console.log(stdout)
+             res.redirect("/")
+         }
     })
 })
 
