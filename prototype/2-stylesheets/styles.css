@@ -32,7 +32,7 @@
 }
 /* line 30, _add-recipe.sass */
 #add-recipe .form--input-title--title {
-  color: #333;
+  color: #ff6347;
   height: 50px;
   line-height: 50px;
   margin-top: 0;
@@ -54,7 +54,7 @@
 /* line 48, _add-recipe.sass */
 #add-recipe .form--input-wrap--input {
   background: none;
-  border: 2px solid #333;
+  border: 2px solid #ff6347;
   border-radius: 5px;
   caret-color: #222;
   color: #222;
@@ -104,10 +104,10 @@
 }
 /* line 91, _add-recipe.sass */
 #add-recipe .form--input-wrap--button {
-  background: #333;
+  background: #ff6347;
   border: none;
   border-radius: 5px;
-  color: #222;
+  color: #eee;
   display: block;
   font-size: 120%;
   height: 100%;
@@ -141,7 +141,7 @@
 }
 /* line 10, _recipe.sass */
 #recipe .wrap--title {
-  color: #333;
+  color: #ff6347;
   font-family: "Raleway", sans-serif;
   font-size: 200%;
   font-weight: 300;
@@ -159,7 +159,7 @@
 }
 /* line 27, _recipe.sass */
 #recipe .wrap--list--item {
-  color: #333;
+  color: #ff6347;
   margin-bottom: 3px;
 }
 /* line 31, _recipe.sass */
@@ -186,22 +186,21 @@ html, body {
 
 /* line 21, styles.sass */
 html, body, .container {
-  color: #222;
   height: auto;
   position: relative;
   width: 100%;
 }
 
-/* line 27, styles.sass */
+/* line 26, styles.sass */
 .footer, footer {
   height: 48px;
   width: 100%;
 }
 
-/* line 33, styles.sass */
+/* line 32, styles.sass */
 html {
-  background: #eee url("http://vertruffelijk.nl/wp-content/uploads/2017/12/untitled-1729.jpg") no-repeat center fixed;
-  background-size: cover;
+  background: #eee;
+  color: #222;
 }
 /* line 39, styles.sass */
 html body .container .main {
@@ -235,33 +234,33 @@ html body .container .main .item--title--link {
   text-align: center;
   width: 100%;
 }
-/* line 68, styles.sass */
+/* line 70, styles.sass */
 html body .container .main .item:nth-child(2n) .item--title--link {
   font-weight: 300;
 }
-/* line 71, styles.sass */
+/* line 73, styles.sass */
 html body .container .main .item--small-desc {
   display: none;
 }
-/* line 74, styles.sass */
+/* line 78, styles.sass */
 html body .container .main .item--small-desc--link {
   color: #222;
 }
-/* line 77, styles.sass */
+/* line 81, styles.sass */
 html body .container .footer {
   background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 83, styles.sass */
+/* line 87, styles.sass */
 html body .container .footer footer .searchbar {
   height: 40px;
   width: 80%;
 }
-/* line 87, styles.sass */
+/* line 91, styles.sass */
 html body .container .footer footer .searchbar--input {
   background: #eee;
-  border: 2px solid #333;
+  border: 2px solid #ff6347;
   border-radius: 30px;
   color: #222;
   font-size: 130%;
@@ -270,31 +269,31 @@ html body .container .footer footer .searchbar--input {
   padding: 0 20px;
   width: 100%;
 }
-/* line 98, styles.sass */
+/* line 102, styles.sass */
 html body .container .footer footer .searchbar--input:focus {
   outline: none;
 }
-/* line 101, styles.sass */
+/* line 105, styles.sass */
 html body .container .footer footer .add-recipe {
-  background: #333;
+  background: #ff6347;
   border-radius: 50%;
-  border: 2px solid #333;
+  border: 2px solid #ff6347;
   bottom: 4px;
   height: 40px;
   right: 4px;
   position: absolute;
   width: 40px;
 }
-/* line 111, styles.sass */
+/* line 115, styles.sass */
 html body .container .footer footer .add-recipe--cross {
-  background: white;
+  background: #fff;
   height: 2px;
   left: 9px;
   position: absolute;
   top: 17px;
   width: 18px;
 }
-/* line 119, styles.sass */
+/* line 123, styles.sass */
 html body .container .footer footer .add-recipe--cross.vert {
   transform: rotate(90deg);
 }
