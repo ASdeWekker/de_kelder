@@ -1,6 +1,5 @@
 // Import vars and mixins.
 
-//@import ../../1-public/stylesheets/parts/vars-and-mixins
 @import vars-and-mixins
 
 // Import styles for the other two pages.
@@ -30,8 +29,7 @@ html, body, .container
 // Styling for the main page.
 
 html
-    background: $bg //url("http://vertruffelijk.nl/wp-content/uploads/2017/12/untitled-1729.jpg") no-repeat center fixed
-    // background-size: cover
+    background: $bg
     color: $text
     
     body
@@ -57,13 +55,11 @@ html
 
                         &--link
                             color: $text
-                            // -webkit-text-stroke: 1px $bg-alt
                             display: block
                             font-family: "Raleway", sans-serif
                             font-size: 75%
                             font-weight: 900
                             text-align: center
-                            // text-shadow: -1px -1px 0 $bg-alt, -1px 1px 0 $bg-alt, 1px -1px 0 $bg-alt, 1px 1px 0 $bg-alt
                             width: 100%
 
                     &:nth-child(2n)
@@ -71,10 +67,6 @@ html
                             font-weight: 300
 
                     &--small-desc
-                        display: none
-                        // font-weight: 600
-                        // text-shadow: -1px -1px 0 $bg-alt, -1px 1px 0 $bg-alt, 1px -1px 0 $bg-alt, 1px 1px 0 $bg-alt
-
                         &--link
                             color: $text
 

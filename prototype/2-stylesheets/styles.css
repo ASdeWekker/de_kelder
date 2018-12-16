@@ -155,67 +155,68 @@
 /* line 21, _recipe.sass */
 #recipe .wrap--photo {
   border-radius: 50%;
+  border: 2px solid #ff6347;
   display: block;
   height: 90%;
   margin-bottom: 10px;
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 404px;
+  max-width: 404px;
   width: 90%;
 }
-/* line 30, _recipe.sass */
+/* line 31, _recipe.sass */
 #recipe .wrap--list {
   padding-left: 20px;
 }
-/* line 33, _recipe.sass */
+/* line 34, _recipe.sass */
 #recipe .wrap--list--item {
   color: #ff6347;
   margin-bottom: 3px;
 }
-/* line 37, _recipe.sass */
+/* line 38, _recipe.sass */
 #recipe .wrap--list--item--span {
   color: #222;
 }
-/* line 40, _recipe.sass */
+/* line 41, _recipe.sass */
 #recipe .wrap--p {
   text-align: center;
 }
-/* line 43, _recipe.sass */
+/* line 44, _recipe.sass */
 #recipe .wrap--p--i {
   font-size: 80%;
   opacity: 0.6;
 }
 
-/* line 13, styles.sass */
+/* line 12, styles.sass */
 * {
   box-sizing: border-box;
 }
 
-/* line 16, styles.sass */
+/* line 15, styles.sass */
 html, body {
   font-family: Arial;
   margin: 0;
   padding: 0;
 }
 
-/* line 21, styles.sass */
+/* line 20, styles.sass */
 html, body, .container {
   height: auto;
   position: relative;
   width: 100%;
 }
 
-/* line 26, styles.sass */
+/* line 25, styles.sass */
 .footer, footer {
   height: 48px;
   width: 100%;
 }
 
-/* line 32, styles.sass */
+/* line 31, styles.sass */
 html {
   background: #eee;
   color: #222;
 }
-/* line 39, styles.sass */
+/* line 37, styles.sass */
 html body .container .main {
   display: flex;
   flex-flow: column nowrap;
@@ -223,21 +224,21 @@ html body .container .main {
   margin-bottom: 48px;
   width: 80%;
 }
-/* line 46, styles.sass */
+/* line 44, styles.sass */
 html body .container .main .item {
   height: auto;
   width: 100%;
 }
-/* line 51, styles.sass */
+/* line 49, styles.sass */
 html body .container .main .item--title--link, html body .container .main .item--small-desc--link {
   text-decoration: none;
 }
-/* line 54, styles.sass */
+/* line 52, styles.sass */
 html body .container .main .item--title {
   margin: 19px 0;
   width: 100%;
 }
-/* line 58, styles.sass */
+/* line 56, styles.sass */
 html body .container .main .item--title--link {
   color: #222;
   display: block;
@@ -247,30 +248,26 @@ html body .container .main .item--title--link {
   text-align: center;
   width: 100%;
 }
-/* line 70, styles.sass */
+/* line 66, styles.sass */
 html body .container .main .item:nth-child(2n) .item--title--link {
   font-weight: 300;
 }
-/* line 73, styles.sass */
-html body .container .main .item--small-desc {
-  display: none;
-}
-/* line 78, styles.sass */
+/* line 70, styles.sass */
 html body .container .main .item--small-desc--link {
   color: #222;
 }
-/* line 81, styles.sass */
+/* line 73, styles.sass */
 html body .container .footer {
   background: none;
   bottom: 0;
   position: fixed;
 }
-/* line 87, styles.sass */
+/* line 79, styles.sass */
 html body .container .footer footer .searchbar {
   height: 40px;
   width: 80%;
 }
-/* line 91, styles.sass */
+/* line 83, styles.sass */
 html body .container .footer footer .searchbar--input {
   background: #eee;
   border: 2px solid #ff6347;
@@ -282,11 +279,11 @@ html body .container .footer footer .searchbar--input {
   padding: 0 20px;
   width: 100%;
 }
-/* line 102, styles.sass */
+/* line 94, styles.sass */
 html body .container .footer footer .searchbar--input:focus {
   outline: none;
 }
-/* line 105, styles.sass */
+/* line 97, styles.sass */
 html body .container .footer footer .add-recipe {
   background: #ff6347;
   border-radius: 50%;
@@ -297,7 +294,7 @@ html body .container .footer footer .add-recipe {
   position: absolute;
   width: 40px;
 }
-/* line 115, styles.sass */
+/* line 107, styles.sass */
 html body .container .footer footer .add-recipe--cross {
   background: #fff;
   height: 2px;
@@ -306,7 +303,7 @@ html body .container .footer footer .add-recipe--cross {
   top: 17px;
   width: 18px;
 }
-/* line 123, styles.sass */
+/* line 115, styles.sass */
 html body .container .footer footer .add-recipe--cross.vert {
   transform: rotate(90deg);
 }
