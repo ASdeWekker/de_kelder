@@ -139,7 +139,12 @@
 #recipe .instructions, #recipe .ingredients {
   padding-left: 10px;
 }
-/* line 10, _recipe.sass */
+/* line 9, _recipe.sass */
+#recipe .photo {
+  display: flex;
+  justify-content: center;
+}
+/* line 14, _recipe.sass */
 #recipe .wrap--title {
   color: #ff6347;
   font-family: "Raleway", sans-serif;
@@ -147,7 +152,7 @@
   font-weight: 300;
   text-align: center;
 }
-/* line 17, _recipe.sass */
+/* line 21, _recipe.sass */
 #recipe .wrap--photo {
   border-radius: 50%;
   display: block;
@@ -157,16 +162,24 @@
   max-width: 400px;
   width: 90%;
 }
-/* line 27, _recipe.sass */
+/* line 30, _recipe.sass */
+#recipe .wrap--list {
+  padding-left: 20px;
+}
+/* line 33, _recipe.sass */
 #recipe .wrap--list--item {
   color: #ff6347;
   margin-bottom: 3px;
 }
-/* line 31, _recipe.sass */
+/* line 37, _recipe.sass */
 #recipe .wrap--list--item--span {
   color: #222;
 }
-/* line 35, _recipe.sass */
+/* line 40, _recipe.sass */
+#recipe .wrap--p {
+  text-align: center;
+}
+/* line 43, _recipe.sass */
 #recipe .wrap--p--i {
   font-size: 80%;
   opacity: 0.6;
