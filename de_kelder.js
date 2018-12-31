@@ -5,7 +5,9 @@ const express = require("express")
 const path = require("path")
 const favicon = require("serve-favicon")
 
-// Declare the app.
+// Declare the routes and app.
+var indexRouter = require('./3-routes/index')
+var recipesRouter = require('./3-routes/recipes')
 const app = express()
 
 // Stop anything from being shown about the server.
@@ -25,8 +27,8 @@ app.use(express.static(path.join(__dirname, "1-public")))
 app.use(favicon(path.join(__dirname, "1-public", "favicon-new.png")))
 
 // Use the routes.
-app.use("/", require("./3-routes/index"))
-app.use("/recipes", require("./3-routes/recipes"))
+app.use("/", indexRouter)
+app.use("/recipes", recipesRouter)
 
 // 404 errors.
 app.use( (req, res, next) => {
