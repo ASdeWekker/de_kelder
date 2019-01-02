@@ -20,7 +20,7 @@ const client = new Client({
 client.connect()
 
 // Make a query.
-const query = "select * from projects"
+const query = "select * from projects order by id"
 
 // --------------- GET  PAGES ---------------
 
