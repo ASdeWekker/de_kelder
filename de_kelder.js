@@ -1,6 +1,7 @@
 // -------------- SET UP STUFF --------------
 
 // Required packages.
+const createError = require("http-errors")
 const express = require("express")
 const path = require("path")
 const favicon = require("serve-favicon")
@@ -24,7 +25,7 @@ app.locals.pretty = true
 // Set the public folder
 app.use(express.static(path.join(__dirname, "1-public")))
 // Set the favicon.
-app.use(favicon(path.join(__dirname, "1-public", "favicon-new.png")))
+app.use(favicon(path.join(__dirname, "1-public", "favicon.png")))
 
 // Use the routes.
 app.use("/", indexRouter)

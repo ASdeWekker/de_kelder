@@ -1,0 +1,33 @@
+/// Styles for the recipes page.
+
+// Import vars and mixins.
+@import ../parts/vars-and-mixins
+
+*
+    box-sizing: border-box
+
+a
+    color: $text
+    text-decoration: none
+
+html, body
+    background: none
+    height: 100%
+    margin: 0
+    padding: 0
+    width: 100%
+
+html
+    background: $bg
+    color: $text
+
+    body
+        .container
+            display: flex
+            flex-flow: column nowrap
+            justify-content: center
+            align-items: center
+
+            .title
+                color: $text-alt
+                text-align: center

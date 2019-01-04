@@ -1,0 +1,37 @@
+/* line 6, styles.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 9, styles.sass */
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+/* line 13, styles.sass */
+html, body {
+  background: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 20, styles.sass */
+html {
+  background: #303030;
+  color: #ddd;
+}
+/* line 25, styles.sass */
+html body .container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+/* line 31, styles.sass */
+html body .container .title {
+  color: #368cbf;
+  text-align: center;
+}
