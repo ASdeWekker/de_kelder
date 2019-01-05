@@ -3,8 +3,8 @@
 // Import vars and mixins.
 @import ../parts/vars-and-mixins
 
-*
-    box-sizing: border-box
+*, *:before, *:after
+    box-sizing: inherit
 
 a
     color: $text
@@ -19,6 +19,7 @@ html, body
 
 html
     background: $bg
+    box-sizing: border-box
     color: $text
 
     body
