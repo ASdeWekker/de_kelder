@@ -27,12 +27,23 @@ const { Client } = require("pg")
 // Function to easily get the page.
 function getPage(url, view, title) {
     router.get(url, (req, res, next) => {
-        res.render(view, { title : title })
+        res.render(view, { title: title })
     })
 }
 
-getPage("/", "recipes/recipes", "Recepten.")
+//getPage("/", "recipes/recipes", "Recepten.")
+router.get("/", (req, res, next) => {
+    let url = req.headers.host.split(":")
+    res.render("recipes/recipes", {
+        title: "Recepten",
+        url: url[0]
+    })
+})
 
 getPage("/add-recipe", "recipes/add-recipe", "Voeg recept toe")
+
+getPage("/add-recipe-2", "recipes/add-recipe-2", "Voeg recept toe 2")
+
+getPage("/add-recipe-3", "recipes/add-recipe-3", "Voeg recept toe 3")
 
 module.exports = router

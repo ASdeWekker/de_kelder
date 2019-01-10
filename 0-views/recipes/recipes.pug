@@ -2,5 +2,11 @@ extends base
 
 block content
     #recipes.container
-        h1.title= title
+        h1.title #{title}
         a(href="/recipes/add-recipe").add-recipe Toevoegen
+        br
+        a(href="/recipes/add-recipe-2").add-recipe Toevoegen 2
+        br
+        a(href="/recipes/add-recipe-3").add-recipe Toevoegen 3
+        br
+        a(href="http://" + url + "/de_kelder/prototype") Prototype
