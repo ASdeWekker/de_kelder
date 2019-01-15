@@ -2,7 +2,7 @@ module.exports = {
   apps : [{
     name: 'De Kelder',
     script: '2-bin/de_kelder',
-
+    kill_timeout: 1600,
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     args: 'one two',
     instances: 1,
