@@ -9,7 +9,7 @@ response = os.system("ping -c 1 " + hostname)
 
 if response == 0:
     print("Connection found.")
-    subprocess.call(["ledstrip", "on"])
+    subprocess.call(["/home/alex/shn/bash/ledstrip.py", "on"])
 else:
     print("Connection lost")
-    subprocess.call(["ledstrip", "off"])
+    subprocess.call(["/home/alex/shn/bash/ledstrip.py", "off"])
