@@ -7,9 +7,14 @@ import subprocess
 hostname = "192.168.1.99"
 response = os.system("ping -c 1 " + hostname)
 
+
+def send_cmd(println,power):
+    print("Connection " + str(println))
+    subprocess.call(["/home/alex/shn/bash/ledstrip.py", "-p", str(power)])
+
+
 if response == 0:
-    print("Connection found.")
-    subprocess.call(["/home/alex/shn/bash/ledstrip.py", "on"])
+    send_cmd(found.,on)
 else:
-    print("Connection lost")
-    subprocess.call(["/home/alex/shn/bash/ledstrip.py", "off"])
+    send_cmd(lost.,off)
+
