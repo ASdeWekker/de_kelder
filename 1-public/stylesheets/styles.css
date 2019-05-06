@@ -1,64 +1,57 @@
-/* line 14, parts/_vars-and-mixins.sass */
-html, html body, html body .container {
+html body .container, html body, html {
   background: none;
   height: 100%;
   width: 100%;
 }
 
-/* line 10, styles.sass */
-* {
-  box-sizing: border-box;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/* line 15, styles.sass */
 html, body, ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 25, styles.sass */
+html {
+  box-sizing: border-box;
+}
 html body .container {
   background: #303030;
   display: flex;
   flex-flow: column nowrap;
   font-family: Arial, "sans-serif";
 }
-/* line 32, styles.sass */
 html body .container ul {
+  background: #303030;
   display: flex;
   flex-flow: row wrap;
   height: auto;
   width: 100%;
 }
-/* line 38, styles.sass */
 html body .container ul li {
   list-style-type: none;
 }
-/* line 41, styles.sass */
 html body .container ul li a {
   color: #ddd;
   text-align: center;
   text-decoration: none;
 }
-/* line 46, styles.sass */
 html body .container .title {
   color: #368cbf;
   font-size: 150%;
   margin-bottom: 0;
   text-align: center;
 }
-/* line 54, styles.sass */
 html body .container .linklist {
   justify-content: center;
 }
-/* line 57, styles.sass */
 html body .container .linklist--item {
   height: 42px;
   line-height: 42px;
   margin: 10px 0;
   min-width: 100px;
 }
-/* line 63, styles.sass */
 html body .container .linklist--item--link {
   color: #ddd;
   line-height: 22px;
@@ -66,37 +59,80 @@ html body .container .linklist--item--link {
   text-align: center;
   width: 100%;
 }
-/* line 70, styles.sass */
 html body .container .linklist--item--link:hover {
   background: #368cbf;
   border-radius: 10px;
   color: #212121;
 }
-/* line 77, styles.sass */
 html body .container .hosts {
   justify-content: space-evenly;
   margin-top: 50px;
 }
-/* line 83, styles.sass */
 html body .container .hosts--item--link {
   color: #ddd;
   font-size: 2em;
   font-weight: 900;
 }
-/* line 90, styles.sass */
-html body .container .buttons {
-  background: none;
-  bottom: 1.5%;
+html body .container .switches {
+  align-items: center;
+  background: #232323;
+  bottom: 60px;
+  height: 99px;
   justify-content: space-around;
   position: absolute;
 }
-/* line 99, styles.sass */
+html body .container .switches--item {
+  margin: 8px 0 12px;
+}
+html body .container .switches--item--title {
+  color: #2b6f97;
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  width: 76px;
+}
+html body .container .switches--item--link {
+  background: #368cbf;
+  color: #303030;
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  padding: 0.2em;
+  text-align: center;
+}
+html body .container .switches--item .switch-on, html body .container .switches--item .switch-off {
+  width: 37px;
+}
+html body .container .switches--item .switch-on {
+  border-radius: 5px 0 0 0;
+  margin-right: 2px;
+}
+html body .container .switches--item .switch-off {
+  border-radius: 0 5px 0 0;
+}
+html body .container .switches--item .switch-toggle {
+  border-radius: 0 0 5px 5px;
+  clear: both;
+  margin-top: 2px;
+  width: 76px;
+}
+html body .container .height-toggle {
+  height: 0;
+}
+html body .container .buttons {
+  background: #303030;
+  bottom: 10px;
+  justify-content: space-around;
+  position: absolute;
+}
 html body .container .buttons--item--button {
   color: #368cbf;
   font-size: 2em;
 }
-/* line 103, styles.sass */
 html body .container .buttons--item--button svg {
   display: block;
   margin: 0 auto;
 }
+
+/*# sourceMappingURL=styles.css.map */

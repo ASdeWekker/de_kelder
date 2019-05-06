@@ -31,6 +31,7 @@ html
             font-family: Arial, "sans-serif"
 
             ul
+                background: $bg
                 display: flex
                 flex-flow: row wrap
                 height: auto
@@ -80,23 +81,69 @@ html
                 margin-top: 50px
 
                 &--item
-
                     &--link
                         color: $text
                         font-size: 2em
                         font-weight: 900
+
+            // BUTTONS FOR SWITCHING STUFF ON OR OFF.
+
+            .switches
+                align-items: center
+                background: darken($bg, 5%)
+                bottom: 60px
+                height: 99px
+                justify-content: space-around
+                position: absolute
+
+                &--item
+                    margin: 8px 0 12px
+
+                    &--title
+                        color: darken($text-alt, 10%)
+                        display: block
+                        height: 26px
+                        line-height: 26px
+                        text-align: center
+                        width: 76px
+
+                    &--link
+                        background: $text-alt
+                        color: $bg
+                        float: left
+                        height: 26px
+                        line-height: 26px
+                        padding: 0.2em
+                        text-align: center
+
+                    .switch-on, .switch-off
+                        width: 37px
+
+                    .switch-on
+                        border-radius: 5px 0 0 0
+                        margin-right: 2px
+
+                    .switch-off
+                        border-radius: 0 5px 0 0
+
+                    .switch-toggle
+                        border-radius: 0 0 5px 5px
+                        clear: both
+                        margin-top: 2px
+                        width: 76px
+
+            .height-toggle
+                height: 0
         
             // BUTTONS AT THE BOTTOM OF THE PAGE.
         
             .buttons
-                background: none
-                bottom: 1.5%
+                background: $bg
+                bottom: 10px
                 justify-content: space-around
                 position: absolute
         
                 &--item
-        
-        
                     &--button
                         color: $text-alt
                         font-size: 2em
@@ -105,7 +152,7 @@ html
                             display: block
                             margin: 0 auto
 
-// I'm going to leave these bits in because I like them.                
+// Is wel genieton.               
 // @media screen and (min-width: 1261px)
 //     .linklist li
 //         width: 11.1%

@@ -1,38 +1,60 @@
 extends base
 
 block content
-    #main.container
-        h1.title De_Kelder
-        ul.linklist
-            each link, i in links.rows
-                li.linklist--item
-                    a(href="http://" + url + ":" + link.port).linklist--item--link #{link.name}
-        ul.hosts
-            li.hosts--item
-                a(href="http://10.8.0.1:3099").hosts--item--link 10.1
-            li.hosts--item
-                a(href="http://10.8.0.4:3099").hosts--item--link 10.4
-            li.hosts--item
-                a(href="http://10.8.0.5:3099").hosts--item--link 10.5
-        ul.buttons
-            li.buttons--item
-                a(href="javascript:void(0);").buttons--item--button
-                    i.fas.fa-cog
-            li.buttons--item
-                a(href="http://192.168.1.90:81/admin").buttons--item--button
-                    i.fas.fa-shield-alt
-            li.buttons--item
-                a(href="http://192.168.1.99:8112").buttons--item--button
-                    .fas.fa-tint
-            li.buttons--item
-                a(href="/wol").buttons--item--button
-                    i.fas.fa-power-off
-            li.buttons--item
-                a(href="http://" + url + "/backup/alex/cv/2").buttons--item--button
-                    i.fas.fa-user
-            li.buttons--item
-                a(href="http://" + url + "/backup").buttons--item--button
-                    i.fas.fa-folder-open
-            li.buttons--item
-                a(href="http://" + url + ":3099/recipes").buttons--item--button
-                    i.fas.fa-utensils
+	#main.container
+		h1.title De_Kelder
+		ul.linklist
+			each link, i in links.rows
+				li.linklist--item
+					a(href="http://" + url + ":" + link.port).linklist--item--link #{link.name}
+		ul.hosts
+			li.hosts--item
+				a(href="http://10.8.0.1:3099").hosts--item--link 10.1
+			li.hosts--item
+				a(href="http://10.8.0.4:3099").hosts--item--link 10.4
+			li.hosts--item
+				a(href="http://10.8.0.5:3099").hosts--item--link 10.5
+		ul.switches
+			li.switches--item
+				b.switches--item--title LAMP 1
+				a(href="javascript:void(0);").switches--item--link.switch-on ON
+				a(href="javascript:void(0);").switches--item--link.switch-off OFF
+				a(href="javascript:void(0);").switches--item--link.switch-toggle TOGGLE
+			li.switches--item
+				b.switches--item--title LAMP 2
+				a(href="javascript:void(0);").switches--item--link.switch-on ON
+				a(href="javascript:void(0);").switches--item--link.switch-off OFF
+				a(href="javascript:void(0);").switches--item--link.switch-toggle TOGGLE
+			li.switches--item
+				b.switches--item--title AMP
+				a(href="javascript:void(0);").switches--item--link.switch-on ON
+				a(href="javascript:void(0);").switches--item--link.switch-off OFF
+				a(href="javascript:void(0);").switches--item--link.switch-toggle TOGGLE
+			li.switches--item
+				b.switches--item--title LEDSTRIP
+				a(href="javascript:void(0);").switches--item--link.switch-on ON
+				a(href="javascript:void(0);").switches--item--link.switch-off OFF
+				a(href="javascript:void(0);").switches--item--link.switch-toggle TOGGLE
+		ul.buttons
+			li.buttons--item
+				a(href="http://10.8.0.4:8112").buttons--item--button
+					i.fas.fa-tint
+			li.buttons--item
+				a(href="http://10.8.0.1:81/admin").buttons--item--button
+					i.fas.fa-shield-alt
+			li.buttons--item
+				a(href="javascript:void(0);").buttons--item--button
+					i.fas.fa-cog
+			li.buttons--item
+				a(href="/wol").buttons--item--button
+					i.fas.fa-power-off
+			li.buttons--item
+				a(href="http://" + url + "/backup/alex/cv/2").buttons--item--button
+					i.fas.fa-user
+			li.buttons--item
+				a(href="http://" + url + "/backup").buttons--item--button
+					i.fas.fa-folder-open
+			li.buttons--item
+				a(href="http://" + url + ":3099/recipes").buttons--item--button
+					i.fas.fa-utensils
+	script(src="js/jquery.min.js", crossorigin="anonymous", type="text/javascript")
