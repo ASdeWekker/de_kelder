@@ -1,5 +1,3 @@
-$(document).ready(function() {
-	$("h1").click(function() {
-		$(this).append("lol");
-	});
+$(".fa-cog").click(function() {
+	$("switches").remove();
 });

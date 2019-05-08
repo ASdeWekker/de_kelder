@@ -77,9 +77,13 @@ html body .container .switches {
   align-items: center;
   background: #232323;
   bottom: 60px;
-  height: 99px;
+  height: 0;
+  left: 0;
   justify-content: space-around;
+  overflow-y: hidden;
   position: absolute;
+  transition: all 0.5s ease;
+  z-index: -1;
 }
 html body .container .switches--item {
   margin: 8px 0 12px;
@@ -94,6 +98,7 @@ html body .container .switches--item--title {
 }
 html body .container .switches--item--link {
   background: #368cbf;
+  border: none;
   color: #303030;
   float: left;
   height: 26px;
@@ -122,9 +127,19 @@ html body .container .height-toggle {
 }
 html body .container .buttons {
   background: #303030;
-  bottom: 10px;
+  bottom: 0;
   justify-content: space-around;
   position: absolute;
+  z-index: 1;
+}
+html body .container .buttons--item #switches {
+  float: right;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+}
+html body .container .buttons--item #switches:checked ~ .switches {
+  height: 99px;
 }
 html body .container .buttons--item--button {
   color: #368cbf;

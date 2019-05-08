@@ -92,9 +92,13 @@ html
                 align-items: center
                 background: darken($bg, 5%)
                 bottom: 60px
-                height: 99px
+                height: 0
+                left: 0
                 justify-content: space-around
+                overflow-y: hidden
                 position: absolute
+                transition: all 0.5s ease
+                z-index: -1
 
                 &--item
                     margin: 8px 0 12px
@@ -109,6 +113,7 @@ html
 
                     &--link
                         background: $text-alt
+                        border: none
                         color: $bg
                         float: left
                         height: 26px
@@ -139,11 +144,21 @@ html
         
             .buttons
                 background: $bg
-                bottom: 10px
+                bottom: 0
                 justify-content: space-around
                 position: absolute
+                z-index: 1
         
                 &--item
+                    #switches
+                        float: right
+                        margin: 0
+                        opacity: 0
+                        padding: 0
+
+                        &:checked ~ .switches
+                            height: 99px
+
                     &--button
                         color: $text-alt
                         font-size: 2em
