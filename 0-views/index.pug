@@ -2,7 +2,13 @@ extends base
 
 block content
 	#main.container
-		h1.title De_Kelder
+		header.header
+			label(for="hosts").header--label 10.1
+			input(type="checkbox")#hosts.header--input
+			.header--items
+				.header--items--item: a(href="http://10.8.0.4:3099") 10.4
+				.header--items--item: a(href="http://10.8.0.5:3099") 10.5
+			h1.header--title De_Kelder
 		ul.linklist
 			each link, i in links.rows
 				li.linklist--item
