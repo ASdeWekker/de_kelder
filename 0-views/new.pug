@@ -1,19 +1,26 @@
 extends base
 
 block content
+	link(rel="stylesheet", href="stylesheets/new.css", type="text/css")
 	#main.container
-		h1.title De_Kelder
+		header.header
+			nav.header--nav
+				input(type="checkbox")#switch.header--nav--input
+				ul.header--nav--list
+					li.header--nav--list--item.item-1
+						a(href="http://10.8.0.1:3099").header--nav--list--item--link 10.1
+					li.header--nav--list--item.item-2
+						a(href="http://10.8.0.4:3099").header--nav--list--item--link 10.4
+					li.header--nav--list--item.item-3
+						a(href="http://10.8.0.5:3099").header--nav--list--item--link 10.5
+				label(for="switch").header--nav--label
+					.header--nav--label--arrow.arrow-left
+					.header--nav--label--arrow.arrow-right
+			h1.header--title De_Kelder
 		ul.linklist
 			each link, i in links.rows
 				li.linklist--item
 					a(href="http://" + url + ":" + link.port).linklist--item--link #{link.name}
-		ul.hosts
-			li.hosts--item
-				a(href="http://10.8.0.1:3099").hosts--item--link 10.1
-			li.hosts--item
-				a(href="http://10.8.0.4:3099").hosts--item--link 10.4
-			li.hosts--item
-				a(href="http://10.8.0.5:3099").hosts--item--link 10.5
 		ul.buttons
 			li.buttons--item
 				a(href="http://10.8.0.4:8112").buttons--item--button
