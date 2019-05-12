@@ -32,6 +32,7 @@ function getPage(url, view, title) {
     })
 }
 
+// Get the main page.
 router.get("/", (req, res, next) => {
     let url = req.headers.host.split(":")
     client.query(query)
@@ -43,6 +44,7 @@ router.get("/", (req, res, next) => {
         .catch(e => console.error(e.stack))
 })
 
+// Get the page for the new design.
 router.get("/new", (req, res, next) => {
     let url = req.headers.host.split(":")
     client.query(query)
@@ -52,6 +54,21 @@ router.get("/new", (req, res, next) => {
             url : url[0]
         }))
         .catch(e => console.error(e.stack))
+})
+
+// Some get requests for the switches.
+router.get("/req/:ip/:power", (req, res, next) => {
+    const ip = String(req.params.ip)
+    const power = String(req.params.power)
+    execFile("curl", ["-sS", "http://192.168.1." + ip + "/?power=" + power], (err, stdout, stderr) => {
+        if (err) {
+            console.log(err)
+        } else if (stderr) {
+            console.log(stderr)
+        } else {
+            console.log(stdout)
+        }
+    })
 })
 
 // Wake my PC.
