@@ -4,6 +4,7 @@ block content
 	link(rel="stylesheet", href="stylesheets/new.css", type="text/css")
 	#main.container
 		header.header
+			h1.header--title De_Kelder
 			nav.header--nav
 				input(type="checkbox")#switch.header--nav--input
 				ul.header--nav--list
@@ -16,7 +17,6 @@ block content
 				label(for="switch").header--nav--label
 					.header--nav--label--arrow.arrow-left
 					.header--nav--label--arrow.arrow-right
-			h1.header--title De_Kelder
 		ul.linklist
 			each link, i in links.rows
 				li.linklist--item

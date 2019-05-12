@@ -1,6 +1,21 @@
-// Import vars and mixins.
+// Variables
 
-@import parts/vars-and-mixins
+// Colors.
+$bg: #ddd
+$bg-alt: #303030
+$text: $bg-alt
+$text-alt: #368cbf
+$text-alt2: $bg
+
+$angle: 41deg
+
+// Mixins
+
+// A standard size for certain container elements.
+%stdsizebg
+    background: none
+    height: 100%
+    width: 100%
 
 // Import styles for the recipes page.
 @import recipes
@@ -49,7 +64,7 @@ html
 
             .header
                 background: $bg-alt
-                box-shadow: 0 3px 12px -1px $bg-alt
+                box-shadow: 3px 3px 5px 6px #000
                 height: 40px
                 width: 100%
 
@@ -60,7 +75,7 @@ html
 
                 &--nav
                     &--input, &--list, &--label
-                        float: left
+                        float: right
 
                     &--input
                         display: block
@@ -91,8 +106,8 @@ html
                         &--item
                             background: $bg-alt
                             height: 40px
-                            left: 0
                             position: absolute
+                            right: 0
                             top: 0
                             transition: top 0.5s ease
                             width: 60px
@@ -117,7 +132,6 @@ html
                     &--label
                         display: block
                         height: 40px
-                        margin-left: 2px
                         width: 28px
 
                         &--arrow
@@ -136,14 +150,13 @@ html
                             transform: rotate($angle)
 
                 &--title
-                    color: $text-alt2
+                    color: $text-alt
                     display: block
                     height: 40px
                     letter-spacing: 2px
                     line-height: 40px
                     margin: 0
-                    padding-right: 10px
-                    text-align: right
+                    padding-left: 10px
         
             // LIST OF LINKS.
         

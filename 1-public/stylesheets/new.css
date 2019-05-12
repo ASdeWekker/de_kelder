@@ -17,13 +17,13 @@ html {
   box-sizing: border-box;
 }
 html body .container {
-  background: #303030;
+  background: #ddd;
   display: flex;
   flex-flow: column nowrap;
   font-family: Arial, "sans-serif";
 }
 html body .container ul {
-  background: #303030;
+  background: #ddd;
   display: flex;
   flex-flow: row wrap;
   height: auto;
@@ -33,13 +33,13 @@ html body .container ul li {
   list-style-type: none;
 }
 html body .container ul li a {
-  color: #ddd;
+  color: #303030;
   text-align: center;
   text-decoration: none;
 }
 html body .container .header {
-  background: #ddd;
-  box-shadow: 0 3px 12px -1px #ddd;
+  background: #303030;
+  box-shadow: 3px 3px 5px 6px #000;
   height: 40px;
   width: 100%;
 }
@@ -49,7 +49,7 @@ html body .container .header--nav, html body .container .header--title {
   width: 50%;
 }
 html body .container .header--nav--input, html body .container .header--nav--list, html body .container .header--nav--label {
-  float: left;
+  float: right;
 }
 html body .container .header--nav--input {
   display: block;
@@ -71,23 +71,23 @@ html body .container .header--nav--input:checked ~ .header--nav--label .arrow-ri
   transform: rotate(-41deg);
 }
 html body .container .header--nav--list {
-  background: #ddd;
+  background: #303030;
   height: 40px;
   list-style-type: none;
   margin-right: 0;
   width: 60px;
 }
 html body .container .header--nav--list--item {
-  background: #ddd;
+  background: #303030;
   height: 40px;
-  left: 0;
   position: absolute;
+  right: 0;
   top: 0;
   transition: top 0.5s ease;
   width: 60px;
 }
 html body .container .header--nav--list--item--link {
-  color: #303030;
+  color: #ddd;
   display: block;
   font-size: 24px;
   font-weight: 900;
@@ -106,11 +106,10 @@ html body .container .header--nav--list .item-2, html body .container .header--n
 html body .container .header--nav--label {
   display: block;
   height: 40px;
-  margin-left: 2px;
   width: 28px;
 }
 html body .container .header--nav--label--arrow {
-  background: #303030;
+  background: #ddd;
   border-radius: 5px;
   float: left;
   height: 18px;
@@ -125,14 +124,13 @@ html body .container .header--nav--label .arrow-right {
   transform: rotate(41deg);
 }
 html body .container .header--title {
-  color: #303030;
+  color: #368cbf;
   display: block;
   height: 40px;
   letter-spacing: 2px;
   line-height: 40px;
   margin: 0;
-  padding-right: 10px;
-  text-align: right;
+  padding-left: 10px;
 }
 html body .container .linklist {
   justify-content: center;
@@ -144,7 +142,7 @@ html body .container .linklist--item {
   min-width: 100px;
 }
 html body .container .linklist--item--link {
-  color: #ddd;
+  color: #303030;
   line-height: 22px;
   padding: 10px;
   text-align: center;
@@ -153,11 +151,11 @@ html body .container .linklist--item--link {
 html body .container .linklist--item--link:hover {
   background: #368cbf;
   border-radius: 10px;
-  color: #ddd;
+  color: #303030;
 }
 html body .container .switches {
   align-items: center;
-  background: #232323;
+  background: #d0d0d0;
   bottom: 60px;
   height: 0;
   left: 0;
@@ -181,7 +179,7 @@ html body .container .switches--item--title {
 html body .container .switches--item--link {
   background: #368cbf;
   border: none;
-  color: #303030;
+  color: #ddd;
   float: left;
   height: 26px;
   line-height: 26px;
@@ -208,7 +206,7 @@ html body .container .height-toggle {
   height: 0;
 }
 html body .container .buttons {
-  background: #303030;
+  background: #ddd;
   bottom: 0;
   justify-content: space-around;
   position: absolute;
