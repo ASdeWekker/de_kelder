@@ -54,6 +54,7 @@ html body .container .linklist--item {
 }
 html body .container .linklist--item--link {
   color: #ddd;
+  display: block;
   line-height: 22px;
   padding: 10px;
   text-align: center;
