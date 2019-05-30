@@ -1,8 +1,7 @@
 extends base
 
 block content
-	link(rel="stylesheet", href="stylesheets/new.css", type="text/css")
-	#main.container
+	#main.wrapper
 		header.header
 			h1.header--title De_Kelder
 			nav.header--nav
@@ -17,6 +16,27 @@ block content
 				label(for="switch").header--nav--label
 					.header--nav--label--arrow.arrow-left
 					.header--nav--label--arrow.arrow-right
-		a(href="javascript:void(0);", onclick="notifyMe()") bitwarden
-	script(defer src="js/request.js", crossorigin="anonymous", type="text/javascript")
-	script(defer src="js/alert.js", crossorigin="anonymous", type="text/javascript")
+		section.wrapper--section.container-fluid
+			.wrapper--section--practice-projects
+				//- .col-6
+				//- 	.dropdown
+				//- 		button(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#dropdownMenuButton.btn.btn-secondary.btn-lg.dropdown-toggle Oefenen
+				//- 		div(aria-labelledby="dropdownMenuButton").dropdown-menu
+				//- 			each oefen, i in oefenen.rows
+				//- 				a(href="http://" + url + ":" + oefen.port).dropdown-item #{oefen.name}
+				//- 				.dropdown-divider
+				//- .col-6
+				//- 	.dropdown
+				//- 		button(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#dropdownMenuButton.btn.btn-secondary.btn-lg.dropdown-toggle Projecten
+				//- 		div(aria-labelledby="dropdownMenuButton").dropdown-menu
+				//- 			each project, i in projecten.rows
+				//- 				a(href="http://" + url + ":" + project.port).dropdown-item #{project.name}
+				//- 				.dropdown-divider
+				- var lists = {oefenen:"Oefenen",projecten:"Projecten"}
+				each val, index in lists
+					.dropdown
+						button(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#dropdownMenuButton.btn.btn-secondary.btn-lg.dropdown-toggle #{val}
+						div(aria-labelledby="dropdownMenuButton").dropdown-menu
+							each thing in index
+								a(href="http://" + url + ":" + thing.port).dropdown-item #{thing.name}
+								.dropdown-divider

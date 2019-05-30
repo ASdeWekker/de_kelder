@@ -1,4 +1,4 @@
-html body .container, html body, html {
+html body .wrapper, html body, html {
   background: none;
   height: 100%;
   width: 100%;
@@ -16,76 +16,77 @@ html, body, ul {
 html {
   box-sizing: border-box;
 }
-html body .container {
+html body .wrapper {
   background: #ddd;
   font-family: Arial, "sans-serif";
 }
-html body .container ul {
+html body .wrapper ul {
   background: #ddd;
   display: flex;
   flex-flow: row wrap;
   height: auto;
   width: 100%;
 }
-html body .container ul li {
+html body .wrapper ul li {
   list-style-type: none;
 }
-html body .container ul li a {
+html body .wrapper ul li a {
   color: #303030;
   text-align: center;
   text-decoration: none;
 }
-html body .container .header {
+html body .wrapper .header {
   background: #303030;
   box-shadow: 0px -1px 9px 3px #303030;
   height: 40px;
   position: relative;
   width: 100%;
 }
-html body .container .header--nav, html body .container .header--title {
+html body .wrapper .header--nav, html body .wrapper .header--title {
   float: left;
   height: 40px;
   width: 50%;
 }
-html body .container .header--title {
+html body .wrapper .header--title {
   color: #368cbf;
   display: block;
+  font-size: 170%;
   height: 40px;
   letter-spacing: 2px;
   line-height: 40px;
   margin: 0;
   padding-left: 10px;
 }
-html body .container .header--nav--input, html body .container .header--nav--list, html body .container .header--nav--label {
+html body .wrapper .header--nav--input, html body .wrapper .header--nav--list, html body .wrapper .header--nav--label {
   float: right;
 }
-html body .container .header--nav--input {
+html body .wrapper .header--nav--input {
   display: block;
   height: 0;
   margin: 0;
   opacity: 0;
   width: 0;
 }
-html body .container .header--nav--input:checked ~ .header--nav--list .item-2 {
+html body .wrapper .header--nav--input:checked ~ .header--nav--list .item-2 {
   top: 40px;
 }
-html body .container .header--nav--input:checked ~ .header--nav--list .item-3 {
+html body .wrapper .header--nav--input:checked ~ .header--nav--list .item-3 {
   top: 80px;
 }
-html body .container .header--nav--input:checked ~ .header--nav--label .arrow-left {
+html body .wrapper .header--nav--input:checked ~ .header--nav--label .arrow-left {
   transform: rotate(41deg);
 }
-html body .container .header--nav--input:checked ~ .header--nav--label .arrow-right {
+html body .wrapper .header--nav--input:checked ~ .header--nav--label .arrow-right {
   transform: rotate(-41deg);
 }
-html body .container .header--nav--list {
+html body .wrapper .header--nav--list {
   background: #303030;
   height: 40px;
   list-style-type: none;
   margin-right: 0;
   width: 60px;
 }
-html body .container .header--nav--list--item {
+html body .wrapper .header--nav--list--item {
   background: #303030;
   height: 40px;
   position: absolute;
@@ -94,7 +95,7 @@ html body .container .header--nav--list--item {
   transition: top 0.5s ease;
   width: 60px;
 }
-html body .container .header--nav--list--item--link {
+html body .wrapper .header--nav--list--item--link {
   color: #ddd;
   display: block;
   font-size: 24px;
@@ -105,18 +106,18 @@ html body .container .header--nav--list--item--link {
   text-decoration: none;
   width: 60px;
 }
-html body .container .header--nav--list .item-1 {
+html body .wrapper .header--nav--list .item-1 {
   z-index: 5;
 }
-html body .container .header--nav--list .item-2, html body .container .header--nav--list .item-3 {
+html body .wrapper .header--nav--list .item-2, html body .wrapper .header--nav--list .item-3 {
   z-index: 4;
 }
-html body .container .header--nav--label {
+html body .wrapper .header--nav--label {
   display: block;
   height: 40px;
   width: 28px;
 }
-html body .container .header--nav--label--arrow {
+html body .wrapper .header--nav--label--arrow {
   background: #ddd;
   border-radius: 5px;
   float: left;
@@ -125,11 +126,19 @@ html body .container .header--nav--label--arrow {
   transition: transform 0.5s ease;
   width: 4px;
 }
-html body .container .header--nav--label .arrow-left {
+html body .wrapper .header--nav--label .arrow-left {
   transform: rotate(-41deg);
 }
-html body .container .header--nav--label .arrow-right {
+html body .wrapper .header--nav--label .arrow-right {
   transform: rotate(41deg);
+}
+html body .wrapper--section--practice-projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 24px;
+}
+html body .wrapper--section--practice-projects .dropdown .dropdown-menu .dropdown-divider:last-child {
+  display: none;
 }
 
 /*# sourceMappingURL=new.css.map */

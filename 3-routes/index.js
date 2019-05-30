@@ -21,7 +21,9 @@ const client = new Client({
 client.connect()
 
 // Make a query.
-const query = "select * from projects order by id"
+const query = "select * from projects order by id desc"
+const oefenenQuery = "select * from oefenen order by id desc"
+const projectenQuery = "select * from projecten order by id desc"
 
 // --------------- GET  PAGES ---------------
 
@@ -37,23 +39,36 @@ router.get("/", (req, res, next) => {
     let url = req.headers.host.split(":")
     client.query(query)
         .then(data => res.render("index", {
-            links : data,
+            links: data,
             // Pass the ip address in the url to easily switch between hosts.
-            url : url[0]
+            url: url[0]
         }))
         .catch(e => console.error(e.stack))
 })
 
 // Get the page for the new design.
+// router.get("/new", (req, res, next) => {
+//     let url = req.headers.host.split(":")
+//     client.query(query)
+//         .then(data => res.render("new", {
+//             links: data,
+//             // Pass the ip address in the url to easily switch between hosts.
+//             url: url[0]
+//         }))
+//         .catch(e => console.error(e.stack))
+// })
+
 router.get("/new", (req, res, next) => {
     let url = req.headers.host.split(":")
-    client.query(query)
-        .then(data => res.render("new", {
-            links : data,
-            // Pass the ip address in the url to easily switch between hosts.
-            url : url[0]
-        }))
-        .catch(e => console.error(e.stack))
+    client.query(oefenenQuery).then(oefen => {
+        client.query(projectenQuery).then(project => {
+            res.render("new", {
+                oefenen: oefen.rows,
+                projecten: project.rows,
+                url: url[0]
+            })
+        }).catch(e => console.error(e.stack))
+    }).catch(error => console.error(error.stack))
 })
 
 // Some get requests for the switches.
