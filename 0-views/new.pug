@@ -32,11 +32,10 @@ block content
 				//- 			each project, i in projecten.rows
 				//- 				a(href="http://" + url + ":" + project.port).dropdown-item #{project.name}
 				//- 				.dropdown-divider
-				- var lists = {oefenen:"Oefenen",projecten:"Projecten"}
-				each val, index in lists
+				each val, index in ["Oefenen","Projecten"]
 					.dropdown
 						button(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#dropdownMenuButton.btn.btn-secondary.btn-lg.dropdown-toggle #{val}
 						div(aria-labelledby="dropdownMenuButton").dropdown-menu
-							each thing in index
+							each thing in data[index].rows
 								a(href="http://" + url + ":" + thing.port).dropdown-item #{thing.name}
 								.dropdown-divider

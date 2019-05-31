@@ -22,8 +22,8 @@ client.connect()
 
 // Make a query.
 const query = "select * from projects order by id desc"
-const oefenenQuery = "select * from oefenen order by id desc"
-const projectenQuery = "select * from projecten order by id desc"
+const oefenenQuery = "select * from oefenen order by port asc"
+const projectenQuery = "select * from projecten order by port asc"
 
 // --------------- GET  PAGES ---------------
 
@@ -60,11 +60,10 @@ router.get("/", (req, res, next) => {
 
 router.get("/new", (req, res, next) => {
     let url = req.headers.host.split(":")
-    client.query(oefenenQuery).then(oefen => {
-        client.query(projectenQuery).then(project => {
+    client.query(oefenenQuery).then(oefenen => {
+        client.query(projectenQuery).then(projecten => {
             res.render("new", {
-                oefenen: oefen.rows,
-                projecten: project.rows,
+                data: [oefenen, projecten],
                 url: url[0]
             })
         }).catch(e => console.error(e.stack))
