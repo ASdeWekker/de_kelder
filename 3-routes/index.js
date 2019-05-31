@@ -46,24 +46,13 @@ router.get("/", (req, res, next) => {
         .catch(e => console.error(e.stack))
 })
 
-// Get the page for the new design.
-// router.get("/new", (req, res, next) => {
-//     let url = req.headers.host.split(":")
-//     client.query(query)
-//         .then(data => res.render("new", {
-//             links: data,
-//             // Pass the ip address in the url to easily switch between hosts.
-//             url: url[0]
-//         }))
-//         .catch(e => console.error(e.stack))
-// })
-
 router.get("/new", (req, res, next) => {
     let url = req.headers.host.split(":")
     client.query(oefenenQuery).then(oefenen => {
         client.query(projectenQuery).then(projecten => {
             res.render("new", {
                 data: [oefenen, projecten],
+                // Pass the ip address in the url to easily switch between hosts.
                 url: url[0]
             })
         }).catch(e => console.error(e.stack))

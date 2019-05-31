@@ -18,20 +18,6 @@ block content
 					.header--nav--label--arrow.arrow-right
 		section.wrapper--section.container-fluid
 			.wrapper--section--practice-projects
-				//- .col-6
-				//- 	.dropdown
-				//- 		button(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#dropdownMenuButton.btn.btn-secondary.btn-lg.dropdown-toggle Oefenen
-				//- 		div(aria-labelledby="dropdownMenuButton").dropdown-menu
-				//- 			each oefen, i in oefenen.rows
-				//- 				a(href="http://" + url + ":" + oefen.port).dropdown-item #{oefen.name}
-				//- 				.dropdown-divider
-				//- .col-6
-				//- 	.dropdown
-				//- 		button(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#dropdownMenuButton.btn.btn-secondary.btn-lg.dropdown-toggle Projecten
-				//- 		div(aria-labelledby="dropdownMenuButton").dropdown-menu
-				//- 			each project, i in projecten.rows
-				//- 				a(href="http://" + url + ":" + project.port).dropdown-item #{project.name}
-				//- 				.dropdown-divider
 				each val, index in ["Oefenen","Projecten"]
 					.dropdown
 						button(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#dropdownMenuButton.btn.btn-secondary.btn-lg.dropdown-toggle #{val}
