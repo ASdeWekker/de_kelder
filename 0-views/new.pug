@@ -7,12 +7,9 @@ block content
 			nav.header--nav
 				input(type="checkbox")#switch.header--nav--input
 				ul.header--nav--list
-					li.header--nav--list--item.item-1
-						a(href="http://10.8.0.1:3099").header--nav--list--item--link 10.1
-					li.header--nav--list--item.item-2
-						a(href="http://10.8.0.4:3099").header--nav--list--item--link 10.4
-					li.header--nav--list--item.item-3
-						a(href="http://10.8.0.5:3099").header--nav--list--item--link 10.5
+					each val, index in ["1","4","5"]
+						li(class="item-" + (index+1)).header--nav--list--item
+							a(href="http://10.8.0." + val + ":3099").header--nav--list--item--link 10.#{val}
 				label(for="switch").header--nav--label
 					.header--nav--label--arrow.arrow-left
 					.header--nav--label--arrow.arrow-right
