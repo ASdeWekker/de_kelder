@@ -21,7 +21,7 @@ const client = new Client({
 client.connect()
 
 // Make a query.
-const query = "select * from projects order by id desc"
+const query = "select * from projects order by id asc"
 const oefenenQuery = "select * from oefenen order by port asc"
 const projectenQuery = "select * from projecten order by port asc"
 
