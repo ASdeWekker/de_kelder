@@ -6,10 +6,7 @@ const express = require("express")
 const path = require("path")
 const favicon = require("serve-favicon")
 
-// Declare the routes and app.
-let indexRouter = require("./3-routes/index")
-let recipesRouter = require("./3-routes/recipes")
-let weightRouter = require("./3-routes/weight")
+// Declare the app.
 const app = express()
 
 // Stop anything from being shown about the server.
@@ -23,15 +20,15 @@ app.locals.pretty = true
 
 // --------------- MIDDLEWARE ---------------
 
-// Set the public folder
+// Set the public folder.
 app.use(express.static(path.join(__dirname, "1-public")))
 // Set the favicon.
 app.use(favicon(path.join(__dirname, "1-public", "favicon.png")))
 
 // Use the routes.
-app.use("/", indexRouter)
-app.use("/recipes", recipesRouter)
-app.use("/weight", weightRouter)
+app.use("/", require("./3-routes/index"))
+app.use("/recipes", require("./3-routes/recipes"))
+//app.use("/weight", require("./3-routes/weight"))
 
 // 404 errors.
 app.use( (req, res, next) => {
