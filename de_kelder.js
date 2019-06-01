@@ -7,8 +7,9 @@ const path = require("path")
 const favicon = require("serve-favicon")
 
 // Declare the routes and app.
-var indexRouter = require('./3-routes/index')
-var recipesRouter = require('./3-routes/recipes')
+let indexRouter = require("./3-routes/index")
+let recipesRouter = require("./3-routes/recipes")
+let weightRouter = require("./3-routes/weight")
 const app = express()
 
 // Stop anything from being shown about the server.
@@ -30,20 +31,21 @@ app.use(favicon(path.join(__dirname, "1-public", "favicon.png")))
 // Use the routes.
 app.use("/", indexRouter)
 app.use("/recipes", recipesRouter)
+app.use("/weight", weightRouter)
 
 // 404 errors.
 app.use( (req, res, next) => {
-    next(createError(404))
+	next(createError(404))
 });
 
 // Error handler.
 app.use( (err, req, res, next) => {
-    res.locals.message = err.message
-    res.locals.error = req.app.get("env") === "development" ? err : {}
+	res.locals.message = err.message
+	res.locals.error = req.app.get("env") === "development" ? err : {}
 
     // render the error page.
-    res.status(err.status || 500)
-    res.render("error")
+	res.status(err.status || 500)
+	res.render("error")
 })
 
 module.exports = app
