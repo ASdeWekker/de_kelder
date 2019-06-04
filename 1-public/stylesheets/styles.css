@@ -1,4 +1,4 @@
-html body .container, html body, html {
+html body .wrapper, html body, html {
   background: none;
   height: 100%;
   width: 100%;
@@ -16,43 +16,43 @@ html, body, ul {
 html {
   box-sizing: border-box;
 }
-html body .container {
+html body .wrapper {
   background: #303030;
   display: flex;
   flex-flow: column nowrap;
   font-family: Arial, "sans-serif";
 }
-html body .container ul {
+html body .wrapper ul {
   background: #303030;
   display: flex;
   flex-flow: row wrap;
   height: auto;
   width: 100%;
 }
-html body .container ul li {
+html body .wrapper ul li {
   list-style-type: none;
 }
-html body .container ul li a {
+html body .wrapper ul li a {
   color: #ddd;
   text-align: center;
   text-decoration: none;
 }
-html body .container .title {
+html body .wrapper .title {
   color: #368cbf;
   font-size: 150%;
   margin-bottom: 0;
   text-align: center;
 }
-html body .container .linklist {
+html body .wrapper .linklist {
   justify-content: center;
 }
-html body .container .linklist--item {
+html body .wrapper .linklist--item {
   height: 42px;
   line-height: 42px;
   margin: 10px 0;
   min-width: 100px;
 }
-html body .container .linklist--item--link {
+html body .wrapper .linklist--item--link {
   color: #ddd;
   display: block;
   line-height: 22px;
@@ -60,21 +60,21 @@ html body .container .linklist--item--link {
   text-align: center;
   width: 100%;
 }
-html body .container .linklist--item--link:hover {
+html body .wrapper .linklist--item--link:hover {
   background: #368cbf;
   border-radius: 10px;
   color: #ddd;
 }
-html body .container .hosts {
+html body .wrapper .hosts {
   justify-content: space-evenly;
   margin-top: 50px;
 }
-html body .container .hosts--item--link {
+html body .wrapper .hosts--item--link {
   color: #ddd;
   font-size: 2em;
   font-weight: 900;
 }
-html body .container .switches {
+html body .wrapper .switches {
   align-items: center;
   background: #232323;
   bottom: 60px;
@@ -86,10 +86,10 @@ html body .container .switches {
   transition: all 0.5s ease;
   z-index: -1;
 }
-html body .container .switches--item {
+html body .wrapper .switches--item {
   margin: 8px 0 12px;
 }
-html body .container .switches--item--title {
+html body .wrapper .switches--item--title {
   color: #2b6f97;
   display: block;
   height: 26px;
@@ -97,7 +97,7 @@ html body .container .switches--item--title {
   text-align: center;
   width: 76px;
 }
-html body .container .switches--item--link {
+html body .wrapper .switches--item--link {
   background: #368cbf;
   border: none;
   color: #303030;
@@ -107,46 +107,46 @@ html body .container .switches--item--link {
   padding: 0.2em;
   text-align: center;
 }
-html body .container .switches--item .switch-on, html body .container .switches--item .switch-off {
+html body .wrapper .switches--item .switch-on, html body .wrapper .switches--item .switch-off {
   width: 37px;
 }
-html body .container .switches--item .switch-on {
+html body .wrapper .switches--item .switch-on {
   border-radius: 5px 0 0 0;
   margin-right: 2px;
 }
-html body .container .switches--item .switch-off {
+html body .wrapper .switches--item .switch-off {
   border-radius: 0 5px 0 0;
 }
-html body .container .switches--item .switch-toggle {
+html body .wrapper .switches--item .switch-toggle {
   border-radius: 0 0 5px 5px;
   clear: both;
   margin-top: 2px;
   width: 76px;
 }
-html body .container .height-toggle {
+html body .wrapper .height-toggle {
   height: 0;
 }
-html body .container .buttons {
+html body .wrapper .buttons {
   background: #303030;
   bottom: 0;
   justify-content: space-around;
   position: absolute;
   z-index: 1;
 }
-html body .container .buttons--item #switches {
+html body .wrapper .buttons--item #switches {
   float: right;
   margin: 0;
   opacity: 0;
   padding: 0;
 }
-html body .container .buttons--item #switches:checked ~ .switches {
+html body .wrapper .buttons--item #switches:checked ~ .switches {
   height: 99px;
 }
-html body .container .buttons--item--button {
+html body .wrapper .buttons--item--button {
   color: #368cbf;
   font-size: 2em;
 }
-html body .container .buttons--item--button svg {
+html body .wrapper .buttons--item--button svg {
   display: block;
   margin: 0 auto;
 }

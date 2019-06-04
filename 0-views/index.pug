@@ -1,7 +1,7 @@
 extends base
 
 block content
-	#main.container
+	#main.wrapper
 		h1.title De_Kelder
 		ul.linklist
 			each link, i in links.rows
@@ -58,4 +58,3 @@ block content
 			li.buttons--item
 				a(href="http://" + url + ":3099/recipes").buttons--item--button
 					i.fas.fa-utensils
-	script(defer src="js/request.js", crossorigin="anonymous", type="text/javascript")
