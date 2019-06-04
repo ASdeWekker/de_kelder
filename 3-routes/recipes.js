@@ -3,6 +3,7 @@
 const express = require("express")
 const router = express.Router()
 const { Client } = require("pg")
+const path = require("path")
 
 // Set up the postgres connect url.
 // const user = process.env.PSQLU
@@ -34,16 +35,16 @@ function getPage(url, view, title) {
 //getPage("/", "recipes/recipes", "Recepten.")
 router.get("/", (req, res, next) => {
     let url = req.headers.host.split(":")
-    res.render("recipes/recipes", {
+    res.render("../5-recipes/0-views/recipes", {
         title: "Recepten",
         url: url[0]
     })
 })
 
-getPage("/add-recipe", "recipes/add-recipe", "Voeg recept toe")
+getPage("/add-recipe", "../5-recipes/0-views/add-recipe", "Voeg recept toe")
 
-getPage("/add-recipe-2", "recipes/add-recipe-2", "Voeg recept toe 2")
+getPage("/add-recipe-2", "../5-recipes/0-views/add-recipe-2", "Voeg recept toe 2")
 
-getPage("/add-recipe-3", "recipes/add-recipe-3", "Voeg recept toe 3")
+getPage("/add-recipe-3", "../5-recipes/0-views/add-recipe-3", "Voeg recept toe 3")
 
 module.exports = router

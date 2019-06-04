@@ -1,15 +1,12 @@
-/* line 6, styles.sass */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 9, styles.sass */
 a {
   color: #ddd;
   text-decoration: none;
 }
 
-/* line 13, styles.sass */
 html, body {
   background: none;
   height: 100%;
@@ -18,21 +15,20 @@ html, body {
   width: 100%;
 }
 
-/* line 20, styles.sass */
 html {
   background: #303030;
   box-sizing: border-box;
   color: #ddd;
 }
-/* line 26, styles.sass */
 html body .container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
-/* line 32, styles.sass */
 html body .container .title {
   color: #368cbf;
   text-align: center;
 }
+
+/*# sourceMappingURL=styles.css.map */
