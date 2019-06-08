@@ -31,4 +31,18 @@ router.post("/", (req, res, next) => {
 	}).catch(e => console.error(e.stack))
 })
 
+router.route("/")
+	.get((req, res) => {
+		pool.query(getQuery).then(data => {
+			res.render("index", { data: data })
+		}).catch(e => console.error(e.stack))
+	}).post((req, res) => {
+		let { weight, date, notes } = req.body
+		rearrangedDate = date.split("-")
+		data = rearrangedDate[2] + "-" + rearrangedDate[1] + "-" + rearrangedDate[0]
+		pool.query(postQuery, [weight, date, notes]).then(data => {
+			res.redirect("/")
+		}).catch(e => console.error(e.stack))
+	})
+
 module.exports = router
