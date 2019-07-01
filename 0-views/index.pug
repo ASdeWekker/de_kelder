@@ -2,59 +2,34 @@ extends base
 
 block content
 	#main.wrapper
-		h1.title De_Kelder
-		ul.linklist
-			each link, i in links.rows
-				li.linklist--item
-					a(href="http://" + url + ":" + link.port).linklist--item--link #{link.name}
-		ul.hosts
-			li.hosts--item
-				a(href="http://10.8.0.1:3099").hosts--item--link 10.1
-			li.hosts--item
-				a(href="http://10.8.0.4:3099").hosts--item--link 10.4
-			li.hosts--item
-				a(href="http://10.8.0.5:3099").hosts--item--link 10.5
-		ul.buttons
-			li.buttons--item
-				a(href="http://10.8.0.4:8112").buttons--item--button
-					i.fas.fa-tint
-			li.buttons--item
-				a(href="http://10.8.0.1:81/admin").buttons--item--button
-					i.fas.fa-shield-alt
-			li.buttons--item.switches-switch
-				label(for="switches").buttons--item--button
-					i.fas.fa-cog
-				input(type="checkbox")#switches
-				ul.switches
-					li.switches--item
-						b.switches--item--title LAMP 1
-						button.switches--item--link.switch-on ON
-						button.switches--item--link.switch-off OFF
-						button.switches--item--link.switch-toggle TOGGLE
-					li.switches--item
-						b.switches--item--title LAMP 2
-						button.switches--item--link.switch-on ON
-						button.switches--item--link.switch-off OFF
-						button.switches--item--link.switch-toggle TOGGLE
-					li.switches--item
-						b.switches--item--title AMP
-						button(onClick="request('223','on')").switches--item--link.switch-on ON
-						button(onClick="request('223','off')").switches--item--link.switch-off OFF
-						button(onClick="request('223','toggle')").switches--item--link.switch-toggle TOGGLE
-					li.switches--item
-						b.switches--item--title LEDSTRIP
-						button(onClick="request('220','on')").switches--item--link.switch-on ON
-						button(onClick="request('220','off')").switches--item--link.switch-off OFF
-						button(onClick="request('220','toggle')").switches--item--link.switch-toggle TOGGLE
-			li.buttons--item
-				a(href="/wol").buttons--item--button
+		header.header
+			h1.header--title De_Kelder
+			nav.header--nav
+				input(type="checkbox")#switch.header--nav--input
+				ul.header--nav--list
+					each val, index in ["1","4","5"]
+						li(class="item-" + (index+1)).header--nav--list--item
+							a(href="http://10.8.0." + val + ":3099").header--nav--list--item--link 10.#{val}
+				label(for="switch").header--nav--label
+					.header--nav--label--arrow.arrow-left
+					.header--nav--label--arrow.arrow-right
+		section.wrapper--section.container-fluid
+			.wrapper--section--practice-projects
+				each val, index in ["Oefenen","Projecten"]
+					.dropdown
+						button(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#dropdownMenuButton.btn.btn-secondary.btn-lg.dropdown-toggle #{val}
+						div(aria-labelledby="dropdownMenuButton").dropdown-menu
+							each thing in data[index].rows
+								a(href="http://" + url + ":" + thing.port).dropdown-item #{thing.name}
+								.dropdown-divider
+			ul.linkjes
+				li.linkjes--item: a(href="http://10.8.0.4:8112").linkjes--item--link Desktop deluge
+				li.linkjes--item: a(href="http://10.8.0.1:81/admin").linkjes--item--link Pihole
+				li.linkjes--item: a(href="javascript:void(0);").linkjes--item--link Wemosjes
+				li.linkjes--item: a(href="http://" + url + "/backup/alex/cv/2").linkjes--item--link CV
+				li.linkjes--item: a(href="http://" + url + "/backup").linkjes--item--link Backup
+				li.linkjes--item: a(href="http://" + url + ":3099/recipes").linkjes--item--link Recepten
+		footer.footer-wrapper
+			.on-icon
+				a(href="/wol").on-icon--link
 					i.fas.fa-power-off
-			li.buttons--item
-				a(href="http://" + url + "/backup/alex/cv/2").buttons--item--button
-					i.fas.fa-user
-			li.buttons--item
-				a(href="http://" + url + "/backup").buttons--item--button
-					i.fas.fa-folder-open
-			li.buttons--item
-				a(href="http://" + url + ":3099/recipes").buttons--item--button
-					i.fas.fa-utensils

@@ -1,6 +1,21 @@
-// Import vars and mixins.
+// Variables
 
-@import parts/vars-and-mixins
+// Colors.
+$bg: #ddd
+$bg-alt: #494f54
+$text: $bg-alt
+$text-alt: #368cbf
+$text-alt2: $bg
+
+$angle: 41deg
+
+// Mixins
+
+// A standard size for certain container elements.
+%stdsizebg
+    background: none
+    height: 100%
+    width: 100%
 
 // Import styles for the recipes page.
 //-@import recipes
@@ -26,8 +41,6 @@ html
         .wrapper
             @extend %stdsizebg
             background: $bg
-            display: flex
-            flex-flow: column nowrap
             font-family: Arial, "sans-serif"
 
             ul
@@ -45,135 +58,146 @@ html
                         text-align: center
                         text-decoration: none
 
-            .title
-                color: $text-alt
-                font-size: 150%
-                margin-bottom: 0
-                text-align: center
-        
-            // LIST OF LINKS.
-        
-            .linklist
-                justify-content: center
-        
-                &--item
-                    height: 42px
-                    line-height: 42px
-                    margin: 10px 0
-                    min-width: 100px
-        
-                    &--link
-                        color: $text
-                        display: block
-                        line-height: 22px
-                        padding: 10px
-                        text-align: center
-                        width: 100%
-        
-                        &:hover
-                            background: $text-alt
-                            border-radius: 10px
-                            color: $bg-alt
+            // THE TITLE & BUTTONS FOR SWITCHING BETWEEN HOSTS.
 
-            // BUTTONS FOR SWITCHING BETWEEN HOSTS.
+            .header
+                background: $bg-alt
+                box-shadow: 0px -1px 9px 3px $bg-alt
+                height: 40px
+                position: relative
+                width: 100%
 
-            .hosts
-                justify-content: space-evenly
-                margin-top: 50px
+                &--nav, &--title
+                    float: left
+                    height: 40px
+                    width: 50%
 
-                &--item
-                    &--link
-                        color: $text
-                        font-size: 2em
-                        font-weight: 900
+                &--title
+                    color: $text-alt
+                    display: block
+                    font-size: 170%
+                    height: 40px
+                    letter-spacing: 2px
+                    line-height: 40px
+                    margin: 0
+                    padding-left: 10px
 
-            // BUTTONS FOR SWITCHING STUFF ON OR OFF.
-
-            .switches
-                align-items: center
-                background: darken($bg, 5%)
-                bottom: 60px
-                height: 0
-                left: 0
-                justify-content: space-around
-                overflow-y: hidden
-                position: absolute
-                transition: all 0.5s ease
-                z-index: -1
-
-                &--item
-                    margin: 8px 0 12px
-
-                    &--title
-                        color: darken($text-alt, 10%)
-                        display: block
-                        height: 26px
-                        line-height: 26px
-                        text-align: center
-                        width: 76px
-
-                    &--link
-                        background: $text-alt
-                        border: none
-                        color: $bg
-                        float: left
-                        height: 26px
-                        line-height: 26px
-                        padding: 0.2em
-                        text-align: center
-
-                    .switch-on, .switch-off
-                        width: 37px
-
-                    .switch-on
-                        border-radius: 5px 0 0 0
-                        margin-right: 2px
-
-                    .switch-off
-                        border-radius: 0 5px 0 0
-
-                    .switch-toggle
-                        border-radius: 0 0 5px 5px
-                        clear: both
-                        margin-top: 2px
-                        width: 76px
-
-            .height-toggle
-                height: 0
-        
-            // BUTTONS AT THE BOTTOM OF THE PAGE.
-        
-            .buttons
-                background: $bg
-                bottom: 0
-                justify-content: space-around
-                position: absolute
-                z-index: 1
-        
-                &--item
-                    #switches
+                &--nav
+                    &--input, &--list, &--label
                         float: right
+
+                    &--input
+                        display: block
+                        height: 0
                         margin: 0
                         opacity: 0
-                        padding: 0
+                        width: 0
 
-                        &:checked ~ .switches
-                            height: 99px
+                        &:checked ~ .header--nav--list .item-2
+                            top: 40px
 
-                    &--button
-                        color: $text-alt
-                        font-size: 2em
-        
+                        &:checked ~ .header--nav--list .item-3
+                            top: 80px
+
+                        &:checked ~ .header--nav--label .arrow-left
+                            transform: rotate($angle)
+
+                        &:checked ~ .header--nav--label .arrow-right
+                            transform: rotate($angle * -1)
+
+                    &--list
+                        background: $bg-alt
+                        height: 40px
+                        list-style-type: none
+                        margin-right: 0
+                        width: 60px
+
+                        &--item
+                            background: $bg-alt
+                            height: 40px
+                            position: absolute
+                            right: 0
+                            top: 0
+                            transition: top 0.5s ease
+                            width: 60px
+
+                            &--link
+                                color: $text-alt2
+                                display: block
+                                font-size: 24px
+                                font-weight: 900
+                                height: 40px
+                                line-height: 40px
+                                text-align: center
+                                text-decoration: none
+                                width: 60px
+
+                        .item-1
+                            z-index: 5
+
+                        .item-2, .item-3
+                            z-index: 4
+
+                    &--label
+                        display: block
+                        height: 40px
+                        width: 28px
+
+                        &--arrow
+                            background: $text-alt2
+                            border-radius: 5px
+                            float: left
+                            height: 18px
+                            margin: 11px 3px
+                            transition: transform 0.5s ease
+                            width: 4px
+
+                        .arrow-left
+                            transform: rotate($angle * -1)
+
+                        .arrow-right
+                            transform: rotate($angle)
+
+            &--section
+                &--practice-projects
+                    display: flex
+                    justify-content: space-evenly
+                    margin-top: 24px
+
+                    .dropdown
+                        .dropdown-menu
+                            .dropdown-divider:last-child
+                                display: none
+
+                // Some links in the middle.
+                .linkjes
+                    flex-flow: column wrap
+                    margin-top: 20px
+
+                    &--item
+                        &--link
+                            text-decoration: underline
+            
+            // The footer.
+            .footer-wrapper, .on-icon
+                height: 48px
+                width: 100%
+
+            .footer-wrapper
+                bottom: 0
+                position: absolute
+
+                .on-icon
+                    display: flex
+                    height: 48px
+                    justify-content: center
+                    width: 100%
+
+                    &--link
+                        font-size: 240%
+                        height: 48px
+                        line-height: 48px
+
                         svg
                             display: block
                             margin: 0 auto
-
-// Is wel genieton.               
-// @media screen and (min-width: 1261px)
-//     .linklist li
-//         width: 11.1%
-        
-// @for $i from 7 to 0
-//     @media screen and (max-width: 180px * $i)
-//         .linklist li
-//             width: 100% / $i

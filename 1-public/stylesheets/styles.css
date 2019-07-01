@@ -17,13 +17,11 @@ html {
   box-sizing: border-box;
 }
 html body .wrapper {
-  background: #303030;
-  display: flex;
-  flex-flow: column nowrap;
+  background: #ddd;
   font-family: Arial, "sans-serif";
 }
 html body .wrapper ul {
-  background: #303030;
+  background: #ddd;
   display: flex;
   flex-flow: row wrap;
   height: auto;
@@ -33,122 +31,144 @@ html body .wrapper ul li {
   list-style-type: none;
 }
 html body .wrapper ul li a {
-  color: #ddd;
+  color: #494f54;
   text-align: center;
   text-decoration: none;
 }
-html body .wrapper .title {
-  color: #368cbf;
-  font-size: 150%;
-  margin-bottom: 0;
-  text-align: center;
-}
-html body .wrapper .linklist {
-  justify-content: center;
-}
-html body .wrapper .linklist--item {
-  height: 42px;
-  line-height: 42px;
-  margin: 10px 0;
-  min-width: 100px;
-}
-html body .wrapper .linklist--item--link {
-  color: #ddd;
-  display: block;
-  line-height: 22px;
-  padding: 10px;
-  text-align: center;
+html body .wrapper .header {
+  background: #494f54;
+  box-shadow: 0px -1px 9px 3px #494f54;
+  height: 40px;
+  position: relative;
   width: 100%;
 }
-html body .wrapper .linklist--item--link:hover {
-  background: #368cbf;
-  border-radius: 10px;
-  color: #ddd;
-}
-html body .wrapper .hosts {
-  justify-content: space-evenly;
-  margin-top: 50px;
-}
-html body .wrapper .hosts--item--link {
-  color: #ddd;
-  font-size: 2em;
-  font-weight: 900;
-}
-html body .wrapper .switches {
-  align-items: center;
-  background: #232323;
-  bottom: 60px;
-  height: 0;
-  left: 0;
-  justify-content: space-around;
-  overflow-y: hidden;
-  position: absolute;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-html body .wrapper .switches--item {
-  margin: 8px 0 12px;
-}
-html body .wrapper .switches--item--title {
-  color: #2b6f97;
-  display: block;
-  height: 26px;
-  line-height: 26px;
-  text-align: center;
-  width: 76px;
-}
-html body .wrapper .switches--item--link {
-  background: #368cbf;
-  border: none;
-  color: #303030;
+html body .wrapper .header--nav, html body .wrapper .header--title {
   float: left;
-  height: 26px;
-  line-height: 26px;
-  padding: 0.2em;
-  text-align: center;
+  height: 40px;
+  width: 50%;
 }
-html body .wrapper .switches--item .switch-on, html body .wrapper .switches--item .switch-off {
-  width: 37px;
+html body .wrapper .header--title {
+  color: #368cbf;
+  display: block;
+  font-size: 170%;
+  height: 40px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  margin: 0;
+  padding-left: 10px;
 }
-html body .wrapper .switches--item .switch-on {
-  border-radius: 5px 0 0 0;
-  margin-right: 2px;
-}
-html body .wrapper .switches--item .switch-off {
-  border-radius: 0 5px 0 0;
-}
-html body .wrapper .switches--item .switch-toggle {
-  border-radius: 0 0 5px 5px;
-  clear: both;
-  margin-top: 2px;
-  width: 76px;
-}
-html body .wrapper .height-toggle {
-  height: 0;
-}
-html body .wrapper .buttons {
-  background: #303030;
-  bottom: 0;
-  justify-content: space-around;
-  position: absolute;
-  z-index: 1;
-}
-html body .wrapper .buttons--item #switches {
+html body .wrapper .header--nav--input, html body .wrapper .header--nav--list, html body .wrapper .header--nav--label {
   float: right;
+}
+html body .wrapper .header--nav--input {
+  display: block;
+  height: 0;
   margin: 0;
   opacity: 0;
-  padding: 0;
+  width: 0;
 }
-html body .wrapper .buttons--item #switches:checked ~ .switches {
-  height: 99px;
+html body .wrapper .header--nav--input:checked ~ .header--nav--list .item-2 {
+  top: 40px;
 }
-html body .wrapper .buttons--item--button {
-  color: #368cbf;
-  font-size: 2em;
+html body .wrapper .header--nav--input:checked ~ .header--nav--list .item-3 {
+  top: 80px;
 }
-html body .wrapper .buttons--item--button svg {
+html body .wrapper .header--nav--input:checked ~ .header--nav--label .arrow-left {
+  transform: rotate(41deg);
+}
+html body .wrapper .header--nav--input:checked ~ .header--nav--label .arrow-right {
+  transform: rotate(-41deg);
+}
+html body .wrapper .header--nav--list {
+  background: #494f54;
+  height: 40px;
+  list-style-type: none;
+  margin-right: 0;
+  width: 60px;
+}
+html body .wrapper .header--nav--list--item {
+  background: #494f54;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: top 0.5s ease;
+  width: 60px;
+}
+html body .wrapper .header--nav--list--item--link {
+  color: #ddd;
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 60px;
+}
+html body .wrapper .header--nav--list .item-1 {
+  z-index: 5;
+}
+html body .wrapper .header--nav--list .item-2, html body .wrapper .header--nav--list .item-3 {
+  z-index: 4;
+}
+html body .wrapper .header--nav--label {
+  display: block;
+  height: 40px;
+  width: 28px;
+}
+html body .wrapper .header--nav--label--arrow {
+  background: #ddd;
+  border-radius: 5px;
+  float: left;
+  height: 18px;
+  margin: 11px 3px;
+  transition: transform 0.5s ease;
+  width: 4px;
+}
+html body .wrapper .header--nav--label .arrow-left {
+  transform: rotate(-41deg);
+}
+html body .wrapper .header--nav--label .arrow-right {
+  transform: rotate(41deg);
+}
+html body .wrapper--section--practice-projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 24px;
+}
+html body .wrapper--section--practice-projects .dropdown .dropdown-menu .dropdown-divider:last-child {
+  display: none;
+}
+html body .wrapper--section .linkjes {
+  flex-flow: column wrap;
+  margin-top: 20px;
+}
+html body .wrapper--section .linkjes--item--link {
+  text-decoration: underline;
+}
+html body .wrapper .footer-wrapper, html body .wrapper .on-icon {
+  height: 48px;
+  width: 100%;
+}
+html body .wrapper .footer-wrapper {
+  bottom: 0;
+  position: absolute;
+}
+html body .wrapper .footer-wrapper .on-icon {
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  width: 100%;
+}
+html body .wrapper .footer-wrapper .on-icon--link {
+  font-size: 240%;
+  height: 48px;
+  line-height: 48px;
+}
+html body .wrapper .footer-wrapper .on-icon--link svg {
   display: block;
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=new.css.map */
