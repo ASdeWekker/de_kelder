@@ -140,5 +140,35 @@ html body .wrapper--section--practice-projects {
 html body .wrapper--section--practice-projects .dropdown .dropdown-menu .dropdown-divider:last-child {
   display: none;
 }
+html body .wrapper--section .linkjes {
+  flex-flow: column wrap;
+  margin-top: 20px;
+}
+html body .wrapper--section .linkjes--item--link {
+  text-decoration: underline;
+}
+html body .wrapper .footer-wrapper, html body .wrapper .on-icon {
+  height: 48px;
+  width: 100%;
+}
+html body .wrapper .footer-wrapper {
+  bottom: 0;
+  position: absolute;
+}
+html body .wrapper .footer-wrapper .on-icon {
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  width: 100%;
+}
+html body .wrapper .footer-wrapper .on-icon--link {
+  font-size: 240%;
+  height: 48px;
+  line-height: 48px;
+}
+html body .wrapper .footer-wrapper .on-icon--link svg {
+  display: block;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=new.css.map */

@@ -168,3 +168,36 @@ html
                         .dropdown-menu
                             .dropdown-divider:last-child
                                 display: none
+
+                // Some links in the middle.
+                .linkjes
+                    flex-flow: column wrap
+                    margin-top: 20px
+
+                    &--item
+                        &--link
+                            text-decoration: underline
+            
+            // The footer.
+            .footer-wrapper, .on-icon
+                height: 48px
+                width: 100%
+
+            .footer-wrapper
+                bottom: 0
+                position: absolute
+
+                .on-icon
+                    display: flex
+                    height: 48px
+                    justify-content: center
+                    width: 100%
+
+                    &--link
+                        font-size: 240%
+                        height: 48px
+                        line-height: 48px
+
+                        svg
+                            display: block
+                            margin: 0 auto
