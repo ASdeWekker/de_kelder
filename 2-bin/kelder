@@ -2,9 +2,9 @@
 
 // Some dependencies.
 
-const app = require("../de_kelder.js")
+const app = require("../kelder.js")
 const http = require("http")
-const debug = require("debug")("de_kelder:server")
+const debug = require("debug")("kelder:server")
 
 // The port.
 

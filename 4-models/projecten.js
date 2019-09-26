@@ -1,5 +1,4 @@
 const { Client } = require("pg")
-require("dotenv").config({ path: "/var/www/html/kelder/.env" })
 const query = `
 create table if not exists projecten (
 	id serial primary key not null,

@@ -4,7 +4,6 @@ const express = require("express")
 const router = express.Router()
 const { Client } = require("pg")
 const { execFile } = require("child_process")
-require("dotenv").config({ path: "/var/www/html/kelder/.env" })
 
 // Set up the postgres connect url.
 const user = process.env.PSQLU

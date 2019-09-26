@@ -27,8 +27,6 @@ app.use(favicon(path.join(__dirname, "1-public", "favicon.png")))
 
 // Use the routes.
 app.use("/", require("./3-routes/index"))
-app.use("/recipes", require("./3-routes/recipes"))
-//app.use("/weight", require("./3-routes/weight"))
 
 // 404 errors.
 app.use( (req, res, next) => {
