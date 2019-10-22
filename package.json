@@ -5,7 +5,7 @@
     "description": "A sort of central hub of all websites and control for the rest.",
     "main": "kelder.js",
     "scripts": {
-        "start": "supervisor ./2-bin/kelder"
+        "start": "nodemon ./2-bin/kelder"
     },
     "author": "Alex de Wekker",
     "license": "ISC",
