@@ -1,0 +1,24 @@
+{
+    "name": "De_Kelder",
+    "version": "1.0.0",
+    "private": true,
+    "description": "A sort of central hub of all websites and control for the rest.",
+    "main": "kelder.js",
+    "scripts": {
+        "start": "nodemon ./2-bin/kelder"
+    },
+    "author": "Alex de Wekker",
+    "license": "ISC",
+    "dependencies": {
+        "cookie-parser": "^1.4.4",
+        "debug": "^4.1.1",
+        "express": "^4.17.1",
+        "global": "^4.4.0",
+        "http-errors": "^1.7.3",
+        "morgan": "^1.9.1",
+        "node-gyp": "^6.0.1",
+        "pg": "^7.12.1",
+        "pug": "^2.0.4",
+        "serve-favicon": "^2.5.0"
+    }
+}
